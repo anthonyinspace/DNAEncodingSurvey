@@ -1,0 +1,15 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: DNAEncoding.aux
+The style file: IEEEtran.bst
+Database file #1: References.bib
+I was expecting a `,' or a `}'---line 29 of file References.bib
+ : 
+ : @article{WC1953N,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+-- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
+-- http://www.michaelshell.org/tex/ieeetran/bibtex/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+Warning--empty year in SFHC2003BL
+
+Done.
+(There was 1 error message)
