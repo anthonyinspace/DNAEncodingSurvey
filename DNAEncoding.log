@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.9.23)  24 OCT 2016 11:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.9.23)  27 OCT 2016 23:45
 entering extended mode
 **C:/Users/anthonymachado/Desktop/Paper/DNAEncoding.tex
 (C:/Users/anthonymachado/Desktop/Paper/DNAEncoding.tex
@@ -1330,15 +1330,15 @@ LaTeX Font Warning: Font shape `U/wasy/m/n' in size <9.5> not available
 (Font)              size <9> substituted on input line 60.
 
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <8> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 84.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 79.
 
 
 pdfTeX warning: pdflatex.exe (file ./by-nc-nd.pdf): PDF inclusion: found PDF ve
 rsion <1.6>, but at most version <1.5> allowed
-<by-nc-nd.pdf, id=70, 85.2545pt x 18.3345pt>
+<by-nc-nd.pdf, id=69, 85.2545pt x 18.3345pt>
 File: by-nc-nd.pdf Graphic file (type pdf)
  <use by-nc-nd.pdf>
-Package pdftex.def Info: by-nc-nd.pdf used on input line 84.
+Package pdftex.def Info: by-nc-nd.pdf used on input line 79.
 (pdftex.def)             Requested size: 85.25427pt x 18.33446pt.
  [1{C:/Users/anthonymachado/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
@@ -1459,10 +1459,10 @@ LaTeX Font Warning: Size substitutions with differences
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 218.
  ) 
 Here is how much of TeX's memory you used:
- 11146 strings out of 493334
- 165918 string characters out of 3126325
- 306370 words of memory out of 3000000
- 14366 multiletter control sequences out of 15000+200000
+ 11150 strings out of 493334
+ 165991 string characters out of 3126325
+ 307386 words of memory out of 3000000
+ 14369 multiletter control sequences out of 15000+200000
  91814 words of font info for 90 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  46i,14n,40p,1037b,437s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1485,9 +1485,9 @@ w/times/utmr8a.pfb><C:/Users/anthonymachado/AppData/Local/Programs/MiKTeX 2.9/f
 onts/type1/urw/times/utmri8a.pfb><C:/Users/anthonymachado/AppData/Local/Program
 s/MiKTeX 2.9/fonts/type1/public/wasy/wasy7.pfb><C:/Users/anthonymachado/AppData
 /Local/Programs/MiKTeX 2.9/fonts/type1/public/wasy/wasy8.pfb>
-Output written on DNAEncoding.pdf (4 pages, 156547 bytes).
+Output written on DNAEncoding.pdf (4 pages, 157745 bytes).
 PDF statistics:
- 191 PDF objects out of 1000 (max. 8388607)
- 41 named destinations out of 1000 (max. 500000)
+ 193 PDF objects out of 1000 (max. 8388607)
+ 42 named destinations out of 1000 (max. 500000)
  131 words of extra memory for PDF output out of 10000 (max. 10000000)
 
