@@ -136,8 +136,6 @@ The following encoding schemes use some or all of these elements in their design
 
 Shimanovsky et al~\cite{SFHC2003BL} were the first to propose using codon degeneracy to encode data in pcDNA. By switching codons between their redundant forms with the modification of one nucleotide, data could be inserted without altering protein translation. Arita and Ohashi ~\cite{AY2004BP} were the first to implement this scheme in a living cell. They did this using site-directed mutagenesis of wobble codons in the \textit{ftsZ} gene of \textit{Bacillus subtilis}. The university name "KEIO" was inserted by modifying the redundant nucleotides of the codons downstream of the \textit{ftsZ} start codon. An unmodified codon represented value 0 while a codon with a wobble nucleotide changed to any of its non-wild type redundant forms represented value 1. Messages were translated using a 6-bit mapping table, with the first 5 bits corresponding to an English alphabet letter or basic punctuation, and the last used as a parity bit for error correction.
 
-
-
 \begin{center}
  \begin{tabular}{||c || c c c c||}
  \hline
@@ -156,13 +154,37 @@ Shimanovsky et al~\cite{SFHC2003BL} were the first to propose using codon degene
 \end{tabular}
 \end{center}
 
+Heider et al. developed the DNA-Crypt~\cite{HBBMC2007} algorithm for creating DNA watermarks for marking genetically modified organisms. It is similar to the work of Arita et al. in that the encoding targets the wobble base pair in the genetic code. An encryption function $E$ maps the plaintext (binary data) $X$ to the ciphertext (genetic data) $Y$, such that $X \in  \{$0, 1$\}$ and $Y \in \{$A, C, G, T$\}$. Two bits are encoded per base, or one byte for four bases. Error correction is achieved with a fuzzy controller that selects one of two algorithms, either the 8/4 Hamming code for mutations that differ in only bit (e.g., 00 to 01) or the WDH-code for those that differ by multiple bits. This encoding scheme allowed implementations of several cryptographic algorithms, including One-Time Pad, AES, Blowfish, and RSA. The accuracy was tested using the GTPase encoding Ypt gene in $S. cerevisiae$.
+
+Haughton and Balado proposed BioCode~\cite{HBBMC2013}, a pair of encoding algorithms, one for ncDNA, and one for pcDNA. The ncDNA algorithm expands upon DNA-Crypt by observing the no start codons in restriction. This is accomplished by defining a set of dinucleotides $D$ = $\{$ AT, CT, TT, CA $\}$ that covers the possible eukaryotic start codons on either DNA strand. The trailing dinucleotide $d$ is continually checked for membership in $D$. If found, $d$ is replaced with a lookup table formed from a graduated mapping of the message space $M_d$ to set $S_d$. The pcDNA encoding technique is similar, but enforces the additional constraint of Binary Codon Equivalency (BCE). This requires that the cardinality of the codon set (|$S_d$|) be varied during the embedding process to allow the usage of a static lookup table.
+
 \subsection{ncDNA Encoding}
 
 \subsection{Plasmid Encoding}
 
 \section{Compression and Error Correction}
 
-Smith et al~\cite{SFHC2003BL} were the first to suggest a data compression technique in DNA encoding, specifically the Huffman Code. The Huffman Code is a form of lossless data compression that forms a symbol table using fewer bits to encode more common characters~\cite{H1952POTIRE}. Smith et al created a Huffman Code table mapping letters of the alphabet to nucleotide strings, where the most common English letter 'e' was mapped to the nucleotide string "T", and the least common english letter 'z' was mapped to a longer nucleotide string "CCCTG". This achieved an average encoding length of 2.2 bases per letter. The mapping is unambiguous, making only one possible interpretation of each message.
+Smith et al.~\cite{SFHC2003BL} were the first to suggest a data compression technique in DNA encoding, specifically the Huffman Code. The Huffman Code is a form of lossless data compression that forms a symbol table using fewer bits to encode more common characters~\cite{H1952POTIRE}. Smith et al created a Huffman Code table mapping letters of the alphabet to nucleotide strings, where the most common English letter 'e' was mapped to the nucleotide string "T", and the least common english letter 'z' was mapped to a longer nucleotide string "CCCTG". This achieved an average encoding length of 2.2 bases per letter. The mapping is unambiguous, making only one possible interpretation of each message.
+
+Comma encoding~\cite{BVSPNAS2000} specifies that encoded words be separated by a single nucleotide (i.e., G). The remaining four (or five in Smith et al.), are composed of the other three nucleotides. Additional constraints are that only three A-T pairs are allowed, and two G-C always on the top strand, so that the DNA molecules will have isothermal melting temperatures. This technique provides particularly good detection of insertions and deletions, unfortunately it is also space inefficient.
+
+The alternating code, also from Smith et al.~\cite{SFHC2003BL} consists of 64, 6 base pair codons, with nucleotides alternating between an A or G (purines) at odd positions, and C or T (pyrimidines) at evens (e.g., RYRYRY…, YRYRYR). Like the comma encoding, the alternating code results in isothermically stable molecules with a 1:1 ratio of A-T to G-C pairs. While more space efficient, this technique is not as proficient at error detection, as only 67\% of codons result in nonsense codons after mutation, compared to 83\% for the comma code.
+
+Contrast mapping is an encoding scheme developed by Mousa et al.~\cite{MMAIAJI2011}. The binary message is divided into 6-bit groups, each converted to decimal (base 10). Pairs of consecutive values ($x, y$) are converted into ($x', y'$) with the the following linear transformations: $x' = 2x - y$,  $y' = 2y - x$. Values are limited to the subdomain:  0 $\leq$ 2$x - y$ $\leq$ $L$, 0 $\leq$ 2$y$ - $x$ $\leq$ $L$. Values are decoded with the following equations: $x = [3x' + 3y'], y = [3 x' + 3y']$. This technique is sufficiently flexible to be applied to DNA or image steganography.
+
+Others to write up...
+
+1) Towards practical, high-capacity, low-maintenance
+information storage in synthesized DNA
+
+2) Rewritable, Random-Access DNA-Based Storage System
+
+3) Genomically encoded analog memory with precise in vivo DNA writing in living cell populations
+
+4) HyDEn: A Hybrid Steganocryptographic Approach for Data Encryption Using Randomized Error-Correcting DNA Codes
+
+5) Robust Chemical Preservation of Digital Information on DNA in Silica with Error-Correcting Codes
+
 
 \begin{table*}[!t]
     \centering
