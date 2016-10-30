@@ -20,7 +20,7 @@
   \author[1]{Anthony P. Machado}
 
   \author[2]{Gaby G. Dagher}
-  
+
   \author[3]{Eddie C. Davis}
 
   \affil[1]{Boise State University, E-mail: anthonymachado@u.boisestate.edu}
@@ -59,15 +59,23 @@ In this survey we provide the first systematic comparison of cellular encoding s
 \maketitle
 \section{Introduction}
 
-Biosteganography is an emerging field in privacy research that combines techniques from genetic engineering, bioinformatics, cryptography and forensics to secretly transfer data within a living cell's DNA~\cite{B2016JOB}. Data ranging from simple text messages to audio recordings and color images can be inserted into cellular DNA. Because DNA is information dense and occurs abundantly in nature, it makes an ideal medium for sending messages secretly. Basic steganographic principles dictate that if an attacker doesn’t know where to find a confidential message in the first place, the message is far more secure~\cite{A2001IEEEIC}.
+Biosteganography is an emerging field in privacy research that combines techniques from genetic engineering, bioinformatics, cryptography and forensics to secretly transfer data within a living cell's DNA~\cite{B2016JOB}. Data ranging from simple text messages to audio recordings and color images can be inserted into cellular DNA for secure transmission. Because DNA is information dense and occurs abundantly in nature, it makes an ideal medium for sending messages secretly. Basic steganographic principles dictate that if an attacker doesn’t know where to find a confidential message in the first place, the message is far more secure~\cite{A2001IEEEIC}. Locating encoded DNA would be harder than finding a needle in a haystack. A needle, at least, can be seen by the human eye.
 
-Traditional digital storage systems such as hard drives and SD cards have detectable emanations, which makes them vulnerable to side attacks~\cite{T2008TOIAS}. Modified DNA, however, has no measurable emanations. If an agent needed to carry a hidden message through a tight security checkpoint, any form of electronic storage could be easily detected, while physical recordings like paper or tape could be visibly located by the security guard. A DNA encoded message, however, located in the cells of the agent's thumb, or in bacteria under the agent's nail, could be brought through without detection. The receiver of the message would need to know how to decode the data, and have the lab equipment to amplify and sequence the DNA.
+Traditional digital storage systems such as hard drives and SD cards have detectable emanations, which makes them vulnerable to side attacks~\cite{T2008TOIAS}. Modified DNA, however, has no measurable emanations. If an agent needed to carry a confidential message through a tight security checkpoint, any form of electronic storage could be easily detected, while physical recordings like paper or tape could be visibly located by the security guard. A DNA encoded message, however, located in the cells of the agent's thumb, or in bacteria under the agent's nail, could be brought through without detection. The receiver of the message would need to know how to decode the data, and have the lab equipment to amplify and sequence the DNA in order to retrieve the data.
 
 Inserting hidden data into DNA is also crucial for watermarking patented genes. Advances in gene editing technology has led to a rise in genetically modified organisms being developed in a variety of sectors such as agriculture, healthcare, and energy. For added security of these novel genomes, many companies have already begun embedding hidden watermarks in their DNA so that ownership can be established in the case of theft. For this purpose too, secrecy is essential. The watermark must be embedded in such a way that the thief cannot find it, else the thief would simply remove it. Thus, biosteganography is an overlapping goal both of individuals wanting to send data privately and companies wanting to watermark genetic inventions.
 
-In this survey,
--encoding overview
-- in this work
+Many encoding schemes have been proposed the accomplish 
+
+In this survey, we will provide the first systematic analysis of these diverse encoding schemes, in which:
+\\
+\begin{itemize}
+\item we define the unique bio-restrictions associated with cellular encoding and compare how the proposed encoding schemes meet these restrictions;
+\item we contrast the error rates and bits-per-nucleotide densities of each of the schemes, highlighting the impact error correction and compression techniques have on both; and
+\item we propose new directions for research incorporating novel epigenetic techniques.
+\end{itemize}
+
+The rest of the survey is organized as follows. In Section 2 we provide a background on genetics, explain techniques in artificial DNA encoding, and clarify the biological restrictions involved in cellular encoding. A systematic comparison of the encoding schemes for coding and non-coding regions is presented in Section 3, in which we look at how each encoding scheme meets cellular restrictions and the error rate and bits-per-nucleotide density it offers.
 
 
 \section{Background}
@@ -76,17 +84,21 @@ In this survey,
 
 Every living cell contains DNA molecules encoded with instructions for making the proteins necessary for the cell to function. DNA takes the form of a double helix made of two antiparallel strands. Each strand is composed of a sequence of 4 nucleotides: adenine (A), guanine (G), cytosine (C), and thymine (T). The purines adenine and guanine, and the pyrimidines cytosine and thymine hydrogen bond with each other across the double helix. Every three nucleotides forms a codon that the cell reads and processes to create an amino acid, the building block of a protein~\cite{WC1953N}.
 
-There are only 20 amino acids, despite the fact that $4^3$ = 64 possible codon variations exist. This is because many amino acids have up to five redundant codons. Also, three codons are used specifically as stop signals to indicate the end of a protein chain. The redundancy in codon to amino acid mapping is called codon degeneracy~\cite{WBBGLL2008}. Codon degeneracy gives an evolutionary advantage to the cell by allowing certain mutations to occur in a codon while preserving the codon’s functionality.
+There are only 20 amino acids, despite the fact that $4^3$ = 64 possible codon variations exist. This is because many amino acids are correlated with up to five redundant codons. Also, three codons are used specifically as stop signals to indicate the end of a protein chain. The redundancy in codon to amino acid mapping is called codon degeneracy~\cite{WBBGLL2008}. Codon degeneracy gives an evolutionary advantage to the cell by allowing certain mutations to occur in a codon while preserving the codon’s functionality.
 
-\subsection{Artificial DNA Encoding}
+
+
+\subsection{Artificial Encoding}
 
  DNA was first encoded with a secret message in 1999 by Clelland et al~\cite{CRB1999N}. Inspired by the tiny, concealed “microdot” messages used in World War II, artificial DNA strands were constructed using a simple substitution cipher, then mixed with human DNA and pipetted onto a printed period on filter paper. The encoded DNA was later recovered from the dot and sequenced to successfully read the secret message: “JUNE 6 INVASION: NORMANDY”.
+ 
+ The potential for DNA-based steganography was quickly realized by researchers.
 
-\section{Bio-Restrictions}
+\subsection{Cellular Encoding Restrictions}
 
 Cellular DNA encoding must not harm the carrier organism, either by removing cellular functionality or adding mutative behavior. To avoid this, encoding schemes must ensure that modified DNA strands remain biologically equivalent to their wild-type form. This section defines the bio-restrictions that exist for two distinct areas of cellular DNA, protein coding DNA (pcDNA) and noncoding DNA (ncDNA). As our knowledge of genetics continues to expand, more particular restrictions may become known.
 
-\subsection{pcDNA Constraints}
+\subsubsection{pcDNA Constraints}
 
 The protein coding region of DNA contains the codons that are translated to amino acids, which are then concatenated into proteins. Any data insertions in this area must meet the following constraints.
 
@@ -95,7 +107,7 @@ The protein coding region of DNA contains the codons that are translated to amin
 \textit{Codon Bias Preservation}
 
 
-\subsection{ncDNA Constraints}
+\subsubsection{ncDNA Constraints}
 
 The noncoding region of DNA is often called "junk DNA" for its apparent lack of use in the cell. Because these regions appear to be non-functional, data can be embedded into these regions if the following constraints are met.
 
