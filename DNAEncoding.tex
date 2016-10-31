@@ -61,21 +61,21 @@ In this survey we provide the first systematic comparison of cellular encoding s
 
 Biosteganography is an emerging field in privacy research that combines techniques from genetic engineering, bioinformatics, cryptography and forensics to secretly transfer data within a living cell's DNA~\cite{B2016JOB}. Data ranging from simple text messages to audio recordings and color images can be inserted into cellular DNA for secure transmission. Because DNA is information dense and occurs abundantly in nature, it makes an ideal medium for sending messages secretly. Basic steganographic principles dictate that if an attacker doesn’t know where to find a confidential message in the first place, the message is far more secure~\cite{A2001IEEEIC}. Locating encoded DNA would be harder than finding a needle in a haystack. A needle, at least, can be seen by the human eye.
 
-Traditional digital storage systems such as hard drives and SD cards have detectable emanations, which makes them vulnerable to side attacks~\cite{T2008TOIAS}. Modified DNA, however, has no measurable emanations. If an agent needed to carry a confidential message through a tight security checkpoint, any form of electronic storage could be easily detected, while physical recordings like paper or tape could be visibly located by the security guard. A DNA encoded message, however, located in the cells of the agent's thumb, or in bacteria under the agent's nail, could be brought through without detection. The receiver of the message would need to know how to decode the data, and have the lab equipment to amplify and sequence the DNA in order to retrieve the data.
+Traditional digital storage systems such as hard drives and SD cards have detectable emanations, which makes them vulnerable to side attacks~\cite{T2008TOIAS}. Modified DNA, however, has no measurable emanations. If an agent needed to carry a confidential message through a tight security checkpoint, any form of electronic storage could be easily detected, while physical recordings like paper or tape could be visibly located by the security guard. A DNA encoded message, however, located in the cells of the agent's thumb, or in bacteria under the agent's nail, could be brought through without detection. The receiver of the message would need to know how to decode the data, and have the lab equipment to amplify and sequence the DNA in order to retrieve the message.
 
-Inserting hidden data into DNA is also crucial for watermarking patented genes. Advances in gene editing technology has led to a rise in genetically modified organisms being developed in a variety of sectors such as agriculture, healthcare, and energy. For added security of these novel genomes, many companies have already begun embedding hidden watermarks in their DNA so that ownership can be established in the case of theft. For this purpose too, secrecy is essential. The watermark must be embedded in such a way that the thief cannot find it, else the thief would simply remove it. Thus, biosteganography is an overlapping goal both of individuals wanting to send data privately and companies wanting to watermark genetic inventions.
+Inserting hidden data into DNA is also crucial for watermarking patented genes. Advances in gene editing technology have led to a rise in genetically modified organisms being developed in a variety of sectors such as agriculture, healthcare, and energy. For added security of these novel genomes, many companies have begun embedding hidden watermarks in their DNA so that ownership can be established in the case of theft. For this purpose too, secrecy is essential. The watermark must be embedded in such a way that the thief cannot find it, else the thief would simply remove it. Thus, biosteganography is an overlapping goal both of individuals wanting to send data privately and companies wanting to watermark genetic inventions.
 
-Many encoding schemes have been proposed the accomplish 
+Many encoding schemes have been proposed to accomplish data embedding in cellular DNA. 
 
 In this survey, we will provide the first systematic analysis of these diverse encoding schemes, in which:
 \\
 \begin{itemize}
 \item we define the unique bio-restrictions associated with cellular encoding and compare how the proposed encoding schemes meet these restrictions;
-\item we contrast the error rates and bits-per-nucleotide densities of each of the schemes, highlighting the impact error correction and compression techniques have on both; and
+\item we contrast the error rates and bits-per-nucleotide densities of each of the schemes, highlighting the effects of error correction and compression techniques on both; and
 \item we propose new directions for research incorporating novel epigenetic techniques.
 \end{itemize}
 
-The rest of the survey is organized as follows. In Section 2 we provide a background on genetics, explain techniques in artificial DNA encoding, and clarify the biological restrictions involved in cellular encoding. A systematic comparison of the encoding schemes for coding and non-coding regions is presented in Section 3, in which we look at how each encoding scheme meets cellular restrictions and the error rate and bits-per-nucleotide density it offers.
+The rest of the survey is organized as follows. In Section 2 we provide a background on genetics, explain techniques in artificial DNA encoding, and clarify the biological restrictions involved in cellular encoding. A systematic comparison of the encoding schemes for coding and non-coding regions is presented in Section 3, in which we look at how each encoding scheme meets cellular restrictions and the error rate and bits-per-nucleotide density it offers. Finally, in Section we propose new directions for future encoding schemes that use epigenetics and alternative genetic regions.
 
 
 \section{Background}
@@ -90,9 +90,11 @@ There are only 20 amino acids, despite the fact that $4^3$ = 64 possible codon v
 
 \subsection{Artificial Encoding}
 
+ Artificial DNA encoding was the 
+ 
  DNA was first encoded with a secret message in 1999 by Clelland et al~\cite{CRB1999N}. Inspired by the tiny, concealed “microdot” messages used in World War II, artificial DNA strands were constructed using a simple substitution cipher, then mixed with human DNA and pipetted onto a printed period on filter paper. The encoded DNA was later recovered from the dot and sequenced to successfully read the secret message: “JUNE 6 INVASION: NORMANDY”.
  
- The potential for DNA-based steganography was quickly realized by researchers.
+ 
 
 \subsection{Cellular Encoding Restrictions}
 
@@ -100,22 +102,22 @@ Cellular DNA encoding must not harm the carrier organism, either by removing cel
 
 \subsubsection{pcDNA Constraints}
 
-The protein coding region of DNA contains the codons that are translated to amino acids, which are then concatenated into proteins. Any data insertions in this area must meet the following constraints.
+The protein coding region of DNA contains the codons that are translated to amino acids, which are concatenated into proteins. Any data insertions in this area must meet the following constraints.
 
-\textit{Protein Preservation} The structure of the protein coded by the region must remain unchanged.
+\textit{Protein Preservation} The structure of the protein coded by the region must remain unchanged. Nucleotide insertions and modifications must not alter the codons in such a way that would change the original amino acid sequence.
 
-\textit{Codon Bias Preservation}
+\textit{Codon Bias Preservation} Individual cells have specific ratios of cytoplasmic tRNA associated with their genomic codons, which can be disrupted if the codon balance is changed, and have a negative effect on the cell. Therefore, it is important that codon bias is preserved.
 
 
 \subsubsection{ncDNA Constraints}
 
-The noncoding region of DNA is often called "junk DNA" for its apparent lack of use in the cell. Because these regions appear to be non-functional, data can be embedded into these regions if the following constraints are met.
+The noncoding region of DNA is often called "junk DNA" for its apparent lack of use in the cell. Because they appear to be non-functional, data can be embedded into these regions if the following constraints are met.
 
 \textit{Truly nonfunctional region.} When ncDNA was first discovered it was assumed to have no role in cell functionality, but recent studies have shown that up to 80\% of ncDNA may have biochemical functions in the cell, despite not coding for proteins~\cite{EPC2012N}. Therefore, it is first imperative that the individual who wishes to insert a message into ncDNA verify that they are encoding their message in the 20\% that has no biochemical use.
 
 \textit{No start codons.} When a cell's genetic machinery locates a start codon, it can begin the transcription process. To prevent unwanted transcription from happening in ncDNA with embedded data, it is important to make sure the encoded nucleotides to not create a start codon. When a DNA string is being transcribed, three-nucleotide codons can be read in six different reading frames. Therefore, there should not be a start codon in any of the six frames. The most common start codon is AUG, though some alternative start codons can also exist, particularly in bacteria~\cite{B1997S}. If a cell contains alternative start codons, the encoding scheme should avoid all of them.
 
-\textit{No homopolymers.} A DNA homopolymer is a region where the same nucleotide is repeated multiple times. Too many repeats can cause errors during DNA replication through polymerase slippage~\cite{VCE2001TEJ}. These replication errors could quickly distort the inserted message and possible damage the cell after a few generations. For this reason any ncDNA encoding scheme should not include homopolymers greater than length 3.
+\textit{No homopolymers.} A DNA homopolymer is a region where the same nucleotide is repeated multiple times. Too many repeats can cause errors during DNA replication through polymerase slippage~\cite{VCE2001TEJ}. These replication errors could quickly distort the inserted message and possibly damage the cell after a few generations. For this reason any ncDNA encoding scheme should not include homopolymers greater than length 3.
 
 
 \section{Encoding Schemes}
