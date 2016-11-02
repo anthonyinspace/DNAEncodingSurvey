@@ -65,7 +65,7 @@ Traditional digital storage systems such as hard drives and SD cards have detect
 
 Inserting hidden data into DNA is also crucial for watermarking patented genes. Advances in gene editing technology have led to a rise in genetically modified organisms being developed in a variety of sectors such as agriculture, healthcare, and energy. For added security of these novel genomes, many companies have begun embedding hidden watermarks in their DNA so that ownership can be established in the case of theft. For this purpose too, secrecy is essential. The watermark must be embedded in such a way that the thief cannot find it, else the thief would simply remove it. Thus, biosteganography is an overlapping goal both of individuals wanting to send data privately and companies wanting to watermark genetic inventions.
 
-Many encoding schemes have been proposed to accomplish data embedding in cellular DNA. 
+Many encoding schemes have been proposed to accomplish data embedding in cellular DNA.
 
 In this survey, we will provide the first systematic analysis of these diverse encoding schemes, in which:
 \\
@@ -86,15 +86,66 @@ Every living cell contains DNA molecules encoded with instructions for making th
 
 There are only 20 amino acids, despite the fact that $4^3$ = 64 possible codon variations exist. This is because many amino acids are correlated with up to five redundant codons. Also, three codons are used specifically as stop signals to indicate the end of a protein chain. The redundancy in codon to amino acid mapping is called codon degeneracy~\cite{WBBGLL2008}. Codon degeneracy gives an evolutionary advantage to the cell by allowing certain mutations to occur in a codon while preserving the codon’s functionality.
 
-
+\begin{center}
+ \begin{tabular}{||c || c c c c c c||}
+ \hline
+ Amino & & & Codons & & &\\ [0.5ex]
+ Acids & & & & & &\\ [0.5ex]
+ \hline\hline
+ Ala & GCT & GCC & GCA & GCG & &\\
+ \hline
+ Arg & CGT & CGC & CGA & CGG & AGA & AGG \\
+ \hline
+ Asn & AAT & AAC & & & &\\
+ \hline
+ Asp & GAT & GAC & & & &\\
+ \hline
+ Cys & TGT & TGC & & & &\\
+ \hline
+ Gln & CAA & CAG & & & &\\
+ \hline
+ Glu & GAA & GAG & & & &\\
+ \hline
+ Gly & GGT & GGC & GGA & GGG & &\\
+ \hline
+ His & CAT & CAC & & & &\\
+ \hline
+ Ile & ATT & ATC & ATA & & &\\
+ \hline
+ Leu & TTA & TTG & CTT & CTC & CTA & CTG \\
+ \hline
+ Lys & AAA & AAG & & & &\\
+ \hline
+ Met & ATG & & & & &\\
+ \hline
+ Phe & TTT & TTC & & & &\\
+ \hline
+ Pro & CCT & CCC & CCA & CCG & &\\
+ \hline
+ Ser & TCT & TCC & TCA & TCG & AGT & AGC \\
+ \hline
+ Thr & ACT & ACC & ACA & ACG & &\\
+ \hline
+ Trp & TGG & & & & &\\
+ \hline
+ Tyr & TAT & TAC & & & &\\
+ \hline
+ Val & GTT & GTC & GTA & GTG & &\\
+ \hline
+ START & ATG & & & & &\\
+ \hline
+ STOP & TAA & TGA & TAG & & &\\[1ex]
+ \hline
+\end{tabular}
+\end{center}
 
 \subsection{Artificial Encoding}
 
- Artificial DNA encoding was the 
- 
+ Artificial DNA encoding was the
+
  DNA was first encoded with a secret message in 1999 by Clelland et al~\cite{CRB1999N}. Inspired by the tiny, concealed “microdot” messages used in World War II, artificial DNA strands were constructed using a simple substitution cipher, then mixed with human DNA and pipetted onto a printed period on filter paper. The encoded DNA was later recovered from the dot and sequenced to successfully read the secret message: “JUNE 6 INVASION: NORMANDY”.
- 
- 
+
+
 
 \subsection{Cellular Encoding Restrictions}
 
@@ -137,24 +188,6 @@ The following encoding schemes use some or all of these elements in their design
 \subsection{pcDNA Encoding}
 
 Shimanovsky et al~\cite{SFHC2003BL} were the first to propose using codon degeneracy to encode data in pcDNA. By switching codons between their redundant forms with the modification of one nucleotide, data could be inserted without altering protein translation. Arita and Ohashi ~\cite{AY2004BP} were the first to implement this scheme in a living cell. They did this using site-directed mutagenesis of wobble codons in the \textit{ftsZ} gene of \textit{Bacillus subtilis}. The university name "KEIO" was inserted by modifying the redundant nucleotides of the codons downstream of the \textit{ftsZ} start codon. An unmodified codon represented value 0 while a codon with a wobble nucleotide changed to any of its non-wild type redundant forms represented value 1. Messages were translated using a 6-bit mapping table, with the first 5 bits corresponding to an English alphabet letter or basic punctuation, and the last used as a parity bit for error correction.
-
-\begin{center}
- \begin{tabular}{||c || c c c c||}
- \hline
-  & U & C & A & G \\ [0.5ex]
- \hline\hline
- U & 6 & 87837 & 787 \\
- \hline
- C & 7 & 78 & 5415 \\
- \hline
- A & 545 & 778 & 7507 \\
- \hline
- G & 545 & 18744 & 7560 \\
- \hline
- 5 & 88 & 788 & 6344 \\ [1ex]
- \hline
-\end{tabular}
-\end{center}
 
 Heider et al. developed the DNA-Crypt~\cite{HBBMC2007} algorithm for creating DNA watermarks for marking genetically modified organisms. It is similar to the work of Arita et al. in that the encoding targets the wobble base pair in the genetic code. An encryption function $E$ maps the plaintext (binary data) $X$ to the ciphertext (genetic data) $Y$, such that $X \in  \{$0, 1$\}$ and $Y \in \{$A, C, G, T$\}$. Two bits are encoded per base, or one byte for four bases. Error correction is achieved with a fuzzy controller that selects one of two algorithms, either the 8/4 Hamming code for mutations that differ in only bit (e.g., 00 to 01) or the WDH-code for those that differ by multiple bits. This encoding scheme allowed implementations of several cryptographic algorithms, including One-Time Pad, AES, Blowfish, and RSA. The accuracy was tested using the GTPase encoding Ypt gene in $S. cerevisiae$.
 

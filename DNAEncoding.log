@@ -1,12 +1,16 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.10.27)  31 OCT 2016 14:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.9.23)  2 NOV 2016 13:27
 entering extended mode
-**"C:/Users/antho/Desktop/DNA Encoding/DNAEncodingSurvey/DNAEncoding.tex"
-("C:/Users/antho/Desktop/DNA Encoding/DNAEncodingSurvey/DNAEncoding.tex"
+**C:/Users/anthonymachado/Desktop/Paper/DNAEncoding.tex
+(C:/Users/anthonymachado/Desktop/Paper/DNAEncoding.tex
 LaTeX2e <2016/03/31> patch level 3
 Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\article.cls"
+
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\arti
+cle.cls"
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\size10.clo"
+
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size
+10.clo"
 File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -21,19 +25,22 @@ File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\inputenc.sty"
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\inpu
+tenc.sty"
 Package: inputenc 2015/03/17 v1.2c Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\utf8.def"
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\utf8
+.def"
 File: utf8.def 2016/02/28 v1.1s UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1enc.dfu"
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1en
+c.dfu"
 File: t1enc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
    defining Unicode char U+00A0 (decimal 160)
    defining Unicode char U+00A1 (decimal 161)
@@ -270,7 +277,8 @@ File: t1enc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
 Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ot1enc.dfu"
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ot1e
+nc.dfu"
 File: ot1enc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
    defining Unicode char U+00A0 (decimal 160)
    defining Unicode char U+00A1 (decimal 161)
@@ -311,7 +319,8 @@ File: ot1enc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
 Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omsenc.dfu"
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omse
+nc.dfu"
 File: omsenc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
@@ -334,12 +343,12 @@ Now handling font encoding U ...
    defining Unicode char U+2026 (decimal 8230)
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
-))
-(dgruyter_NEW.sty
+)) (dgruyter_NEW.sty
 Package: dgruyter_NEW 2013/10/15 v0.87 Walter de Gruyter layout
 LaTeX Info: Redefining \numberline on input line 137.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\fixltx2e.sty"
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\fixl
+tx2e.sty"
 Package: fixltx2e 2015/06/22 v2.0b fixes to LaTeX (obsolete)
 
 
@@ -349,14 +358,18 @@ Package fixltx2e Warning: fixltx2e is not required with releases after 2015
 
 )
 \gridwidth=\dimen103
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\fontenc.sty"
+
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\font
+enc.sty"
 Package: fontenc 2016/06/19 v1.99m Standard LaTeX package
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1enc.def"
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1en
+c.def"
 File: t1enc.def 2016/06/19 v1.99m Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\textcomp.sty"
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\text
+comp.sty"
 Package: textcomp 2016/06/19 v1.99m Standard LaTeX package
 Package textcomp Info: Sub-encoding information:
 (textcomp)               5 = only ISO-Adobe without \textcurrency
@@ -371,12 +384,14 @@ Package textcomp Info: Sub-encoding information:
 (textcomp)             See the documentation for details.
 Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 79.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ts1enc.def"
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1e
+nc.def"
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
 Now handling font encoding TS1 ...
 ... processing UTF-8 mapping file for font encoding TS1
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ts1enc.dfu"
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1e
+nc.dfu"
 File: ts1enc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
    defining Unicode char U+00A2 (decimal 162)
    defining Unicode char U+00A3 (decimal 163)
@@ -512,27 +527,33 @@ Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
 Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tipa\tipa.sty"
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tipa\tipa
+.sty"
 Package: tipa 2002/08/08 TIPA version 1.1
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\fontenc.sty"
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\font
+enc.sty"
 Package: fontenc 2016/06/19 v1.99m Standard LaTeX package
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tipa\t3enc.def"
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tipa\t3en
+c.def"
 File: t3enc.def 2001/12/31 T3 encoding
 Now handling font encoding T3 ...
 ... no UTF-8 mapping file for font encoding T3
 LaTeX Font Info:    Try loading font information for T1+cmss on input line 357.
 
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1cmss.fd"
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1cm
+ss.fd"
 File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1enc.def"
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1en
+c.def"
 File: t1enc.def 2016/06/19 v1.99m Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 )))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\lmodern.sty"
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\lmoder
+n.sty"
 Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
@@ -570,20 +591,25 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 \dg@wordmark=\box26
    defining Unicode char U+2007 (decimal 8199)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\babel.sty"
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\b
+abel.sty"
 Package: babel 2016/04/23 3.9r The Babel package
 
 *************************************
 * Local config file bblopts.cfg used
 *
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\arabi\bblopts.cfg"
+
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\latex\arabi\bbl
+opts.cfg"
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
  babel
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\babel-english\english.ldf"
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\latex\babel-eng
+lish\english.ldf"
 Language: english 2012/08/20 v3.3p English support from the babel system
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\babel.def"
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\b
+abel.def"
 File: babel.def 2016/04/23 3.9r Babel common definitions
 \babel@savecnt=\count87
 \U@D=\dimen104
@@ -592,7 +618,8 @@ File: babel.def 2016/04/23 3.9r Babel common definitions
 \l@australian = a dialect from \language\l@british 
 \l@newzealand = a dialect from \language\l@british 
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\babel-english\english.ldf"
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\latex\babel-eng
+lish\english.ldf"
 Language: english 2012/08/20 v3.3p English support from the babel system
 ))
 
@@ -600,10 +627,13 @@ Package Babel Warning: The package option `english' should not be used
 (Babel)                with a more specific one (like `USenglish') on input lin
 e 1333.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ms\ragged2e.sty"
+
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ms\ragged
+2e.sty"
 Package: ragged2e 2009/05/21 v2.1 ragged2e Package (MS)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ms\everysel.sty"
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ms\everys
+el.sty"
 Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
 )
 \CenteringLeftskip=\skip43
@@ -621,24 +651,30 @@ Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
 \RaggedRightParindent=\skip55
 \JustifyingParindent=\skip56
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\a
+msmath.sty"
 Package: amsmath 2016/06/28 v2.15d AMS math features
 \@mathmargin=\skip57
 
 For additional information on amsmath, use the `?' option.
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
+
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\a
+mstext.sty"
 Package: amstext 2000/06/29 v2.01 AMS text
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\a
+msgen.sty"
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks16
 \ex@=\dimen105
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\a
+msbsy.sty"
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen106
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\a
+msopn.sty"
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count88
@@ -679,7 +715,8 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 635.
 LaTeX Info: Redefining \[ on input line 2739.
 LaTeX Info: Redefining \] on input line 2740.
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amscls\amsthm.sty"
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amscls\am
+sthm.sty"
 Package: amsthm 2015/03/04 v2.20.2
 \thm@style=\toks21
 \thm@bodyfont=\toks22
@@ -691,31 +728,39 @@ Package: amsthm 2015/03/04 v2.20.2
 \thm@headsep=\skip62
 \dth@everypar=\toks26
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\
+graphicx.sty"
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\
+keyval.sty"
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks27
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\
+graphics.sty"
 Package: graphics 2016/07/10 v1.0t Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\
+trig.sty"
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\latex\00miktex\
+graphics.cfg"
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 99.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def"
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-
+def\pdftex.def"
 File: pdftex.def 2016/07/10 v0.06j Graphics/color for pdfTeX
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdie
+k\infwarerr.sty"
 Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdie
+k\ltxcmds.sty"
 Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count100
@@ -723,7 +768,8 @@ Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen114
 \Gin@req@width=\dimen115
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\array.sty"
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\arr
+ay.sty"
 Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
 \col@sep=\dimen116
 \extrarowheight=\dimen117
@@ -731,10 +777,12 @@ Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
 \extratabsurround=\skip63
 \backup@length=\skip64
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\multirow\multirow.sty"
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\latex\multirow\
+multirow.sty"
 \bigstrutjot=\dimen118
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\tabularx.sty"
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\tab
+ularx.sty"
 Package: tabularx 2016/02/03 v2.11 `tabularx' package (DPC)
 \TX@col@width=\dimen119
 \TX@old@table=\dimen120
@@ -744,8 +792,10 @@ Package: tabularx 2016/02/03 v2.11 `tabularx' package (DPC)
 \TX@cols=\count101
 \TX@ftn=\toks29
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\multirow\bigstrut.sty")
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\supertabular\supertabular.sty"
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\latex\multirow\
+bigstrut.sty")
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\latex\supertabu
+lar\supertabular.sty"
 Package: supertabular 2004/02/20 v4.1e the supertabular environment
 \c@tracingst=\count102
 \ST@wd=\dimen124
@@ -764,7 +814,8 @@ Package: supertabular 2004/02/20 v4.1e the supertabular environment
 \ST@dimen=\dimen134
 \ST@pbox=\box29
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\booktabs\booktabs.sty"
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\latex\booktabs\
+booktabs.sty"
 Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \heavyrulewidth=\dimen135
 \lightrulewidth=\dimen136
@@ -784,7 +835,8 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \@lastruleclass=\count106
 \@thisrulewidth=\dimen147
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\multicol.sty"
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\mul
+ticol.sty"
 Package: multicol 2016/04/07 v1.8p multicolumn formatting (FMi)
 \c@tracingmulticols=\count107
 
@@ -837,10 +889,13 @@ Package multicol Warning: May not work with the twocolumn option on input line
 \mult@nat@firstbox=\box54
 \colbreak@box=\box55
 \mc@col@check@num=\count115
-) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\caption.sty"
+)
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\c
+aption.sty"
 Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\caption3.sty"
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\c
+aption3.sty"
 Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 67.
 \captionmargin=\dimen157
@@ -854,10 +909,12 @@ Package caption3 Info: TeX engine: e-TeX on input line 67.
 \c@ContinuedFloat=\count116
 Package caption Info: supertabular package is loaded.
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\sidecap\sidecap.sty"
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\latex\sidecap\s
+idecap.sty"
 Package: sidecap 2003/06/06 v1.6f SideCap Package (RN/HjG)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ifth
+en.sty"
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
 \SC@BOXWD=\dimen164
@@ -867,7 +924,8 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 \c@SC@C=\count117
 \SC@BOX=\box56
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\rotating.sty"
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\
+rotating.sty"
 Package: rotating 2016/05/22 v2.16c rotated objects in LaTeX
 \c@r@tfl@t=\count118
 \rotFPtop=\skip70
@@ -875,14 +933,16 @@ Package: rotating 2016/05/22 v2.16c rotated objects in LaTeX
 \rot@float@box=\box57
 \rot@mess@toks=\toks30
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\natbib\natbib.sty"
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\latex\natbib\na
+tbib.sty"
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip72
 \bibsep=\skip73
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count119
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\makeidx.sty"
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\make
+idx.sty"
 Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
 )
 \@indexfile=\write3
@@ -890,7 +950,9 @@ Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
 
 
 Writing index file DNAEncoding.idx
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lineno\lineno.sty"
+
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lineno\li
+neno.sty"
 Package: lineno 2005/11/02 line numbers on paragraphs v4.41
 \linenopenalty=\count120
 \output=\toks31
@@ -908,18 +970,22 @@ Package: lineno 2005/11/02 line numbers on paragraphs v4.41
 \bframebox=\box58
 LaTeX Info: Redefining \\ on input line 3056.
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\url\url.sty"
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\latex\url\url.s
+ty"
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\
+hyperref.sty"
 Package: hyperref 2016/06/24 v6.83q Hypertext links for LaTeX
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty"
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdie
+k\hobsub-hyperref.sty"
 Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
 
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\hobsub-generic.sty"
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdie
+k\hobsub-generic.sty"
 Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
 Package hobsub Info: Skipping package `infwarerr' (already loaded).
@@ -959,27 +1025,32 @@ Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
 Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
 Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\generic\ifxetex
+\ifxetex.sty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty"
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\
+auxhook.sty"
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\
+kvoptions.sty"
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
 \@linkdim=\dimen173
 \Hy@linkcounter=\count127
 \Hy@pagecounter=\count128
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\
+pd1enc.def"
 File: pd1enc.def 2016/06/24 v6.83q Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
 \Hy@SavedSpaceFactor=\count129
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\latex\00miktex\
+hyperref.cfg"
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
 Package hyperref Info: Option `breaklinks' set `true' on input line 4362.
@@ -1015,22 +1086,27 @@ LaTeX Info: Redefining \pageref on input line 6416.
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def"
+
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\
+hpdftex.def"
 File: hpdftex.def 2016/06/24 v6.83q Hyperref driver for pdfTeX
 \Fld@listcount=\count135
 \c@bookmark@seq@number=\count136
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\
+rerunfilecheck.sty"
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
 \Hy@SectionHShift=\skip74
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\doi\doi.sty"
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\latex\doi\doi.s
+ty"
 Package: doi 2007/07/24 handle doi numbers
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\footmisc\footmisc.sty"
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\latex\footmisc\
+footmisc.sty"
 Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
 \FN@temptoken=\toks32
 \footnotemargin=\dimen177
@@ -1044,10 +1120,12 @@ Package footmisc Info: Declaring symbol style lamport* on input line 903.
 Package footmisc Info: Declaring symbol style lamport*-robust on input line 924
 .
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ncctools\manyfoot.sty"
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ncctools\
+manyfoot.sty"
 Package: manyfoot 2005/09/11 v1.10 Many Footnote Levels Package (NCC)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ncctools\nccfoots.sty"
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ncctools\
+nccfoots.sty"
 Package: nccfoots 2005/02/03 v1.2 NCC Footnotes Package (NCC)
 )
 \MFL@columnwidth=\dimen178
@@ -1056,7 +1134,8 @@ Package: nccfoots 2005/02/03 v1.2 NCC Footnotes Package (NCC)
 \footinsA=\insert199
 \c@footnoteA=\count138
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\preprint\authblk.sty"
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\latex\preprint\
+authblk.sty"
 Package: authblk 2001/02/27 1.3 (PWD)
 \affilsep=\skip76
 \@affilsep=\skip77
@@ -1064,19 +1143,21 @@ Package: authblk 2001/02/27 1.3 (PWD)
 \c@authors=\count140
 \c@affil=\count141
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lastpage\lastpage.sty"
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lastpage\
+lastpage.sty"
 Package: lastpage 2015/03/29 v1.2m Refers to last page's name (HMM; JPG)
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\wasysym\wasysym.sty"
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\latex\wasysym\w
+asysym.sty"
 Package: wasysym 2003/10/30 v2.0 Wasy-2 symbol support package
 \symwasy=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `wasy' in version `bold'
 (Font)                  U/wasy/m/n --> U/wasy/b/n on input line 90.
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\times.sty"
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\ti
+mes.sty"
 Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
-)
-(DNAEncoding.aux)
+) (DNAEncoding.aux)
 \openout1 = `DNAEncoding.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
@@ -1093,13 +1174,17 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
 LaTeX Font Info:    ... okay on input line 17.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 17.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 17.
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
+
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1c
+mr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 17.
 LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 17.
 LaTeX Font Info:    Try loading font information for T3+cmr on input line 17.
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tipa\t3cmr.fd"
+
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tipa\t3cm
+r.fd"
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
 LaTeX Font Info:    ... okay on input line 17.
@@ -1107,19 +1192,20 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 17.
 LaTeX Font Info:    ... okay on input line 17.
 LaTeX Font Info:    Try loading font information for T1+ptm on input line 17.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\t1ptm.fd"
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\t1
+ptm.fd"
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
-)
-<dg-degruyter.pdf, id=1, 73.94926pt x 5.25363pt>
+) <dg-degruyter.pdf, id=1, 73.94926pt x 5.25363pt>
 File: dg-degruyter.pdf Graphic file (type pdf)
- <use dg-degruyter.pdf>
+
+<use dg-degruyter.pdf>
 Package pdftex.def Info: dg-degruyter.pdf used on input line 17.
 (pdftex.def)             Requested size: 84.10667pt x 5.97508pt.
-
-ABD: EverySelectfont initializing macros
+ ABD: EverySelectfont initializing macros
 LaTeX Info: Redefining \selectfont on input line 17.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\su
+pp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count142
 \scratchdimen=\dimen179
@@ -1132,10 +1218,13 @@ LaTeX Info: Redefining \selectfont on input line 17.
 \MPnumerator=\count146
 \makeMPintoPDFobject=\count147
 \everyMPtoPDFconversion=\toks34
-) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
+)
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\
+epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\
+grfext.sty"
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 )
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -1154,10 +1243,12 @@ Package caption Info: We need package `ragged2e' on input line 17.
 \AtBeginShipoutBox=\box60
 Package hyperref Info: Link coloring OFF on input line 17.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\
+nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdie
+k\gettitlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count148
@@ -1165,8 +1256,7 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 17.
 LaTeX Info: Redefining \pageref on input line 17.
 LaTeX Info: Redefining \nameref on input line 17.
-
-(DNAEncoding.out) (DNAEncoding.out)
+ (DNAEncoding.out) (DNAEncoding.out)
 \@outlinefile=\write4
 \openout4 = `DNAEncoding.out'.
 
@@ -1175,7 +1265,8 @@ Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             ! on input line 17.
 LaTeX Font Info:    Try loading font information for T1+phv on input line 59.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\t1phv.fd"
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\t1
+phv.fd"
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
@@ -1197,24 +1288,29 @@ Underfull \hbox (badness 5316) in paragraph at lines 59--59
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <15> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 60.
 LaTeX Font Info:    Try loading font information for OT1+lmr on input line 60.
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\ot1lmr.fd"
+
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\ot1lmr
+.fd"
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Try loading font information for OML+lmm on input line 60.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\omllmm.fd"
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omllmm
+.fd"
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 60.
 
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\omslmsy.fd"
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omslms
+y.fd"
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Try loading font information for OMX+lmex on input line 60.
 
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\omxlmex.fd"
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omxlme
+x.fd"
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -1225,7 +1321,8 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 60.
 LaTeX Font Info:    Try loading font information for U+wasy on input line 60.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\wasysym\uwasy.fd"
+("C:\Users\anthonymachado\AppData\Local\Programs\MiKTeX 2.9\tex\latex\wasysym\u
+wasy.fd"
 File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
 )
 
@@ -1248,119 +1345,122 @@ File: by-nc-nd.pdf Graphic file (type pdf)
  <use by-nc-nd.pdf>
 Package pdftex.def Info: by-nc-nd.pdf used on input line 76.
 (pdftex.def)             Requested size: 85.25427pt x 18.33446pt.
- [1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
+ [1{C:/Users/anthonymachado/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
  <./dg-degruyter.pdf> <./by-nc-nd.pdf>]
-Underfull \hbox (badness 1028) in paragraph at lines 109--110
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 90.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 90.
+ [2]
+Underfull \hbox (badness 1028) in paragraph at lines 160--161
 \T1/ptm/m/n/9.49998 codons, which can be dis-rupted if the codon bal-ance is
  []
 
-[2]
-Underfull \hbox (badness 2368) in paragraph at lines 120--121
+
+Underfull \hbox (badness 2368) in paragraph at lines 171--172
 \T1/ptm/m/n/9.49998 many re-peats can cause er-rors dur-ing DNA repli-ca-tion
  []
 
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 142.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 142.
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 239--239
+Underfull \hbox (badness 10000) in paragraph at lines 272--272
 []|\T1/phv/b/n/8 Set-
  []
 
 
-Overfull \hbox (1.49864pt too wide) in paragraph at lines 239--239
+Overfull \hbox (1.49864pt too wide) in paragraph at lines 272--272
 []|\T1/phv/b/n/8 Other| 
  []
 
 
-Overfull \hbox (4.18059pt too wide) in paragraph at lines 239--239
+Overfull \hbox (4.18059pt too wide) in paragraph at lines 272--272
 []|\T1/phv/b/n/8 Single| 
  []
 
 
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <8> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 239.
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 272.
 
 
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <6> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 239.
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 272.
 
 
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <5> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 239.
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 272.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 239--239
+Underfull \hbox (badness 10000) in paragraph at lines 272--272
 []|\T1/phv/b/n/8 Threat
  []
 
 
-Overfull \hbox (2.02554pt too wide) in paragraph at lines 239--239
+Overfull \hbox (2.02554pt too wide) in paragraph at lines 272--272
 []|\T1/phv/b/n/8 Differential
  []
 
 
-Overfull \hbox (4.40228pt too wide) in paragraph at lines 239--239
+Overfull \hbox (4.40228pt too wide) in paragraph at lines 272--272
 []|\T1/phv/b/n/8 Syntactic
  []
 
 
-Overfull \hbox (2.02554pt too wide) in paragraph at lines 239--239
+Overfull \hbox (2.02554pt too wide) in paragraph at lines 272--272
 []|\T1/phv/b/n/8 Differential
  []
 
 
-Overfull \hbox (4.40228pt too wide) in paragraph at lines 239--239
+Overfull \hbox (4.40228pt too wide) in paragraph at lines 272--272
 []|\T1/phv/b/n/8 Syntactic
  []
 
 
-Overfull \hbox (0.53737pt too wide) in paragraph at lines 239--239
+Overfull \hbox (0.53737pt too wide) in paragraph at lines 272--272
 []|\T1/phv/b/n/8 Vert.| 
  []
 
 
-Overfull \hbox (0.53737pt too wide) in paragraph at lines 239--239
+Overfull \hbox (0.53737pt too wide) in paragraph at lines 272--272
 []|\T1/phv/b/n/8 Vert.| 
  []
 
 LaTeX Font Info:    Font shape `T1/phv/bx/it' in size <8> not available
-(Font)              Font shape `T1/phv/b/it' tried instead on input line 239.
+(Font)              Font shape `T1/phv/b/it' tried instead on input line 272.
 LaTeX Font Info:    Font shape `T1/phv/b/it' in size <8> not available
-(Font)              Font shape `T1/phv/b/sl' tried instead on input line 239.
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 272.
 
 LaTeX Font Warning: Font shape `U/wasy/bx/n' in size <8> not available
-(Font)              Font shape `U/wasy/b/n' tried instead on input line 239.
+(Font)              Font shape `U/wasy/b/n' tried instead on input line 272.
 
 
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <8> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 239.
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 272.
 
-LaTeX Font Info:    Calculating math sizes for size <6.97385> on input line 244
+LaTeX Font Info:    Calculating math sizes for size <6.97385> on input line 277
 .
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6.97385> on input line 244.
+(Font)              <6.97385> on input line 277.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <4.8999> on input line 244.
+(Font)              <4.8999> on input line 277.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <3.49995> on input line 244.
+(Font)              <3.49995> on input line 277.
 
 LaTeX Font Warning: Font shape `U/wasy/m/n' in size <3.49995> not available
-(Font)              size <5> substituted on input line 244.
+(Font)              size <5> substituted on input line 277.
 
 (DNAEncoding.bbl
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <8> not available
 (Font)              Font shape `T1/phv/m/sl' tried instead on input line 26.
-) 
+ [4]) 
 AED: lastpage setting LastPage
-[4] [5]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 254.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 254.
+[5
+
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 287.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 287.
  (DNAEncoding.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 254.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 254.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 287.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 287.
 Package rerunfilecheck Info: File `DNAEncoding.out' has not changed.
 (rerunfilecheck)             Checksum: 03B0B80A15BC5C77080A16EC1E4AE874;1084.
 
@@ -1368,35 +1468,41 @@ Package rerunfilecheck Info: File `DNAEncoding.out' has not changed.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.50566pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 254.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 287.
  ) 
 Here is how much of TeX's memory you used:
  11168 strings out of 493334
- 161424 string characters out of 3136671
- 306450 words of memory out of 3000000
+ 166318 string characters out of 3126325
+ 308450 words of memory out of 3000000
  14382 multiletter control sequences out of 15000+200000
  91814 words of font info for 90 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 46i,14n,40p,1055b,437s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}{C:/Progra
-m Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files (x8
-6)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files (x86)/MiKTeX 2
-.9/fonts/enc/dvips/lm/lm-rm.enc}<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/
-public/lm/lmbsy7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/l
-mmi10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmmi7.pfb><C
-:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Program Fi
-les (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmr7.pfb><C:/Program Files (x86)/MiK
-TeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fon
-ts/type1/public/lm/lmsy7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw
-/helvetic/uhvb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/helveti
-c/uhvbo8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8
-a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvro8a.pfb><
-C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program 
-Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files (x86)
-/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb><C:/Program Files (x86)/MiKTeX 2.
-9/fonts/type1/public/wasy/wasy7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/ty
-pe1/public/wasy/wasy8.pfb>
-Output written on DNAEncoding.pdf (5 pages, 189164 bytes).
+ 46i,14n,40p,1037b,523s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/anthonymachado/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/fo
+ntname/8r.enc}{C:/Users/anthonymachado/AppData/Local/Programs/MiKTeX 2.9/fonts/
+enc/dvips/lm/lm-mathsy.enc}{C:/Users/anthonymachado/AppData/Local/Programs/MiKT
+eX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/anthonymachado/AppData/Local/
+Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}<C:/Users/anthonymachado/AppDa
+ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmbsy7.pfb><C:/Users/anthony
+machado/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmmi10.pfb><C:/
+Users/anthonymachado/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lm
+mi7.pfb><C:/Users/anthonymachado/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
+public/lm/lmr10.pfb><C:/Users/anthonymachado/AppData/Local/Programs/MiKTeX 2.9/
+fonts/type1/public/lm/lmr7.pfb><C:/Users/anthonymachado/AppData/Local/Programs/
+MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Users/anthonymachado/AppData/Lo
+cal/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy7.pfb><C:/Users/anthonymachad
+o/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Use
+rs/anthonymachado/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/helvetic/uh
+vbo8a.pfb><C:/Users/anthonymachado/AppData/Local/Programs/MiKTeX 2.9/fonts/type
+1/urw/helvetic/uhvr8a.pfb><C:/Users/anthonymachado/AppData/Local/Programs/MiKTe
+X 2.9/fonts/type1/urw/helvetic/uhvro8a.pfb><C:/Users/anthonymachado/AppData/Loc
+al/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/anthonymachad
+o/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/
+anthonymachado/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.
+pfb><C:/Users/anthonymachado/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
+ic/wasy/wasy7.pfb><C:/Users/anthonymachado/AppData/Local/Programs/MiKTeX 2.9/fo
+nts/type1/public/wasy/wasy8.pfb>
+Output written on DNAEncoding.pdf (5 pages, 189929 bytes).
 PDF statistics:
  220 PDF objects out of 1000 (max. 8388607)
  47 named destinations out of 1000 (max. 500000)
