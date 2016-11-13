@@ -87,6 +87,7 @@ Every living cell contains DNA molecules encoded with instructions for making th
 There are only 20 amino acids, despite the fact that $4^3$ = 64 possible codon variations exist. This is because many amino acids are correlated with up to five redundant codons. Also, three codons are used specifically as stop signals to indicate the end of a protein chain. The redundancy in codon to amino acid mapping is called codon degeneracy~\cite{WBBGLL2008}. Codon degeneracy gives an evolutionary advantage to the cell by allowing certain mutations to occur in a codon while preserving the codon’s functionality.
 
 \begin{center}
+ \scalebox{.85}{
  \begin{tabular}{||c || c c c c c c||}
  \hline
  Amino & & & Codons & & &\\ [0.5ex]
@@ -136,7 +137,7 @@ There are only 20 amino acids, despite the fact that $4^3$ = 64 possible codon v
  \hline
  STOP & TAA & TGA & TAG & & &\\[1ex]
  \hline
-\end{tabular}
+\end{tabular}}
 \end{center}
 
 \subsection{Artificial Encoding}
@@ -187,7 +188,7 @@ The following encoding schemes use some or all of these elements in their design
 
 \subsection{pcDNA Encoding}
 
-Shimanovsky et al~\cite{SFHC2003BL} were the first to propose using codon degeneracy to encode data in pcDNA. By switching codons between their redundant forms with the modification of one nucleotide, data could be inserted without altering protein translation. Arita and Ohashi ~\cite{AY2004BP} were the first to implement this scheme in a living cell. They did this using site-directed mutagenesis of wobble codons in the \textit{ftsZ} gene of \textit{Bacillus subtilis}. The university name "KEIO" was inserted by modifying the redundant nucleotides of the codons downstream of the \textit{ftsZ} start codon. An unmodified codon represented value 0 while a codon with a wobble nucleotide changed to any of its non-wild type redundant forms represented value 1. Messages were translated using a 6-bit mapping table, with the first 5 bits corresponding to an English alphabet letter or basic punctuation, and the last used as a parity bit for error correction.
+Shimanovsky et al~\cite{SFHC2003BL} were the first to propose using codon degeneracy to encode data in pcDNA. By switching codons between their redundant forms with the modification of one nucleotide, data was inserted without altering protein translation. Arita and Ohashi~\cite{AY2004BP} implemented this technique in a living cell. They did this using site-directed mutagenesis of wobble codons in the \textit{ftsZ} gene of \textit{Bacillus subtilis}. The university name "KEIO" was inserted by modifying the redundant nucleotides of the codons downstream of the \textit{ftsZ} start codon. An unmodified codon represented value 0 while a codon with a wobble nucleotide changed to any of its non-wild type redundant forms represented value 1. Messages were translated using a 6-bit mapping table, with the first 5 bits corresponding to an English alphabet letter or basic punctuation, and the last used as a parity bit for error correction.
 
 Heider et al. developed the DNA-Crypt~\cite{HBBMC2007} algorithm for creating DNA watermarks for marking genetically modified organisms. It is similar to the work of Arita et al. in that the encoding targets the wobble base pair in the genetic code. An encryption function $E$ maps the plaintext (binary data) $X$ to the ciphertext (genetic data) $Y$, such that $X \in  \{$0, 1$\}$ and $Y \in \{$A, C, G, T$\}$. Two bits are encoded per base, or one byte for four bases. Error correction is achieved with a fuzzy controller that selects one of two algorithms, either the 8/4 Hamming code for mutations that differ in only bit (e.g., 00 to 01) or the WDH-code for those that differ by multiple bits. This encoding scheme allowed implementations of several cryptographic algorithms, including One-Time Pad, AES, Blowfish, and RSA. The accuracy was tested using the GTPase encoding Ypt gene in $S. cerevisiae$.
 
@@ -196,6 +197,9 @@ Haughton and Balado proposed BioCode~\cite{HBBMC2013}, a pair of encoding algori
 \subsection{ncDNA Encoding}
 
 \subsection{Plasmid Encoding}
+
+Wong et al.~\cite{WWF2003COTACM} were the first to encode data into plasmids. Letters and punctuation were mapped to nucleotide triplets, then short text snippets of 19 to 33 characters were inserted into plasmids in Deinococcus radiodurans, a bacteria that is very resilient to extreme conditions. The encoded section of the plasmid was flanked by sentinel sequences 20 base pairs long containing stop codons. This was done to prevent the bacteria from transcribing the message while reading the adjacent functional parts of the plasmid. After insertion of the plasmids into the host bacteria, they were incorporated into their genomes.
+
 
 \section{Compression and Error Correction}
 
@@ -220,6 +224,35 @@ information storage in synthesized DNA
 
 5) Robust Chemical Preservation of Digital Information on DNA in Silica with Error-Correcting Codes
 
+
+
+
+\section{Future Directions}
+
+
+
+\section{Conclusions}
+
+\bibliographystyle{IEEEtran}
+\bibliography{References}
+
+\begin{table}[!t]
+	\caption{Table 1}
+	\label{fig:table1}
+	\centering
+	\scalebox{0.7}{
+	\begin{tabular}{|c|c|c|c|c|c|c|c|c|}\hline \hline
+		Method  &Organism  &Bio-Restrictions*  &Error Detection/Correction  &Error Rate  &Compression Technique  &Bits/Base Density  &Encryption  &Blind Decoding\\ \hline
+		Protein Coding DNA  &  &  &  &  &  &  &  &\\ \hline
+		Secret Signature~\cite{AY2004BP}  &B. subtilis  &H,S,F,(),()  &Parity Bit / -  &*  &None  &6 Bases / Letter  &None  &No\\ \hline
+		DNA-Crypt~\cite{HBBMC2007}  &S. cerevisiae  &H,S,F,(),()  &WDH, Hamming  &*  &None  &0.214  &OTP, AES, Blowfish, RSA  &No\\ \hline
+		  &  &  &  &  &  &  &  &\\ \hline
+		Noncoding DNA  &  &  &  &  &  &  &  &\\ \hline
+		  &  &  &  &  &  &  &  &\\ \hline
+		  &  &  &  &  &  &  &  &\\ \hline
+		Plasmids  &  &  &  &  &  &  &  &\\ \hline
+	\end{tabular}}
+\end{table}
 
 \begin{table*}[!t]
     \centering
@@ -276,13 +309,6 @@ information storage in synthesized DNA
     \fontsize{7pt}{12pt}\selectfont
     \raggedright In this column, $\Circle$ denotes semi-honest threat model whereas $\CIRCLE$ denotes malicious threat model.
 \end{table*}
-
-\section{Future Directions}
-
-\section{Conclusions}
-
-\bibliographystyle{IEEEtran}
-\bibliography{References}
 
 \end{document}
 

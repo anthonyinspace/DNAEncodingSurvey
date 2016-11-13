@@ -79,6 +79,10 @@ D.~Haughton and F.~Balado, ``Biocode: Two biologically compatible algorithms
   for embedding data in non-coding and coding regions of dna,'' \emph{BMC
   bioinformatics}, vol. 14(1), p.~1, 2013.
 
+\bibitem{WWF2003COTACM}
+P.~Wong, K.~Wong, and H.~Foote, ``Organic data memory using the dna approach,''
+  \emph{Communications of the ACM}, vol. 46:1, pp. 95--98, 2003.
+
 \bibitem{H1952POTIRE}
 D.~Huffman, ``A method for the construction of minimum-redundancy codes,''
   \emph{Proceedings of the IRE}, vol. 40(9), pp. 1098--1101, 1952.

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.9.23)  2 NOV 2016 13:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.9.23)  12 NOV 2016 22:24
 entering extended mode
 **C:/Users/anthonymachado/Desktop/Paper/DNAEncoding.tex
 (C:/Users/anthonymachado/Desktop/Paper/DNAEncoding.tex
@@ -1349,118 +1349,123 @@ Package pdftex.def Info: by-nc-nd.pdf used on input line 76.
 
  <./dg-degruyter.pdf> <./by-nc-nd.pdf>]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 90.
+(Font)              <8> on input line 140.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 90.
+(Font)              <6> on input line 140.
  [2]
-Underfull \hbox (badness 1028) in paragraph at lines 160--161
+Underfull \hbox (badness 1028) in paragraph at lines 161--162
 \T1/ptm/m/n/9.49998 codons, which can be dis-rupted if the codon bal-ance is
  []
 
 
-Underfull \hbox (badness 2368) in paragraph at lines 171--172
+Underfull \hbox (badness 2368) in paragraph at lines 172--173
 \T1/ptm/m/n/9.49998 many re-peats can cause er-rors dur-ing DNA repli-ca-tion
  []
 
-[3]
-Underfull \hbox (badness 10000) in paragraph at lines 272--272
+[3] (DNAEncoding.bbl
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <8> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 26.
+ [4])
+Overfull \hbox (286.69165pt too wide) in paragraph at lines 254--255
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 305--305
 []|\T1/phv/b/n/8 Set-
  []
 
 
-Overfull \hbox (1.49864pt too wide) in paragraph at lines 272--272
+Overfull \hbox (1.49864pt too wide) in paragraph at lines 305--305
 []|\T1/phv/b/n/8 Other| 
  []
 
 
-Overfull \hbox (4.18059pt too wide) in paragraph at lines 272--272
+Overfull \hbox (4.18059pt too wide) in paragraph at lines 305--305
 []|\T1/phv/b/n/8 Single| 
  []
 
 
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <8> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 272.
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 305.
 
 
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <6> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 272.
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 305.
 
 
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <5> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 272.
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 305.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 272--272
+Underfull \hbox (badness 10000) in paragraph at lines 305--305
 []|\T1/phv/b/n/8 Threat
  []
 
 
-Overfull \hbox (2.02554pt too wide) in paragraph at lines 272--272
+Overfull \hbox (2.02554pt too wide) in paragraph at lines 305--305
 []|\T1/phv/b/n/8 Differential
  []
 
 
-Overfull \hbox (4.40228pt too wide) in paragraph at lines 272--272
+Overfull \hbox (4.40228pt too wide) in paragraph at lines 305--305
 []|\T1/phv/b/n/8 Syntactic
  []
 
 
-Overfull \hbox (2.02554pt too wide) in paragraph at lines 272--272
+Overfull \hbox (2.02554pt too wide) in paragraph at lines 305--305
 []|\T1/phv/b/n/8 Differential
  []
 
 
-Overfull \hbox (4.40228pt too wide) in paragraph at lines 272--272
+Overfull \hbox (4.40228pt too wide) in paragraph at lines 305--305
 []|\T1/phv/b/n/8 Syntactic
  []
 
 
-Overfull \hbox (0.53737pt too wide) in paragraph at lines 272--272
+Overfull \hbox (0.53737pt too wide) in paragraph at lines 305--305
 []|\T1/phv/b/n/8 Vert.| 
  []
 
 
-Overfull \hbox (0.53737pt too wide) in paragraph at lines 272--272
+Overfull \hbox (0.53737pt too wide) in paragraph at lines 305--305
 []|\T1/phv/b/n/8 Vert.| 
  []
 
 LaTeX Font Info:    Font shape `T1/phv/bx/it' in size <8> not available
-(Font)              Font shape `T1/phv/b/it' tried instead on input line 272.
+(Font)              Font shape `T1/phv/b/it' tried instead on input line 305.
 LaTeX Font Info:    Font shape `T1/phv/b/it' in size <8> not available
-(Font)              Font shape `T1/phv/b/sl' tried instead on input line 272.
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 305.
 
 LaTeX Font Warning: Font shape `U/wasy/bx/n' in size <8> not available
-(Font)              Font shape `U/wasy/b/n' tried instead on input line 272.
+(Font)              Font shape `U/wasy/b/n' tried instead on input line 305.
 
 
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <8> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 272.
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 305.
 
-LaTeX Font Info:    Calculating math sizes for size <6.97385> on input line 277
+LaTeX Font Info:    Calculating math sizes for size <6.97385> on input line 310
 .
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6.97385> on input line 277.
+(Font)              <6.97385> on input line 310.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <4.8999> on input line 277.
+(Font)              <4.8999> on input line 310.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <3.49995> on input line 277.
+(Font)              <3.49995> on input line 310.
 
 LaTeX Font Warning: Font shape `U/wasy/m/n' in size <3.49995> not available
-(Font)              size <5> substituted on input line 277.
+(Font)              size <5> substituted on input line 310.
 
-(DNAEncoding.bbl
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <8> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 26.
- [4]) 
+
 AED: lastpage setting LastPage
 [5
 
-]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 287.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 287.
+] [6]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 313.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 313.
  (DNAEncoding.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 287.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 287.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 313.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 313.
 Package rerunfilecheck Info: File `DNAEncoding.out' has not changed.
 (rerunfilecheck)             Checksum: 03B0B80A15BC5C77080A16EC1E4AE874;1084.
 
@@ -1468,16 +1473,16 @@ Package rerunfilecheck Info: File `DNAEncoding.out' has not changed.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.50566pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 287.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 313.
  ) 
 Here is how much of TeX's memory you used:
- 11168 strings out of 493334
- 166318 string characters out of 3126325
- 308450 words of memory out of 3000000
- 14382 multiletter control sequences out of 15000+200000
+ 11175 strings out of 493334
+ 166432 string characters out of 3126325
+ 312503 words of memory out of 3000000
+ 14386 multiletter control sequences out of 15000+200000
  91814 words of font info for 90 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 46i,14n,40p,1037b,523s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 46i,14n,40p,1018b,503s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/anthonymachado/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/fo
 ntname/8r.enc}{C:/Users/anthonymachado/AppData/Local/Programs/MiKTeX 2.9/fonts/
 enc/dvips/lm/lm-mathsy.enc}{C:/Users/anthonymachado/AppData/Local/Programs/MiKT
@@ -1502,9 +1507,9 @@ anthonymachado/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.
 pfb><C:/Users/anthonymachado/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
 ic/wasy/wasy7.pfb><C:/Users/anthonymachado/AppData/Local/Programs/MiKTeX 2.9/fo
 nts/type1/public/wasy/wasy8.pfb>
-Output written on DNAEncoding.pdf (5 pages, 189929 bytes).
+Output written on DNAEncoding.pdf (6 pages, 193905 bytes).
 PDF statistics:
- 220 PDF objects out of 1000 (max. 8388607)
- 47 named destinations out of 1000 (max. 500000)
+ 230 PDF objects out of 1000 (max. 8388607)
+ 50 named destinations out of 1000 (max. 500000)
  131 words of extra memory for PDF output out of 10000 (max. 10000000)
 
