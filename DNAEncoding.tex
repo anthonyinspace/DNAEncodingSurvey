@@ -194,11 +194,21 @@ Heider et al. developed the DNA-Crypt~\cite{HBBMC2007} algorithm for creating DN
 
 Haughton and Balado proposed BioCode~\cite{HBBMC2013}, a pair of encoding algorithms, one for ncDNA, and one for pcDNA. The ncDNA algorithm expands upon DNA-Crypt by observing the no start codons in restriction. This is accomplished by defining a set of dinucleotides $D$ = $\{$ AT, CT, TT, CA $\}$ that covers the possible eukaryotic start codons on either DNA strand. The trailing dinucleotide $d$ is continually checked for membership in $D$. If found, $d$ is replaced with a lookup table formed from a graduated mapping of the message space $M_d$ to set $S_d$. The pcDNA encoding technique is similar, but enforces the additional constraint of Binary Codon Equivalency (BCE). This requires that the cardinality of the codon set (|$S_d$|) be varied during the embedding process to allow the usage of a static lookup table.
 
-\subsection{ncDNA Encoding}
+In order to better preserve codon bias, Lee developed a discrete wavelet transform (DWT) technique for pcDNA encoding~\cite{L2014IS}. The target coding sequence was divided into subsequences in which every codon was given a numerical code associated with amino acid histogram rankings. DWT coefficients were calculated for synonymous codons and the optimal subsequence was found, which was then replaced with the encoded subsequence. A nonlinear congruential-pseudorandom number generator then created the watermark and picked the location in the DWT domain for embedding.
 
-\subsection{Plasmid Encoding}
+\subsection{ncDNA and Plasmid Encoding}
 
-Wong et al.~\cite{WWF2003COTACM} were the first to encode data into plasmids. Letters and punctuation were mapped to nucleotide triplets, then short text snippets of 19 to 33 characters were inserted into plasmids in Deinococcus radiodurans, a bacteria that is very resilient to extreme conditions. The encoded section of the plasmid was flanked by sentinel sequences 20 base pairs long containing stop codons. This was done to prevent the bacteria from transcribing the message while reading the adjacent functional parts of the plasmid. After insertion of the plasmids into the host bacteria, they were incorporated into their genomes.
+The development of encoding schemes for ncDNA and plasmids have been strongly correlated, due to two regions having nearly identical bio-restrictions. The main difference being that plasmid encoding is also confined by length. However, due to their similarities and the parallel advancement of their encoding schemes, we will consider them both in this section.
+
+Wong et al.~\cite{WWF2003COTACM} were the first to encode data into plasmids. Letters and punctuation were mapped to nucleotide triplets, then short text snippets of 19 to 33 characters were inserted into the plasmids of Deinococcus radiodurans, a bacteria that is very resilient to extreme conditions. The encoded section of the plasmid was flanked by sentinel sequences 20 base pairs long containing stop codons. This was done to prevent the bacteria from transcribing the message while reading the adjacent functional parts of the plasmid. After insertion of the plasmids into the host bacteria, they were incorporated into their genomes. No error correction, encryption, or compression techniques were used.
+
+Yachie et al.~\cite{YSSOT2007BP} came up with the idea of using multiple alignment in lieu of error detection or correction techniques. With this scheme, messages were composed using the Keyboard Scan Code Set2, which contains all keyboard inputs, and converted these messages to binary. The encryption keys mapped four bits of binary code to two nucleotides. This type of mapping created four reading frames in the binary message (C1 - C4), each of which was converted to DNA and inserted adjacently into the plasmid, creating redundancy that allowed for multiple alignment when decoding.
+
+Repetition coding was used again, this time for ncdDNA, by Haughton and Balado ~\cite{HB2011IEEEICOBAB} who used two variant approaches. Both approaches required finding subsequences in the host ncDNA equal to the length of the encoded message, and replacing them with the message, as opposed to simply inserting the message and expanding the DNA strand. With th first approach, $RAlign$, the redundant subsequences were each prepended and appended with unique 24-bp long markers to aid alignment, and replaced specific subsequences in the genome that were known by both the sender and receiver. With the second approach, $HTAlign$, the prepended and appended markers were identical, which means the receiver does not need to know the location of the replaced subsequences, but can find the repeated messages by searching for the markers alone.
+
+Wanting to improve on the very low bits per base density of previous schemes, Ailenberg and Rotstein suggested an improved Huffman code that could decrease the sequence sizes by up to 40\%~\cite{AR2009BT} compared to other schemes. Keyboard characters were mapped to variable length sequences, with the more common characters assigned to the shorter sequences. To help maintain C-G balance, CG-rich codons were pushed downwards on the frequency table. To illustrate the density that could be achieved, text and musical notes for "Mary Had a Little Lamb", along with an image of a lamb made with geometric shapes, were encoded into a mere 844-bp DNA fragment. It was estimated that this encoding scheme would average 3.5 bases-per-character, which was a noted improvement over previous schemes. No error correction was used.
+
+Heider et al.~\cite{HPB2009BMCRN} were interested in the possibility of encoding data in non-protein coding but biochemically functional DNA. 2-3 character watermarks were inserted into non-coding promoter regions and a regulatory RNA region in $Escherichia coli$. The introduction of the watermarks were shown to disrupt the reading of the genes associated with the promoters and changed the secondary structure of the regulatory RNA molecule. This research was significant in showing that biochemically functional ncDNA is a poor region for encoding.
 
 
 \section{Compression and Error Correction}
@@ -229,30 +239,18 @@ information storage in synthesized DNA
 
 \section{Future Directions}
 
+There are several other regions of DNA that have seen little research in biosteganography, but have substantial potential for message encoding and watermarking. 
 
+\subsection{Mitochondrial DNA}
+
+Heider et al.~\cite{HKB2008B} suggested using mitochondria for secret data encoding. Mitochondria are organelles in the cell that contain a small amount of DNA that encodes translation machinery and oxidative chain components~\cite{GV2001G}. Heider et al. identified an mtDNA section 1,541 base pairs long that contains no active gene regions and suggested that it would be an ideal location for embedding data with synonymous codons. They created a program called $Project Mito$, derived from $DNA-Crypt$, that encrypts binary files and modifies them with the Hamming code for error correction, before translating the message into an mtDNA sequence. $Project Mito$ can also be used for decryption after the DNA is sequenced.
 
 \section{Conclusions}
 
 \bibliographystyle{IEEEtran}
 \bibliography{References}
 
-\begin{table}[!t]
-	\caption{Table 1}
-	\label{fig:table1}
-	\centering
-	\scalebox{0.7}{
-	\begin{tabular}{|c|c|c|c|c|c|c|c|c|}\hline \hline
-		Method  &Organism  &Bio-Restrictions*  &Error Detection/Correction  &Error Rate  &Compression Technique  &Bits/Base Density  &Encryption  &Blind Decoding\\ \hline
-		Protein Coding DNA  &  &  &  &  &  &  &  &\\ \hline
-		Secret Signature~\cite{AY2004BP}  &B. subtilis  &H,S,F,(),()  &Parity Bit / -  &*  &None  &6 Bases / Letter  &None  &No\\ \hline
-		DNA-Crypt~\cite{HBBMC2007}  &S. cerevisiae  &H,S,F,(),()  &WDH, Hamming  &*  &None  &0.214  &OTP, AES, Blowfish, RSA  &No\\ \hline
-		  &  &  &  &  &  &  &  &\\ \hline
-		Noncoding DNA  &  &  &  &  &  &  &  &\\ \hline
-		  &  &  &  &  &  &  &  &\\ \hline
-		  &  &  &  &  &  &  &  &\\ \hline
-		Plasmids  &  &  &  &  &  &  &  &\\ \hline
-	\end{tabular}}
-\end{table}
+
 
 \begin{table*}[!t]
     \centering
@@ -309,6 +307,24 @@ information storage in synthesized DNA
     \fontsize{7pt}{12pt}\selectfont
     \raggedright In this column, $\Circle$ denotes semi-honest threat model whereas $\CIRCLE$ denotes malicious threat model.
 \end{table*}
+
+\begin{table}[!t]
+	\caption{Table 1}
+	\label{fig:table1}
+	\centering
+	\scalebox{0.7}{
+	\begin{tabular}{|c|c|c|c|c|c|c|c|c|}\hline \hline
+		Method  &Organism  &Bio-Restrictions*  &Error Detection/Correction  &Error Rate  &Compression Technique  &Bits/Base Density  &Encryption  &Blind Decoding\\ \hline
+		Protein Coding DNA  &  &  &  &  &  &  &  &\\ \hline
+		Secret Signature~\cite{AY2004BP}  &B. subtilis  &H,S,F,(),()  &Parity Bit / -  &*  &None  &6 Bases / Letter  &None  &No\\ \hline
+		DNA-Crypt~\cite{HBBMC2007}  &S. cerevisiae  &H,S,F,(),()  &WDH, Hamming  &*  &None  &0.214  &OTP, AES, Blowfish, RSA  &No\\ \hline
+		  &  &  &  &  &  &  &  &\\ \hline
+		Noncoding DNA  &  &  &  &  &  &  &  &\\ \hline
+		  &  &  &  &  &  &  &  &\\ \hline
+		  &  &  &  &  &  &  &  &\\ \hline
+		Plasmids  &  &  &  &  &  &  &  &\\ \hline
+	\end{tabular}}
+\end{table}
 
 \end{document}
 

@@ -72,16 +72,39 @@ M.~Arita and O.~Yoshiaki, ``Secret signatures inside genomic dna,''
 
 \bibitem{HBBMC2007}
 D.~Heider and A.~Barnekow, ``Dna-based watermarks using the dna-crypt
-  algorithm,'' \emph{BMC bioinformatics}, vol. 8(1), p.~1, 2007.
+  algorithm,'' \emph{BMC bioinformatics}, vol. 8(1), 2007.
 
 \bibitem{HBBMC2013}
 D.~Haughton and F.~Balado, ``Biocode: Two biologically compatible algorithms
   for embedding data in non-coding and coding regions of dna,'' \emph{BMC
   bioinformatics}, vol. 14(1), p.~1, 2013.
 
+\bibitem{L2014IS}
+S.~Lee, ``Dwt based coding dna watermarking for dna copyright protection,''
+  \emph{Information Sciences}, vol. 273, pp. 263--286, 2014.
+
 \bibitem{WWF2003COTACM}
 P.~Wong, K.~Wong, and H.~Foote, ``Organic data memory using the dna approach,''
   \emph{Communications of the ACM}, vol. 46:1, pp. 95--98, 2003.
+
+\bibitem{YSSOT2007BP}
+N.~Yachie, K.~Sekiyama, J.~Sugahard, Y.~Ohashi, and M.~Tomita,
+  ``Alignment-based approach for durable data storage into living organisms,''
+  \emph{Biotechnology Progress}, vol.~23, pp. 501--505, 2007.
+
+\bibitem{HB2011IEEEICOBAB}
+D.~Haughton and F.~Balado, ``Repetition coding as an effective error correction
+  code for information encoded in dna,'' \emph{Internation Conference on
+  Bioinformatics and Bioengineering}, 2011.
+
+\bibitem{AR2009BT}
+M.~Ailenberg and O.~Rotstein, ``An improved huffman coding method for archiving
+  text, images, and music characters in dna,'' \emph{BioTechniques}, vol.~47,
+  pp. 747--754, 2009.
+
+\bibitem{HPB2009BMCRN}
+D.~Heider, M.~Pyka, and A.~Barnekow, ``Dna watermarks in non-coding regulatory
+  sequences,'' \emph{BMC Research Notes}, vol. 2:123, 2009.
 
 \bibitem{H1952POTIRE}
 D.~Huffman, ``A method for the construction of minimum-redundancy codes,''
@@ -97,5 +120,14 @@ W.~S. R. V. E. H. S. e.~a. Brenner, S., ``In vitro cloning of complex mixtures
 M.~K. A.-W. W. . H. M.~M. Mousa, H., ``Data hiding based on contrast mapping
   using dna medium,'' \emph{International Arab Journal of Information
   Technolology}, vol. 8(2), pp. 147--154, 2011.
+
+\bibitem{HKB2008B}
+D.~Heider, D.~Kessler, and A.~Barnekow, ``Watermarking sexually reproducing
+  diploid organisms,'' \emph{Bioinformatics}, vol. 24:17, pp. 1961--1962, 2008.
+
+\bibitem{GV2001G}
+R.~Garesse and C.~Vallejo, ``Animal mitochondrial biogenesis and function: a
+  regulatory cross-talk between two genomes,'' \emph{Gene}, vol. 263, pp.
+  1--16, 2001.
 
 \end{thebibliography}
