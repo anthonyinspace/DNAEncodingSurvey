@@ -171,6 +171,28 @@ The noncoding region of DNA is often called "junk DNA" for its apparent lack of 
 
 \textit{No homopolymers.} A DNA homopolymer is a region where the same nucleotide is repeated multiple times. Too many repeats can cause errors during DNA replication through polymerase slippage~\cite{VCE2001TEJ}. These replication errors could quickly distort the inserted message and possibly damage the cell after a few generations. For this reason any ncDNA encoding scheme should not include homopolymers greater than length 3.
 
+\section{Compression and Error Correction}
+
+Smith et al.~\cite{SFHC2003BL} were the first to suggest a data compression technique in DNA encoding, specifically the Huffman Code. The Huffman Code is a form of lossless data compression that forms a symbol table using fewer bits to encode more common characters~\cite{H1952POTIRE}. Smith et al created a Huffman Code table mapping letters of the alphabet to nucleotide strings, where the most common English letter 'e' was mapped to the nucleotide string "T", and the least common english letter 'z' was mapped to a longer nucleotide string "CCCTG". This achieved an average encoding length of 2.2 bases per letter. The mapping is unambiguous, making only one possible interpretation of each message.
+
+Comma encoding~\cite{BVSPNAS2000} specifies that encoded words be separated by a single nucleotide (i.e., G). The remaining four (or five in Smith et al.), are composed of the other three nucleotides. Additional constraints are that only three A-T pairs are allowed, and two G-C always on the top strand, so that the DNA molecules will have isothermal melting temperatures. This technique provides particularly good detection of insertions and deletions, unfortunately it is also space inefficient.
+
+The alternating code, also from Smith et al.~\cite{SFHC2003BL} consists of 64, 6 base pair codons, with nucleotides alternating between an A or G (purines) at odd positions, and C or T (pyrimidines) at evens (e.g., RYRYRY…, YRYRYR). Like the comma encoding, the alternating code results in isothermically stable molecules with a 1:1 ratio of A-T to G-C pairs. While more space efficient, this technique is not as proficient at error detection, as only 67\% of codons result in nonsense codons after mutation, compared to 83\% for the comma code.
+
+Contrast mapping is an encoding scheme developed by Mousa et al.~\cite{MMAIAJI2011}. The binary message is divided into 6-bit groups, each converted to decimal (base 10). Pairs of consecutive values ($x, y$) are converted into ($x', y'$) with the the following linear transformations: $x' = 2x - y$,  $y' = 2y - x$. Values are limited to the subdomain:  0 $\leq$ 2$x - y$ $\leq$ $L$, 0 $\leq$ 2$y$ - $x$ $\leq$ $L$. Values are decoded with the following equations: $x = [3x' + 3y'], y = [3 x' + 3y']$. This technique is sufficiently flexible to be applied to DNA or image steganography.
+
+Others to write up...
+
+1) Towards practical, high-capacity, low-maintenance
+information storage in synthesized DNA
+
+2) Rewritable, Random-Access DNA-Based Storage System
+
+3) Genomically encoded analog memory with precise in vivo DNA writing in living cell populations
+
+4) HyDEn: A Hybrid Steganocryptographic Approach for Data Encryption Using Randomized Error-Correcting DNA Codes
+
+5) Robust Chemical Preservation of Digital Information on DNA in Silica with Error-Correcting Codes
 
 \section{Encoding Schemes}
 
@@ -204,42 +226,44 @@ Wong et al.~\cite{WWF2003COTACM} were the first to encode data into plasmids. Le
 
 Yachie et al.~\cite{YSSOT2007BP} came up with the idea of using multiple alignment in lieu of error detection or correction techniques. With this scheme, messages were composed using the Keyboard Scan Code Set2, which contains all keyboard inputs, and converted these messages to binary. The encryption keys mapped four bits of binary code to two nucleotides. This type of mapping created four reading frames in the binary message (C1 - C4), each of which was converted to DNA and inserted adjacently into the plasmid, creating redundancy that allowed for multiple alignment when decoding.
 
-Repetition coding was used again, this time for ncdDNA, by Haughton and Balado ~\cite{HB2011IEEEICOBAB} who used two variant approaches. Both approaches required finding subsequences in the host ncDNA equal to the length of the encoded message, and replacing them with the message, as opposed to simply inserting the message and expanding the DNA strand. With th first approach, $RAlign$, the redundant subsequences were each prepended and appended with unique 24-bp long markers to aid alignment, and replaced specific subsequences in the genome that were known by both the sender and receiver. With the second approach, $HTAlign$, the prepended and appended markers were identical, which means the receiver does not need to know the location of the replaced subsequences, but can find the repeated messages by searching for the markers alone.
+Repetition coding was used again, this time for ncdDNA, by Haughton and Balado ~\cite{HB2011IEEEICOBAB} who used two variant approaches. Both approaches required finding subsequences in the host ncDNA equal to the length of the encoded message, and replacing them with the message, as opposed to simply inserting the message and expanding the DNA strand. With the first approach, $RAlign$, the redundant subsequences were each prepended and appended with unique 24-bp long markers to aid alignment, and replaced specific subsequences in the genome that were known by both the sender and receiver. With the second approach, $HTAlign$, the prepended and appended markers were identical, which means the receiver does not need to know the location of the replaced subsequences, but can find the repeated messages by searching for the markers alone.
 
 Wanting to improve on the very low bits per base density of previous schemes, Ailenberg and Rotstein suggested an improved Huffman code that could decrease the sequence sizes by up to 40\%~\cite{AR2009BT} compared to other schemes. Keyboard characters were mapped to variable length sequences, with the more common characters assigned to the shorter sequences. To help maintain C-G balance, CG-rich codons were pushed downwards on the frequency table. To illustrate the density that could be achieved, text and musical notes for "Mary Had a Little Lamb", along with an image of a lamb made with geometric shapes, were encoded into a mere 844-bp DNA fragment. It was estimated that this encoding scheme would average 3.5 bases-per-character, which was a noted improvement over previous schemes. No error correction was used.
 
+\begin{table}[h]
+	\caption{Table 1}
+	\label{fig:table1}
+	\centering
+	\scalebox{0.6}{
+	\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}\hline \hline
+		Method  &  &  &Bio-Restrictions  &  &  &Error Detection  &Error Correction  &Compression  &Encryption  &Blind Decoding\\ \hline
+		  &No Homopolymers  &No Start Codons  &Preserves Functionality  &Preserves Codon Bias  &Balances C-G  &  &  &  &  &\\ \hline
+		PROTEIN CODING DNA  &  &  &  &  &  &  &  &  &  &\\ \hline
+	Secret Signature~\cite{AY2004BP}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &  &  &\centering{$\CIRCLE$}  &  &  &  &\\ \hline
+		DNA-Crypt~\cite{HBBMC2007}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &  &  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &  &\centering{$\CIRCLE$}  &\\ \hline
+		BioCode~\cite{HBBMC2013}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &  &  &\\ \hline
+		DWT Based~\cite{L2014IS}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &  &  &\\ \hline
+		  &  &  &  &  &  &  &  &  &  &\\ \hline
+		NONCODING DNA and PLASMIDS  &  &  &  &  &  &  &  &  &  &\\ \hline
+        Organic Memory~\cite{WWF2003COTACM}  &  &  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &  &  &  &  &  &\\ \hline
+		Alignment-Based~\cite{YSSOT2007BP}  &  &  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &  &\centering{$\Circle$}  &\centering{$\Circle$}  &  &  &\\ \hline
+		Improved Huffman~\cite{AR2009BT}  &  &  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &\centering{$\Circle$}  &  &  &\centering{$\CIRCLE$}  &  &\\ \hline
+		Regulatory Watermarks~\cite{HPB2009BMCRN}  &  &  &  &  &  &  &  &  &  &\\ \hline
+		RAlign~\cite{HB2011IEEEICOBAB}  &  &  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &  &\centering{$\Circle$}  &\centering{$\Circle$}  &  &  &\\ \hline
+		HTAlign~\cite{HB2011IEEEICOBAB}  &  &  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &  &\centering{$\Circle$}  &\centering{$\Circle$}  &  &  &\\ \hline
+		DNA Barcodes~\cite{KS2015BMCB}  &\centering{$\CIRCLE$}  &  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &  &  &\\ \hline
+		DNA-Courier Attack~\cite{CLY2015SAPW}  &  &  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &  &  &  &\centering{$\CIRCLE$}  &\\ \hline
+	\end{tabular}}
+\end{table}
+
 Heider et al.~\cite{HPB2009BMCRN} were interested in the possibility of encoding data in non-protein coding but biochemically functional DNA. 2-3 character watermarks were inserted into non-coding promoter regions and a regulatory RNA region in $Escherichia coli$. The introduction of the watermarks were shown to disrupt the reading of the genes associated with the promoters and changed the secondary structure of the regulatory RNA molecule. This research was significant in showing that biochemically functional ncDNA is a poor region for encoding.
-
-
-\section{Compression and Error Correction}
-
-Smith et al.~\cite{SFHC2003BL} were the first to suggest a data compression technique in DNA encoding, specifically the Huffman Code. The Huffman Code is a form of lossless data compression that forms a symbol table using fewer bits to encode more common characters~\cite{H1952POTIRE}. Smith et al created a Huffman Code table mapping letters of the alphabet to nucleotide strings, where the most common English letter 'e' was mapped to the nucleotide string "T", and the least common english letter 'z' was mapped to a longer nucleotide string "CCCTG". This achieved an average encoding length of 2.2 bases per letter. The mapping is unambiguous, making only one possible interpretation of each message.
-
-Comma encoding~\cite{BVSPNAS2000} specifies that encoded words be separated by a single nucleotide (i.e., G). The remaining four (or five in Smith et al.), are composed of the other three nucleotides. Additional constraints are that only three A-T pairs are allowed, and two G-C always on the top strand, so that the DNA molecules will have isothermal melting temperatures. This technique provides particularly good detection of insertions and deletions, unfortunately it is also space inefficient.
-
-The alternating code, also from Smith et al.~\cite{SFHC2003BL} consists of 64, 6 base pair codons, with nucleotides alternating between an A or G (purines) at odd positions, and C or T (pyrimidines) at evens (e.g., RYRYRY…, YRYRYR). Like the comma encoding, the alternating code results in isothermically stable molecules with a 1:1 ratio of A-T to G-C pairs. While more space efficient, this technique is not as proficient at error detection, as only 67\% of codons result in nonsense codons after mutation, compared to 83\% for the comma code.
-
-Contrast mapping is an encoding scheme developed by Mousa et al.~\cite{MMAIAJI2011}. The binary message is divided into 6-bit groups, each converted to decimal (base 10). Pairs of consecutive values ($x, y$) are converted into ($x', y'$) with the the following linear transformations: $x' = 2x - y$,  $y' = 2y - x$. Values are limited to the subdomain:  0 $\leq$ 2$x - y$ $\leq$ $L$, 0 $\leq$ 2$y$ - $x$ $\leq$ $L$. Values are decoded with the following equations: $x = [3x' + 3y'], y = [3 x' + 3y']$. This technique is sufficiently flexible to be applied to DNA or image steganography.
-
-Others to write up...
-
-1) Towards practical, high-capacity, low-maintenance
-information storage in synthesized DNA
-
-2) Rewritable, Random-Access DNA-Based Storage System
-
-3) Genomically encoded analog memory with precise in vivo DNA writing in living cell populations
-
-4) HyDEn: A Hybrid Steganocryptographic Approach for Data Encryption Using Randomized Error-Correcting DNA Codes
-
-5) Robust Chemical Preservation of Digital Information on DNA in Silica with Error-Correcting Codes
 
 
 
 
 \section{Future Directions}
 
-There are several other regions of DNA that have seen little research in biosteganography, but have substantial potential for message encoding and watermarking. 
+There are several other regions of DNA that have seen little research in biosteganography, but have substantial potential for message encoding and watermarking.
 
 \subsection{Mitochondrial DNA}
 
@@ -249,6 +273,7 @@ Heider et al.~\cite{HKB2008B} suggested using mitochondria for secret data encod
 
 \bibliographystyle{IEEEtran}
 \bibliography{References}
+
 
 
 
@@ -308,23 +333,7 @@ Heider et al.~\cite{HKB2008B} suggested using mitochondria for secret data encod
     \raggedright In this column, $\Circle$ denotes semi-honest threat model whereas $\CIRCLE$ denotes malicious threat model.
 \end{table*}
 
-\begin{table}[!t]
-	\caption{Table 1}
-	\label{fig:table1}
-	\centering
-	\scalebox{0.7}{
-	\begin{tabular}{|c|c|c|c|c|c|c|c|c|}\hline \hline
-		Method  &Organism  &Bio-Restrictions*  &Error Detection/Correction  &Error Rate  &Compression Technique  &Bits/Base Density  &Encryption  &Blind Decoding\\ \hline
-		Protein Coding DNA  &  &  &  &  &  &  &  &\\ \hline
-		Secret Signature~\cite{AY2004BP}  &B. subtilis  &H,S,F,(),()  &Parity Bit / -  &*  &None  &6 Bases / Letter  &None  &No\\ \hline
-		DNA-Crypt~\cite{HBBMC2007}  &S. cerevisiae  &H,S,F,(),()  &WDH, Hamming  &*  &None  &0.214  &OTP, AES, Blowfish, RSA  &No\\ \hline
-		  &  &  &  &  &  &  &  &\\ \hline
-		Noncoding DNA  &  &  &  &  &  &  &  &\\ \hline
-		  &  &  &  &  &  &  &  &\\ \hline
-		  &  &  &  &  &  &  &  &\\ \hline
-		Plasmids  &  &  &  &  &  &  &  &\\ \hline
-	\end{tabular}}
-\end{table}
+
 
 \end{document}
 

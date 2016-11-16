@@ -6,36 +6,40 @@ I was expecting a `,' or a `}'---line 29 of file References.bib
  : @article{WC1953N,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
+Repeated entry---line 193 of file References.bib
+ : @inproceedings{CLY2015SAPW
+ :                           ,
+I'm skipping whatever remains of this entry
 -- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 Warning--empty year in SFHC2003BL
+Too many commas in name 1 of "Brenner, S., Williams, S. R., Vermaas, E. H., Storck, et al." for entry BVSPNAS2000
+while executing---line 2403 of file IEEEtran.bst
+Too many commas in name 1 of "Brenner, S., Williams, S. R., Vermaas, E. H., Storck, et al." for entry BVSPNAS2000
+while executing---line 2403 of file IEEEtran.bst
+Too many commas in name 1 of "Brenner, S., Williams, S. R., Vermaas, E. H., Storck, et al." for entry BVSPNAS2000
+while executing---line 2403 of file IEEEtran.bst
+Too many commas in name 1 of "Brenner, S., Williams, S. R., Vermaas, E. H., Storck, et al." for entry BVSPNAS2000
+while executing---line 2403 of file IEEEtran.bst
+Too many commas in name 1 of "Brenner, S., Williams, S. R., Vermaas, E. H., Storck, et al." for entry BVSPNAS2000
+while executing---line 2403 of file IEEEtran.bst
+Too many commas in name 1 of "Mousa, H., Moustafa, K., Abdel-Wahed, W., & Hadhoud, M. M." for entry MMAIAJI2011
+while executing---line 2403 of file IEEEtran.bst
+Too many commas in name 1 of "Mousa, H., Moustafa, K., Abdel-Wahed, W., & Hadhoud, M. M." for entry MMAIAJI2011
+while executing---line 2403 of file IEEEtran.bst
+Too many commas in name 1 of "Mousa, H., Moustafa, K., Abdel-Wahed, W., & Hadhoud, M. M." for entry MMAIAJI2011
+while executing---line 2403 of file IEEEtran.bst
+Too many commas in name 1 of "Mousa, H., Moustafa, K., Abdel-Wahed, W., & Hadhoud, M. M." for entry MMAIAJI2011
+while executing---line 2403 of file IEEEtran.bst
+Too many commas in name 1 of "Mousa, H., Moustafa, K., Abdel-Wahed, W., & Hadhoud, M. M." for entry MMAIAJI2011
+while executing---line 2403 of file IEEEtran.bst
 Name 1 in "Heider, Dominik, and Barnekow, Angelika" has a comma at the end for entry HBBMC2007
 while executing---line 2403 of file IEEEtran.bst
 Name 1 in "Haughton, David, and Félix Balado" has a comma at the end for entry HBBMC2013
 while executing---line 2403 of file IEEEtran.bst
 Name 1 in "Heider, Dominik, and Pyka, Martin and Barnekow, Angelika" has a comma at the end for entry HPB2009BMCRN
 while executing---line 2403 of file IEEEtran.bst
-Too many commas in name 1 of "Brenner, S., Williams, S. R., Vermaas, E. H., Storck, et al." for entry BVSPNAS2000
-while executing---line 2403 of file IEEEtran.bst
-Too many commas in name 1 of "Brenner, S., Williams, S. R., Vermaas, E. H., Storck, et al." for entry BVSPNAS2000
-while executing---line 2403 of file IEEEtran.bst
-Too many commas in name 1 of "Brenner, S., Williams, S. R., Vermaas, E. H., Storck, et al." for entry BVSPNAS2000
-while executing---line 2403 of file IEEEtran.bst
-Too many commas in name 1 of "Brenner, S., Williams, S. R., Vermaas, E. H., Storck, et al." for entry BVSPNAS2000
-while executing---line 2403 of file IEEEtran.bst
-Too many commas in name 1 of "Brenner, S., Williams, S. R., Vermaas, E. H., Storck, et al." for entry BVSPNAS2000
-while executing---line 2403 of file IEEEtran.bst
-Too many commas in name 1 of "Mousa, H., Moustafa, K., Abdel-Wahed, W., & Hadhoud, M. M." for entry MMAIAJI2011
-while executing---line 2403 of file IEEEtran.bst
-Too many commas in name 1 of "Mousa, H., Moustafa, K., Abdel-Wahed, W., & Hadhoud, M. M." for entry MMAIAJI2011
-while executing---line 2403 of file IEEEtran.bst
-Too many commas in name 1 of "Mousa, H., Moustafa, K., Abdel-Wahed, W., & Hadhoud, M. M." for entry MMAIAJI2011
-while executing---line 2403 of file IEEEtran.bst
-Too many commas in name 1 of "Mousa, H., Moustafa, K., Abdel-Wahed, W., & Hadhoud, M. M." for entry MMAIAJI2011
-while executing---line 2403 of file IEEEtran.bst
-Too many commas in name 1 of "Mousa, H., Moustafa, K., Abdel-Wahed, W., & Hadhoud, M. M." for entry MMAIAJI2011
-while executing---line 2403 of file IEEEtran.bst
 
 Done.
-(There were 14 error messages)
+(There were 15 error messages)

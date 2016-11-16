@@ -66,6 +66,21 @@ G.~Smith, C.~Fiddles, J.~Hawkins, and J.~Cox, ``Some possible codes for
   encrypting data in {DNA}, volume = {25}, pages = {1125-1130}, year =
   {2003},'' \emph{Biotechnology Letters}.
 
+\bibitem{H1952POTIRE}
+D.~Huffman, ``A method for the construction of minimum-redundancy codes,''
+  \emph{Proceedings of the IRE}, vol. 40(9), pp. 1098--1101, 1952.
+
+\bibitem{BVSPNAS2000}
+W.~S. R. V. E. H. S. e.~a. Brenner, S., ``In vitro cloning of complex mixtures
+  of dna on microbeads: physical separation of differentially expressed
+  cdnas,'' \emph{Proceedings of the National Academy of Sciences}, vol. 97(4),
+  pp. 1665--1670, 2000.
+
+\bibitem{MMAIAJI2011}
+M.~K. A.-W. W. . H. M.~M. Mousa, H., ``Data hiding based on contrast mapping
+  using dna medium,'' \emph{International Arab Journal of Information
+  Technolology}, vol. 8(2), pp. 147--154, 2011.
+
 \bibitem{AY2004BP}
 M.~Arita and O.~Yoshiaki, ``Secret signatures inside genomic dna,''
   \emph{Biotechnology Progress}, vol.~20, pp. 1605--1607, 2004.
@@ -106,20 +121,14 @@ M.~Ailenberg and O.~Rotstein, ``An improved huffman coding method for archiving
 D.~Heider, M.~Pyka, and A.~Barnekow, ``Dna watermarks in non-coding regulatory
   sequences,'' \emph{BMC Research Notes}, vol. 2:123, 2009.
 
-\bibitem{H1952POTIRE}
-D.~Huffman, ``A method for the construction of minimum-redundancy codes,''
-  \emph{Proceedings of the IRE}, vol. 40(9), pp. 1098--1101, 1952.
+\bibitem{KS2015BMCB}
+D.~Kracht and S.~Schober, ``Insertion and deletion correcting dna barcodes
+  based watermarks,'' \emph{BMC Bioinformatics}, vol. 16:50, 2015.
 
-\bibitem{BVSPNAS2000}
-W.~S. R. V. E. H. S. e.~a. Brenner, S., ``In vitro cloning of complex mixtures
-  of dna on microbeads: physical separation of differentially expressed
-  cdnas,'' \emph{Proceedings of the National Academy of Sciences}, vol. 97(4),
-  pp. 1665--1670, 2000.
-
-\bibitem{MMAIAJI2011}
-M.~K. A.-W. W. . H. M.~M. Mousa, H., ``Data hiding based on contrast mapping
-  using dna medium,'' \emph{International Arab Journal of Information
-  Technolology}, vol. 8(2), pp. 147--154, 2011.
+\bibitem{CLY2015SAPW}
+J.~Chun, H.~Lee, and J.~Yoon, ``Passing go with {DNA} sequencing: Delivering
+  messages in a covert transgenic channel,'' \emph{IEEE CS Security and Privacy
+  Workshop}, vol. 14:121, 2013.
 
 \bibitem{HKB2008B}
 D.~Heider, D.~Kessler, and A.~Barnekow, ``Watermarking sexually reproducing
