@@ -31,6 +31,8 @@
 
   \runningtitle{Hiding Data in Cellular DNA}
 
+  \providecommand{\e}[1]{\ensuremath{\times 10^{#1}}}
+
   %\subtitle{...}
 
   \begin{abstract}
@@ -82,7 +84,7 @@ The rest of the survey is organized as follows. In Section 2 we provide a backgr
 
 \subsection{DNA}
 
-Every living cell contains DNA molecules encoded with instructions for making the proteins necessary for the cell to function. DNA takes the form of a double helix made of two antiparallel strands. Each strand is composed of a sequence of 4 nucleotides: adenine (A), guanine (G), cytosine (C), and thymine (T). The purines adenine and guanine, and the pyrimidines cytosine and thymine hydrogen bond with each other across the double helix. Every three nucleotides forms a codon that the cell reads and processes to create an amino acid, the building block of a protein~\cite{WC1953N}.
+Every living cell contains DNA molecules encoded with instructions for making the proteins necessary for the cell to function. DNA takes the form of a double helix made of two antiparallel strands. Each strand is composed of a sequence of 4 nucleotides: adenine (A), guanine (G), cytosine (C), and thymine (T). The purines adenine and guanine, and the pyrimidines cytosine and thymine, form hydrogen bonds with each other across the double helix. Adenine binds to thymine with two H-bonds, and guanine binds to cytosine with three. Every three nucleotides forms a codon that the cell reads and processes to create an amino acid, the building block of a protein~\cite{WC1953N}. Proteins can be encoded on either strand.
 
 There are only 20 amino acids, despite the fact that $4^3$ = 64 possible codon variations exist. This is because many amino acids are correlated with up to five redundant codons. Also, three codons are used specifically as stop signals to indicate the end of a protein chain. The redundancy in codon to amino acid mapping is called codon degeneracy~\cite{WBBGLL2008}. Codon degeneracy gives an evolutionary advantage to the cell by allowing certain mutations to occur in a codon while preserving the codon’s functionality.
 
@@ -142,11 +144,19 @@ There are only 20 amino acids, despite the fact that $4^3$ = 64 possible codon v
 
 \subsection{Artificial Encoding}
 
- Artificial DNA encoding was the
+Artificial DNA encoding, or DNA data storage, is the process of storing digital information such as text, audio, or images within \textit{in vitro} DNA base pair sequences. DNA is an appealing storage medium due to its high density. For example, the human genome contains 3.3\e{9} base pairs, or about 725 MB of binary data, with a mass of 3.59\e{-12} grams. DNA is also incredibly resilient, as the sequencing of 45,000 year old woolly mammoth genomes indicate~\cite{PALKOPOULOU2015}. As with any memory device, the critical operations are read and write. Continued advances in DNA sequencing (reading) and oligonucleotide synthesis (writing) increase the viability of nucleic acid for long term archival storage.
 
- DNA was first encoded with a secret message in 1999 by Clelland et al~\cite{CRB1999N}. Inspired by the tiny, concealed “microdot” messages used in World War II, artificial DNA strands were constructed using a simple substitution cipher, then mixed with human DNA and pipetted onto a printed period on filter paper. The encoded DNA was later recovered from the dot and sequenced to successfully read the secret message: “JUNE 6 INVASION: NORMANDY”.
+DNA was first encoded with a secret message in 1999 by Clelland et al~\cite{CRB1999N}. Inspired by the tiny, concealed “microdot” messages used in World War II, artificial DNA strands were constructed using a simple substitution cipher, then mixed with human DNA and pipetted onto a printed period on filter paper. The encoded DNA was later recovered from the dot and sequenced to successfully read the secret message: “JUNE 6 INVASION: NORMANDY”.
 
+The primary limiting factor has been the length of the oligonucleotides that can be synthesized. Church et al.~\cite{CHURCH2012} developed a technique using high fidelity DNA microchips to encode 5.27 MB of data including a book by the author, 11 JPEG images, and a JavaScript program into 54,898 159 nt sequences. Each 159 nt sequence consisted of a 96 nt data block and 19 nt address. The data were recovered with only 10 bit errors.
 
+Goldman et al.~\cite{GOLDMAN2013} were able to encode 739 KB of text, images, and audio with 100\% recovery rate. The technique applied a modified Huffman code~\cite{H1952POTIRE}, converting the binary (base-2) data into ternary (base-3), and mapping each trit to a nucleotide, different from the one preceding it in order to prevent homopolymers. The sequences were capped with reverse complemented index information so that the data could be reassembled by scanning for overlaps.
+
+Grass et al.~\cite{GRASS2015} developed error correction codes for DNA stored in silica gel and exposed to high temperature ($70^o$ C).
+
+Yazdi et al.~\cite{YAZDI2015} also developed some sort of DNA error correction code, but I have not yet read trough the paper.
+
+Blawat et al.~\cite{BLAWAT2016} improved upon this work by developing forward error correction codes.
 
 \subsection{Cellular Encoding Restrictions}
 
@@ -181,19 +191,6 @@ The alternating code, also from Smith et al.~\cite{SFHC2003BL} consists of 64, 6
 
 Contrast mapping is an encoding scheme developed by Mousa et al.~\cite{MMAIAJI2011}. The binary message is divided into 6-bit groups, each converted to decimal (base 10). Pairs of consecutive values ($x, y$) are converted into ($x', y'$) with the the following linear transformations: $x' = 2x - y$,  $y' = 2y - x$. Values are limited to the subdomain:  0 $\leq$ 2$x - y$ $\leq$ $L$, 0 $\leq$ 2$y$ - $x$ $\leq$ $L$. Values are decoded with the following equations: $x = [3x' + 3y'], y = [3 x' + 3y']$. This technique is sufficiently flexible to be applied to DNA or image steganography.
 
-Others to write up...
-
-1) Towards practical, high-capacity, low-maintenance
-information storage in synthesized DNA
-
-2) Rewritable, Random-Access DNA-Based Storage System
-
-3) Genomically encoded analog memory with precise in vivo DNA writing in living cell populations
-
-4) HyDEn: A Hybrid Steganocryptographic Approach for Data Encryption Using Randomized Error-Correcting DNA Codes
-
-5) Robust Chemical Preservation of Digital Information on DNA in Silica with Error-Correcting Codes
-
 \section{Encoding Schemes}
 
 Encoding schemes for cellular DNA can involve several components:
@@ -207,6 +204,8 @@ Encoding schemes for cellular DNA can involve several components:
 \end{enumerate}
 
 The following encoding schemes use some or all of these elements in their design.
+
+
 
 \subsection{pcDNA Encoding}
 
@@ -261,7 +260,23 @@ Heider et al.~\cite{HPB2009BMCRN} were interested in the possibility of encoding
 
 
 
-\section{Future Directions}
+\begin{table}[h]
+	\caption{Comparative evaluation of encoding schemes}
+	\label{fig:encoding_table}
+	\centering
+	\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}\hline \hline
+		.  &Method  &Organism  &Bio-Restrictions*  &Error Correction  &Error Rate  &Compression Technique  &Bits/Base Density  &Blind Decoding  &etc?\\ \hline
+		&  &  &  &  &  &  &  &  &\\ \hline
+		Protein Coding DNA  &  &  &  &  &  &  &  &  &\\ \hline
+		Kalifa, 2015  &LSBase  &  &H,S,F,C,G  &  &  &  &  &  &\\ \hline
+		…  &  &  &  &  &  &  &  &  &\\ \hline
+		Noncoding DNA  &  &  &  &  &  &  &  &  &\\ \hline
+		Shimanovsky, 2002  &Codon redundancy  &  &F,C,G  &  &  &  &  &  &\\ \hline
+		…  &  &  &  &  &  &  &  &  &\\ \hline
+		Plasmids  &DNA Courier Attack  &  &H,S,F,C,G  &  &  &  &  &  &\\ \hline
+		…  &  &  &  &  &  &  &  &  &\\ \hline
+	\end{tabular}
+\end{table}
 
 There are several other regions of DNA that have seen little research in biosteganography, but have substantial potential for message encoding and watermarking.
 

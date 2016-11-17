@@ -44,9 +44,45 @@ J.~Watson, T.~Baker, S.~Bell, A.~Gann, M.~Levine, and R.~Losich,
   \emph{Molecular Biology of the Gene, 6th Edition}.\hskip 1em plus 0.5em minus
   0.4em\relax Pearson, 2008.
 
+\bibitem{PALKOPOULOU2015}
+E.~Palkopoulou, S.~Mallick, P.~Skoglund, J.~Enk, N.~Rohland, H.~Li, A.~Omrak,
+  S.~Vartanyan, H.~Poinar, A.~G{\"o}therstr{\"o}m \emph{et~al.}, ``Complete
+  genomes reveal signatures of demographic and genetic declines in the woolly
+  mammoth,'' \emph{Current Biology}, vol.~25, no.~10, pp. 1395--1400, 2015.
+
 \bibitem{CRB1999N}
 C.~Clelland, V.~Risca, and C.~Bancroft, ``Hiding messages in {DNA} microdots,''
   \emph{Nature}, vol. 399, pp. 533--534, 1999.
+
+\bibitem{CHURCH2012}
+G.~M. Church, Y.~Gao, and S.~Kosuri, ``Next-generation digital information
+  storage in dna,'' \emph{Science}, vol. 337, no. 6102, pp. 1628--1628, 2012.
+
+\bibitem{GOLDMAN2013}
+N.~Goldman, P.~Bertone, S.~Chen, C.~Dessimoz, E.~M. LeProust, B.~Sipos, and
+  E.~Birney, ``Towards practical, high-capacity, low-maintenance information
+  storage in synthesized dna,'' \emph{Nature}, vol. 494, no. 7435, pp. 77--80,
+  2013.
+
+\bibitem{H1952POTIRE}
+D.~Huffman, ``A method for the construction of minimum-redundancy codes,''
+  \emph{Proceedings of the IRE}, vol. 40(9), pp. 1098--1101, 1952.
+
+\bibitem{GRASS2015}
+R.~N. Grass, R.~Heckel, M.~Puddu, D.~Paunescu, and W.~J. Stark, ``Robust
+  chemical preservation of digital information on dna in silica with
+  error-correcting codes,'' \emph{Angewandte Chemie International Edition},
+  vol.~54, no.~8, pp. 2552--2555, 2015.
+
+\bibitem{YAZDI2015}
+S.~H.~T. Yazdi, Y.~Yuan, J.~Ma, H.~Zhao, and O.~Milenkovic, ``A rewritable,
+  random-access dna-based storage system,'' \emph{Scientific reports}, vol.~5,
+  2015.
+
+\bibitem{BLAWAT2016}
+M.~Blawat, K.~Gaedke, I.~Huetter, X.-M. Chen, B.~Turczyk, S.~Inverso,
+  B.~Pruitt, and G.~Church, ``Forward error correction for dna data storage,''
+  \emph{Procedia Computer Science}, vol.~80, pp. 1011--1022, 2016.
 
 \bibitem{EPC2012N}
 E.~P. Consortium \emph{et~al.}, ``An integrated encyclopedia of dna elements in
@@ -65,10 +101,6 @@ E.~Viguera, D.~Conceill, and S.~Ehrlich, ``Replication slippage involves dna
 G.~Smith, C.~Fiddles, J.~Hawkins, and J.~Cox, ``Some possible codes for
   encrypting data in {DNA}, volume = {25}, pages = {1125-1130}, year =
   {2003},'' \emph{Biotechnology Letters}.
-
-\bibitem{H1952POTIRE}
-D.~Huffman, ``A method for the construction of minimum-redundancy codes,''
-  \emph{Proceedings of the IRE}, vol. 40(9), pp. 1098--1101, 1952.
 
 \bibitem{BVSPNAS2000}
 W.~S. R. V. E. H. S. e.~a. Brenner, S., ``In vitro cloning of complex mixtures

@@ -1,5 +1,12 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: DNAEncoding.aux
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: DNAEncoding.aux
 The style file: IEEEtran.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: References.bib
 I was expecting a `,' or a `}'---line 29 of file References.bib
  : 
@@ -42,4 +49,45 @@ Name 1 in "Heider, Dominik, and Pyka, Martin and Barnekow, Angelika" has a comma
 while executing---line 2403 of file IEEEtran.bst
 
 Done.
+You've used 32 entries,
+            4087 wiz_defined-function locations,
+            1049 strings with 12821 characters,
+and the built_in function-call counts, 24701 in all, are:
+= -- 2044
+> -- 589
+< -- 232
++ -- 343
+- -- 98
+* -- 1173
+:= -- 3722
+add.period$ -- 64
+call.type$ -- 32
+change.case$ -- 31
+chr.to.int$ -- 525
+cite$ -- 33
+duplicate$ -- 1771
+empty$ -- 1832
+format.name$ -- 122
+if$ -- 5766
+int.to.chr$ -- 0
+int.to.str$ -- 32
+missing$ -- 283
+newline$ -- 119
+num.names$ -- 32
+pop$ -- 609
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 2
+skip$ -- 1928
+stack$ -- 0
+substring$ -- 1257
+swap$ -- 1492
+text.length$ -- 57
+text.prefix$ -- 0
+top$ -- 5
+type$ -- 32
+warning$ -- 1
+while$ -- 107
+width$ -- 34
+write$ -- 333
 (There were 15 error messages)
