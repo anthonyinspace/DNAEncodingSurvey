@@ -49,45 +49,45 @@ Name 1 in "Heider, Dominik, and Pyka, Martin and Barnekow, Angelika" has a comma
 while executing---line 2403 of file IEEEtran.bst
 
 Done.
-You've used 32 entries,
+You've used 34 entries,
             4087 wiz_defined-function locations,
-            1049 strings with 12821 characters,
-and the built_in function-call counts, 24701 in all, are:
-= -- 2044
-> -- 589
-< -- 232
-+ -- 343
-- -- 98
-* -- 1173
-:= -- 3722
-add.period$ -- 64
-call.type$ -- 32
-change.case$ -- 31
-chr.to.int$ -- 525
-cite$ -- 33
-duplicate$ -- 1771
-empty$ -- 1832
-format.name$ -- 122
-if$ -- 5766
+            1064 strings with 13301 characters,
+and the built_in function-call counts, 26627 in all, are:
+= -- 2198
+> -- 639
+< -- 252
++ -- 371
+- -- 106
+* -- 1266
+:= -- 3989
+add.period$ -- 69
+call.type$ -- 34
+change.case$ -- 33
+chr.to.int$ -- 573
+cite$ -- 35
+duplicate$ -- 1902
+empty$ -- 1983
+format.name$ -- 132
+if$ -- 6223
 int.to.chr$ -- 0
-int.to.str$ -- 32
-missing$ -- 283
-newline$ -- 119
-num.names$ -- 32
-pop$ -- 609
+int.to.str$ -- 34
+missing$ -- 305
+newline$ -- 125
+num.names$ -- 34
+pop$ -- 659
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 1928
+skip$ -- 2076
 stack$ -- 0
-substring$ -- 1257
-swap$ -- 1492
-text.length$ -- 57
+substring$ -- 1371
+swap$ -- 1608
+text.length$ -- 61
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 32
+type$ -- 34
 warning$ -- 1
-while$ -- 107
-width$ -- 34
-write$ -- 333
+while$ -- 117
+width$ -- 36
+write$ -- 353
 (There were 15 error messages)

@@ -74,6 +74,11 @@ R.~N. Grass, R.~Heckel, M.~Puddu, D.~Paunescu, and W.~J. Stark, ``Robust
   error-correcting codes,'' \emph{Angewandte Chemie International Edition},
   vol.~54, no.~8, pp. 2552--2555, 2015.
 
+\bibitem{REED1960}
+I.~S. Reed and G.~Solomon, ``Polynomial codes over certain finite fields,''
+  \emph{Journal of the society for industrial and applied mathematics}, vol.~8,
+  no.~2, pp. 300--304, 1960.
+
 \bibitem{YAZDI2015}
 S.~H.~T. Yazdi, Y.~Yuan, J.~Ma, H.~Zhao, and O.~Milenkovic, ``A rewritable,
   random-access dna-based storage system,'' \emph{Scientific reports}, vol.~5,
@@ -83,6 +88,13 @@ S.~H.~T. Yazdi, Y.~Yuan, J.~Ma, H.~Zhao, and O.~Milenkovic, ``A rewritable,
 M.~Blawat, K.~Gaedke, I.~Huetter, X.-M. Chen, B.~Turczyk, S.~Inverso,
   B.~Pruitt, and G.~Church, ``Forward error correction for dna data storage,''
   \emph{Procedia Computer Science}, vol.~80, pp. 1011--1022, 2016.
+
+\bibitem{BORNHOLT2016}
+J.~Bornholt, R.~Lopez, D.~M. Carmean, L.~Ceze, G.~Seelig, and K.~Strauss, ``A
+  dna-based archival storage system,'' in \emph{Proceedings of the Twenty-First
+  International Conference on Architectural Support for Programming Languages
+  and Operating Systems}.\hskip 1em plus 0.5em minus 0.4em\relax ACM, 2016, pp.
+  637--649.
 
 \bibitem{EPC2012N}
 E.~P. Consortium \emph{et~al.}, ``An integrated encyclopedia of dna elements in

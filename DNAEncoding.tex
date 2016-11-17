@@ -152,11 +152,13 @@ The primary limiting factor has been the length of the oligonucleotides that can
 
 Goldman et al.~\cite{GOLDMAN2013} were able to encode 739 KB of text, images, and audio with 100\% recovery rate. The technique applied a modified Huffman code~\cite{H1952POTIRE}, converting the binary (base-2) data into ternary (base-3), and mapping each trit to a nucleotide, different from the one preceding it in order to prevent homopolymers. The sequences were capped with reverse complemented index information so that the data could be reassembled by scanning for overlaps.
 
-Grass et al.~\cite{GRASS2015} developed error correction codes for DNA stored in silica gel and exposed to high temperature ($70^o$ C).
+Grass et al.~\cite{GRASS2015} developed error correction codes for DNA stored in silica gel and exposed to high temperature ($70^o$ C). Every two bytes of input data are mapped to three values from the Galois Field of size 47 (GF(47)). The mappings are arranged in blocks of 594\texttt{x}30. Each block also has 594\texttt{x}3 bits of index data. In the second step, Reed-Solomon (RS) codes~\cite{REED1960} are applied to add 119 bits of redundancy A. In another round of RS, a redundancy B of 6 bits in length. This results in a final block size of 713\texttt{x}39. Each column is mapped to an oligonucleotide by mapping each value from GF(47) to a DNA codon (triplet).
 
 Yazdi et al.~\cite{YAZDI2015} also developed some sort of DNA error correction code, but I have not yet read trough the paper.
 
 Blawat et al.~\cite{BLAWAT2016} improved upon this work by developing forward error correction codes.
+
+Bornholt et al.~\cite{BORNHOLT2016} have developed a DNA-based archival storage system.
 
 \subsection{Cellular Encoding Restrictions}
 
