@@ -1,64 +1,37 @@
-\documentclass[USenglish,oneside,twocolumn]{article}
+\documentclass{bioinfo}
+\copyrightyear{2015} \pubyear{2015}
 
-\usepackage[utf8]{inputenc}%(only for the pdftex engine)
-%\RequirePackage[no-math]{fontspec}%(only for the luatex or the xetex engine)
-\usepackage[big]{dgruyter_NEW}
-
-\DOI{foobar}
-
-\cclogo{\includegraphics{by-nc-nd.pdf}}
+\access{Advance Access Publication Date: Day Month Year}
+\appnotes{Manuscript Category}
 
 % Related work comparison table
 \usepackage{amsmath,wasysym} % \CIRCLE, \Circle
 \usepackage{multirow} % \multirow
 \usepackage{times} % font in table header
 
-
 \begin{document}
+\firstpage{1}
 
+\subtitle{Sequence Analysis}
 
-  \author[1]{Anthony P. Machado}
+\title{Hiding Data in Cellular DNA: Contextualizing Diverse Encoding Schemes}
+\author[Sample \textit{et~al}.]{Anthony P. Machado\,$^{\text{\sfb 1,}*}$, Gaby G. Dagher\,$^{\text{\sfb 2}}$ and Eddie C. Davis\,$^{\text{\sfb 2,}*}$}
+\address{$^{\text{\sf 1}}$Computer Science Department, Boise State University, Boise, 83725, USA}
 
-  \author[2]{Gaby G. Dagher}
+\corresp{$^\ast$To whom correspondence should be addressed.}
 
-  \author[3]{Eddie C. Davis}
+\history{Received on XXXXX; revised on XXXXX; accepted on XXXXX}
 
-  \affil[1]{Boise State University, E-mail: anthonymachado@u.boisestate.edu}
+\editor{Associate Editor: XXXXXXX}
 
-  \affil[2]{Boise State University, E-mail: gabydagher@boisestate.edu}
-
-  \title{\huge Hiding Data in Cellular DNA: Contextualizing Diverse Encoding Schemes}
-
-  \runningtitle{Hiding Data in Cellular DNA}
-
-  \providecommand{\e}[1]{\ensuremath{\times 10^{#1}}}
-
-  %\subtitle{...}
-
-  \begin{abstract}
-{DNA, the macromolecule used by organisms to store and transmit genomic data, has attracted the attention of privacy researchers as a channel for secure data transfer. DNA's small size and abundance in nature makes it an ideal steganographic medium for hiding messages. Already, artificially synthesized DNA has been used to store text, audio, and images. Encoded cellular DNA is not far behind, with much research being done on ways to safely embed data without harming the cell. \\
-In this survey we provide the first systematic comparison of cellular encoding schemes proposed in the literature. Different DNA regions in the cell have their own unique bio-restrictions that must be satisfied for DNA storage. Drawing from a wide array of schemes, we compare the novel techniques used to meet these bio-restrictions. This contextualization of the research creates a bigger picture that can help guide the design of future schemes. We also survey the compression methods and error detection techniques used by the encoding schemes, and their effect on error rate and bits-per-base density. Finally, we propose future directions for research in untapped cellular regions such as mitochondrial DNA and we offer novel insights into the potential for epigenetic encoding with methylation and histones.}
-\end{abstract}
-
-  \keywords{keywords, keywords}
-%  \classification[PACS]{}
- % \communicated{...}
- % \dedication{...}
- % \test
-
-  \journalname{Proceedings on Privacy Enhancing Technologies}
-\DOI{Editor to enter DOI}
-  \startpage{1}
-  \received{..}
-  \revised{..}
-  \accepted{..}
-
-  \journalyear{2017}
-  \journalvolume{2017}
-  \journalissue{3}
-
+\abstract{\textbf{Motivation:} DNA, the macromolecule used by organisms to store and transmit genomic data, has attracted the attention of privacy researchers as a channel for secure data transfer. DNA's small size and abundance in nature makes it an ideal steganographic medium for hiding messages. Already, artificially synthesized DNA has been used to store text, audio, and images. Encoded cellular DNA is not far behind, with much research being done on ways to safely embed data without harming the cell.\\
+\textbf{Results:} In this survey we provide the first systematic comparison of cellular encoding schemes proposed in the literature. Different DNA regions in the cell have their own unique bio-restrictions that must be satisfied for DNA storage. Drawing from a wide array of schemes, we compare the novel techniques used to meet these bio-restrictions. This contextualization of the research creates a bigger picture that can help guide the design of future schemes. We also survey the compression methods and error detection techniques used by the encoding schemes, and their effect on error rate and bits-per-base density. Finally, we propose future directions for research in untapped cellular regions such as mitochondrial DNA and we offer novel insights into the potential for epigenetic encoding with methylation and histones. \\
+\textbf{Contact:} \href{anthonymachado@u.boisestate.edu}{anthonymachado@u.boisestate.edu}\\
+\textbf{Supplementary information:} Supplementary data are available at \textit{Bioinformatics}
+online.}
 
 \maketitle
+
 \section{Introduction}
 
 Biosteganography is an emerging field in privacy research that combines techniques from genetic engineering, bioinformatics, cryptography and forensics to secretly transfer data within a living cell's DNA~\cite{B2016JOB}. Data ranging from simple text messages to audio recordings and color images can be inserted into cellular DNA for secure transmission. Because DNA is information dense and occurs abundantly in nature, it makes an ideal medium for sending messages secretly. Basic steganographic principles dictate that if an attacker doesn’t know where to find a confidential message in the first place, the message is far more secure~\cite{A2001IEEEIC}. Locating encoded DNA would be harder than finding a needle in a haystack. A needle, at least, can be seen by the human eye.
@@ -70,15 +43,15 @@ Inserting hidden data into DNA is also crucial for watermarking patented genes. 
 Many encoding schemes have been proposed to accomplish data embedding in cellular DNA.
 
 In this survey, we will provide the first systematic analysis of these diverse encoding schemes, in which:
-\\
 \begin{itemize}
-\item we define the unique bio-restrictions associated with cellular encoding and compare how the proposed encoding schemes meet these restrictions;
-\item we contrast the error rates and bits-per-nucleotide densities of each of the schemes, highlighting the effects of error correction and compression techniques on both; and
-\item we propose new directions for research incorporating novel epigenetic techniques.
+\item We define the unique bio-restrictions associated with cellular encoding and compare how the proposed encoding schemes meet these restrictions;
+\item We contrast the error rates and bits-per-nucleotide densities of each of the schemes, highlighting the effects of error correction and compression techniques on both; and
+\item We propose new directions for research incorporating novel epigenetic techniques.
 \end{itemize}
 
 The rest of the survey is organized as follows. In Section 2 we provide a background on genetics, explain techniques in artificial DNA encoding, and clarify the biological restrictions involved in cellular encoding. A systematic comparison of the encoding schemes for coding and non-coding regions is presented in Section 3, in which we look at how each encoding scheme meets cellular restrictions and the error rate and bits-per-nucleotide density it offers. Finally, in Section we propose new directions for future encoding schemes that use epigenetics and alternative genetic regions.
 
+%\enlargethispage{12pt}
 
 \section{Background}
 
@@ -88,63 +61,9 @@ Every living cell contains DNA molecules encoded with instructions for making th
 
 There are only 20 amino acids, despite the fact that $4^3$ = 64 possible codon variations exist. This is because many amino acids are correlated with up to five redundant codons. Also, three codons are used specifically as stop signals to indicate the end of a protein chain. The redundancy in codon to amino acid mapping is called codon degeneracy~\cite{WBBGLL2008}. Codon degeneracy gives an evolutionary advantage to the cell by allowing certain mutations to occur in a codon while preserving the codon’s functionality.
 
-\begin{center}
- \scalebox{.85}{
- \begin{tabular}{||c || c c c c c c||}
- \hline
- Amino & & & Codons & & &\\ [0.5ex]
- Acids & & & & & &\\ [0.5ex]
- \hline\hline
- Ala & GCT & GCC & GCA & GCG & &\\
- \hline
- Arg & CGT & CGC & CGA & CGG & AGA & AGG \\
- \hline
- Asn & AAT & AAC & & & &\\
- \hline
- Asp & GAT & GAC & & & &\\
- \hline
- Cys & TGT & TGC & & & &\\
- \hline
- Gln & CAA & CAG & & & &\\
- \hline
- Glu & GAA & GAG & & & &\\
- \hline
- Gly & GGT & GGC & GGA & GGG & &\\
- \hline
- His & CAT & CAC & & & &\\
- \hline
- Ile & ATT & ATC & ATA & & &\\
- \hline
- Leu & TTA & TTG & CTT & CTC & CTA & CTG \\
- \hline
- Lys & AAA & AAG & & & &\\
- \hline
- Met & ATG & & & & &\\
- \hline
- Phe & TTT & TTC & & & &\\
- \hline
- Pro & CCT & CCC & CCA & CCG & &\\
- \hline
- Ser & TCT & TCC & TCA & TCG & AGT & AGC \\
- \hline
- Thr & ACT & ACC & ACA & ACG & &\\
- \hline
- Trp & TGG & & & & &\\
- \hline
- Tyr & TAT & TAC & & & &\\
- \hline
- Val & GTT & GTC & GTA & GTG & &\\
- \hline
- START & ATG & & & & &\\
- \hline
- STOP & TAA & TGA & TAG & & &\\[1ex]
- \hline
-\end{tabular}}
-\end{center}
-
 \subsection{Artificial Encoding}
 
-Artificial DNA encoding, or DNA data storage, is the process of storing digital information such as text, audio, or images within \textit{in vitro} DNA base pair sequences. DNA is an appealing storage medium due to its high density. For example, the human genome contains 3.3\e{9} base pairs, or about 725 MB of binary data, with a mass of 3.59\e{-12} grams. DNA is also incredibly resilient, as the sequencing of 45,000 year old woolly mammoth genomes indicate~\cite{PALKOPOULOU2015}. As with any memory device, the critical operations are read and write. Continued advances in DNA sequencing (reading) and oligonucleotide synthesis (writing) increase the viability of nucleic acid for long term archival storage.
+Artificial DNA encoding, or DNA data storage, is the process of storing digital information such as text, audio, or images within \textit{in vitro} DNA base pair sequences. DNA is an appealing storage medium due to its high density. For example, the human genome contains 3.3e9 base pairs, or about 725 MB of binary data, with a mass of 3.59e-12 grams. DNA is also incredibly resilient, as the sequencing of 45,000 year old woolly mammoth genomes indicate~\cite{PALKOPOULOU2015}. As with any memory device, the critical operations are read and write. Continued advances in DNA sequencing (reading) and oligonucleotide synthesis (writing) increase the viability of nucleic acid for long term archival storage.
 
 DNA was first encoded with a secret message in 1999 by Clelland et al~\cite{CRB1999N}. Inspired by the tiny, concealed “microdot” messages used in World War II, artificial DNA strands were constructed using a simple substitution cipher, then mixed with human DNA and pipetted onto a printed period on filter paper. The encoded DNA was later recovered from the dot and sequenced to successfully read the secret message: “JUNE 6 INVASION: NORMANDY”.
 
@@ -215,6 +134,34 @@ Shimanovsky et al~\cite{SFHC2003BL} were the first to propose using codon degene
 
 Heider et al. developed the DNA-Crypt~\cite{HBBMC2007} algorithm for creating DNA watermarks for marking genetically modified organisms. It is similar to the work of Arita et al. in that the encoding targets the wobble base pair in the genetic code. An encryption function $E$ maps the plaintext (binary data) $X$ to the ciphertext (genetic data) $Y$, such that $X \in  \{$0, 1$\}$ and $Y \in \{$A, C, G, T$\}$. Two bits are encoded per base, or one byte for four bases. Error correction is achieved with a fuzzy controller that selects one of two algorithms, either the 8/4 Hamming code for mutations that differ in only bit (e.g., 00 to 01) or the WDH-code for those that differ by multiple bits. This encoding scheme allowed implementations of several cryptographic algorithms, including One-Time Pad, AES, Blowfish, and RSA. The accuracy was tested using the GTPase encoding Ypt gene in $S. cerevisiae$.
 
+Liss et al. were the first to design a pcDNA encoding scheme that allowed for blind decoding~\cite{LDBKHLW2012PO}. First a codon usage table was created, which ranked synonymous codons according to their natural occurrence. An odd-ranked codon (1st, 3rd, or 5th) represented binary 1, while an even-ranked codon (2nd, 4th, or 6th) represented binary 0. Encoding in this way also allowed for codon bias preservation through gene optimization. The receiver who obtains the DNA would only need to know which gene had the encoded message, and the codon usage table, which itself could be encoded into the same genome. Since the receiver does not need to know the wildtype sequence of the genome to decode, this type of scheme can be blindly decoded.
+
+\begin{table*}[t]
+	\caption{Table 1}
+	\label{fig:table1}
+	\centering
+	\scalebox{0.7}{
+	\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}\hline \hline
+		Method  &  &  &Bio-Restrictions  &  &  &Error Detection  &Error Correction  &Compression  &Encryption  &Blind Decoding\\ \hline
+		  &No Homopolymers  &No Start Codons  &Preserves Functionality  &Preserves Codon Bias  &Balances C-G  &  &  &  &  &\\ \hline
+		PROTEIN CODING DNA  &  &  &  &  &  &  &  &  &  &\\ \hline
+	Secret Signature~\cite{AY2004BP}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &  &  &\centering{$\CIRCLE$}  &  &  &  &\\ \hline
+		DNA-Crypt~\cite{HBBMC2007}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &  &  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &  &\centering{$\CIRCLE$}  &\\ \hline
+        Codon Usage Table~\cite{LDBKHLW2012PO}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &  &  &  &  &$\CIRCLE$\\ \hline
+		BioCode~\cite{HBBMC2013}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &  &  &\\ \hline
+		DWT Based~\cite{L2014IS}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &  &  &\\ \hline
+		  &  &  &  &  &  &  &  &  &  &\\ \hline
+		NONCODING DNA and PLASMIDS  &  &  &  &  &  &  &  &  &  &\\ \hline
+        Organic Memory~\cite{WWF2003COTACM}  &  &  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &  &  &  &  &  &$\CIRCLE$\\ \hline
+		Alignment-Based~\cite{YSSOT2007BP}  &  &  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &  &\centering{$\Circle$}  &\centering{$\Circle$}  &  &  &$\CIRCLE$\\ \hline
+		Improved Huffman~\cite{AR2009BT}  &  &  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &\centering{$\Circle$}  &  &  &\centering{$\CIRCLE$}  &  &$\CIRCLE$\\ \hline
+		RAlign~\cite{HB2011IEEEICOBAB}  &  &  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &  &\centering{$\Circle$}  &\centering{$\Circle$}  &  &  &$\CIRCLE$\\ \hline
+		HTAlign~\cite{HB2011IEEEICOBAB}  &  &  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &  &\centering{$\Circle$}  &\centering{$\Circle$}  &  &  &$\CIRCLE$\\ \hline
+		DNA Barcodes~\cite{KS2015BMCB}  &\centering{$\CIRCLE$}  &  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &  &  &$\CIRCLE$\\ \hline
+		DNA-Courier Attack~\cite{CLY2015SAPW}  &  &  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &  &  &  &\centering{$\CIRCLE$}  &$\CIRCLE$\\ \hline
+	\end{tabular}}
+\end{table*}
+
 Haughton and Balado proposed BioCode~\cite{HBBMC2013}, a pair of encoding algorithms, one for ncDNA, and one for pcDNA. The ncDNA algorithm expands upon DNA-Crypt by observing the no start codons in restriction. This is accomplished by defining a set of dinucleotides $D$ = $\{$ AT, CT, TT, CA $\}$ that covers the possible eukaryotic start codons on either DNA strand. The trailing dinucleotide $d$ is continually checked for membership in $D$. If found, $d$ is replaced with a lookup table formed from a graduated mapping of the message space $M_d$ to set $S_d$. The pcDNA encoding technique is similar, but enforces the additional constraint of Binary Codon Equivalency (BCE). This requires that the cardinality of the codon set (|$S_d$|) be varied during the embedding process to allow the usage of a static lookup table.
 
 In order to better preserve codon bias, Lee developed a discrete wavelet transform (DWT) technique for pcDNA encoding~\cite{L2014IS}. The target coding sequence was divided into subsequences in which every codon was given a numerical code associated with amino acid histogram rankings. DWT coefficients were calculated for synonymous codons and the optimal subsequence was found, which was then replaced with the encoded subsequence. A nonlinear congruential-pseudorandom number generator then created the watermark and picked the location in the DWT domain for embedding.
@@ -223,62 +170,19 @@ In order to better preserve codon bias, Lee developed a discrete wavelet transfo
 
 The development of encoding schemes for ncDNA and plasmids have been strongly correlated, due to two regions having nearly identical bio-restrictions. The main difference being that plasmid encoding is also confined by length. However, due to their similarities and the parallel advancement of their encoding schemes, we will consider them both in this section.
 
-Wong et al.~\cite{WWF2003COTACM} were the first to encode data into plasmids. Letters and punctuation were mapped to nucleotide triplets, then short text snippets of 19 to 33 characters were inserted into the plasmids of Deinococcus radiodurans, a bacteria that is very resilient to extreme conditions. The encoded section of the plasmid was flanked by sentinel sequences 20 base pairs long containing stop codons. This was done to prevent the bacteria from transcribing the message while reading the adjacent functional parts of the plasmid. After insertion of the plasmids into the host bacteria, they were incorporated into their genomes. No error correction, encryption, or compression techniques were used.
+~\cite{WWF2003COTACM} were the first to encode data into plasmids. Letters and punctuation were mapped to nucleotide triplets, then short text snippets of 19 to 33 characters were inserted into the plasmids of Deinococcus radiodurans, a bacteria that is very resilient to extreme conditions. The encoded section of the plasmid was flanked by sentinel sequences 20 base pairs long containing stop codons. This was done to prevent the bacteria from transcribing the message while reading the adjacent functional parts of the plasmid. After insertion of the plasmids into the host bacteria, they were incorporated into their genomes. No error correction, encryption, or compression techniques were used.
 
-Yachie et al.~\cite{YSSOT2007BP} came up with the idea of using multiple alignment in lieu of error detection or correction techniques. With this scheme, messages were composed using the Keyboard Scan Code Set2, which contains all keyboard inputs, and converted these messages to binary. The encryption keys mapped four bits of binary code to two nucleotides. This type of mapping created four reading frames in the binary message (C1 - C4), each of which was converted to DNA and inserted adjacently into the plasmid, creating redundancy that allowed for multiple alignment when decoding.
+~\cite{YSSOT2007BP} came up with the idea of using multiple alignment in lieu of error detection or correction techniques. With this scheme, messages were composed using the Keyboard Scan Code Set2, which contains all keyboard inputs, and converted these messages to binary. The encryption keys mapped four bits of binary code to two nucleotides. This type of mapping created four reading frames in the binary message (C1 - C4), each of which was converted to DNA and inserted adjacently into the plasmid, creating redundancy that allowed for multiple alignment when decoding.
 
-Repetition coding was used again, this time for ncdDNA, by Haughton and Balado ~\cite{HB2011IEEEICOBAB} who used two variant approaches. Both approaches required finding subsequences in the host ncDNA equal to the length of the encoded message, and replacing them with the message, as opposed to simply inserting the message and expanding the DNA strand. With the first approach, $RAlign$, the redundant subsequences were each prepended and appended with unique 24-bp long markers to aid alignment, and replaced specific subsequences in the genome that were known by both the sender and receiver. With the second approach, $HTAlign$, the prepended and appended markers were identical, which means the receiver does not need to know the location of the replaced subsequences, but can find the repeated messages by searching for the markers alone.
+Repetition coding was used again, this time for ncdDNA, by ~\cite{HB2011IEEEICOBAB} who used two variant approaches. Both approaches required finding subsequences in the host ncDNA equal to the length of the encoded message, and replacing them with the message, as opposed to simply inserting the message and expanding the DNA strand. With the first approach, $RAlign$, the redundant subsequences were each prepended and appended with unique 24-bp long markers to aid alignment, and replaced specific subsequences in the genome that were known by both the sender and receiver. With the second approach, $HTAlign$, the prepended and appended markers were identical, which means the receiver does not need to know the location of the replaced subsequences, but can find the repeated messages by searching for the markers alone.
 
 Wanting to improve on the very low bits per base density of previous schemes, Ailenberg and Rotstein suggested an improved Huffman code that could decrease the sequence sizes by up to 40\%~\cite{AR2009BT} compared to other schemes. Keyboard characters were mapped to variable length sequences, with the more common characters assigned to the shorter sequences. To help maintain C-G balance, CG-rich codons were pushed downwards on the frequency table. To illustrate the density that could be achieved, text and musical notes for "Mary Had a Little Lamb", along with an image of a lamb made with geometric shapes, were encoded into a mere 844-bp DNA fragment. It was estimated that this encoding scheme would average 3.5 bases-per-character, which was a noted improvement over previous schemes. No error correction was used.
 
-\begin{table}[h]
-	\caption{Table 1}
-	\label{fig:table1}
-	\centering
-	\scalebox{0.6}{
-	\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}\hline \hline
-		Method  &  &  &Bio-Restrictions  &  &  &Error Detection  &Error Correction  &Compression  &Encryption  &Blind Decoding\\ \hline
-		  &No Homopolymers  &No Start Codons  &Preserves Functionality  &Preserves Codon Bias  &Balances C-G  &  &  &  &  &\\ \hline
-		PROTEIN CODING DNA  &  &  &  &  &  &  &  &  &  &\\ \hline
-	Secret Signature~\cite{AY2004BP}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &  &  &\centering{$\CIRCLE$}  &  &  &  &\\ \hline
-		DNA-Crypt~\cite{HBBMC2007}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &  &  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &  &\centering{$\CIRCLE$}  &\\ \hline
-		BioCode~\cite{HBBMC2013}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &  &  &\\ \hline
-		DWT Based~\cite{L2014IS}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &  &  &\\ \hline
-		  &  &  &  &  &  &  &  &  &  &\\ \hline
-		NONCODING DNA and PLASMIDS  &  &  &  &  &  &  &  &  &  &\\ \hline
-        Organic Memory~\cite{WWF2003COTACM}  &  &  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &  &  &  &  &  &\\ \hline
-		Alignment-Based~\cite{YSSOT2007BP}  &  &  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &  &\centering{$\Circle$}  &\centering{$\Circle$}  &  &  &\\ \hline
-		Improved Huffman~\cite{AR2009BT}  &  &  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &\centering{$\Circle$}  &  &  &\centering{$\CIRCLE$}  &  &\\ \hline
-		Regulatory Watermarks~\cite{HPB2009BMCRN}  &  &  &  &  &  &  &  &  &  &\\ \hline
-		RAlign~\cite{HB2011IEEEICOBAB}  &  &  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &  &\centering{$\Circle$}  &\centering{$\Circle$}  &  &  &\\ \hline
-		HTAlign~\cite{HB2011IEEEICOBAB}  &  &  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &  &\centering{$\Circle$}  &\centering{$\Circle$}  &  &  &\\ \hline
-		DNA Barcodes~\cite{KS2015BMCB}  &\centering{$\CIRCLE$}  &  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &  &  &\\ \hline
-		DNA-Courier Attack~\cite{CLY2015SAPW}  &  &  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &  &  &  &\centering{$\CIRCLE$}  &\\ \hline
-	\end{tabular}}
-\end{table}
+~\cite{HPB2009BMCRN} were interested in the possibility of encoding data in non-protein coding but biochemically functional DNA. 2-3 character watermarks were inserted into non-coding promoter regions and a regulatory RNA region in $Escherichia coli$. The introduction of the watermarks were shown to disrupt the reading of the genes associated with the promoters and changed the secondary structure of the regulatory RNA molecule. This research was significant in showing that biochemically functional ncDNA is a poor region for encoding.
 
-Heider et al.~\cite{HPB2009BMCRN} were interested in the possibility of encoding data in non-protein coding but biochemically functional DNA. 2-3 character watermarks were inserted into non-coding promoter regions and a regulatory RNA region in $Escherichia coli$. The introduction of the watermarks were shown to disrupt the reading of the genes associated with the promoters and changed the secondary structure of the regulatory RNA molecule. This research was significant in showing that biochemically functional ncDNA is a poor region for encoding.
+~\cite{CLY2015SAPW} were the first to design a cyber attack model they named "DNA courier attack" using encoded DNA. To ensure secrecy, the message was first encrypted into ciphertext using the encryption algorithm AES-128 with a secret key. Then a probability distribution of the DNA fragments in the non-coding regions was created. The mapping table was formed by sorting the codons and 5-bit sequences by frequency and matching the two directly. After insertion of the message, fake data was then embedded to rebalance the original codon distribution and further hide the message data. The encoded sequence is then inserted into an isolated plasmid, which is injected into a bacterial cell that can multiply and be hidden so the sender can carry it through a tight security checkpoint if necessary.
 
-
-
-
-\begin{table}[h]
-	\caption{Comparative evaluation of encoding schemes}
-	\label{fig:encoding_table}
-	\centering
-	\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}\hline \hline
-		.  &Method  &Organism  &Bio-Restrictions*  &Error Correction  &Error Rate  &Compression Technique  &Bits/Base Density  &Blind Decoding  &etc?\\ \hline
-		&  &  &  &  &  &  &  &  &\\ \hline
-		Protein Coding DNA  &  &  &  &  &  &  &  &  &\\ \hline
-		Kalifa, 2015  &LSBase  &  &H,S,F,C,G  &  &  &  &  &  &\\ \hline
-		…  &  &  &  &  &  &  &  &  &\\ \hline
-		Noncoding DNA  &  &  &  &  &  &  &  &  &\\ \hline
-		Shimanovsky, 2002  &Codon redundancy  &  &F,C,G  &  &  &  &  &  &\\ \hline
-		…  &  &  &  &  &  &  &  &  &\\ \hline
-		Plasmids  &DNA Courier Attack  &  &H,S,F,C,G  &  &  &  &  &  &\\ \hline
-		…  &  &  &  &  &  &  &  &  &\\ \hline
-	\end{tabular}
-\end{table}
+\section{Gaps and Future Directions}
 
 There are several other regions of DNA that have seen little research in biosteganography, but have substantial potential for message encoding and watermarking.
 
@@ -288,72 +192,71 @@ Heider et al.~\cite{HKB2008B} suggested using mitochondria for secret data encod
 
 \section{Conclusions}
 
-\bibliographystyle{IEEEtran}
-\bibliography{References}
+\bibliographystyle{natbib}
+\bibliographystyle{achemnat}
+\bibliographystyle{plainnat}
+\bibliographystyle{abbrv}
+\bibliographystyle{bioinformatics}
+
+\bibliographystyle{plain}
+
+\bibliography{Document}
 
 
+\section{Appendix}
 
-
-\begin{table*}[!t]
-    \centering
-    \caption{Comparative evaluation of encoding schemes}
-    \label{tbl:related_work}
-    \scalebox{0.7}{
-        \begin{tabular}{|p{5.7cm}|p{1.0cm}|p{0.7cm}|p{1.4cm}|p{1.1cm}|p{1.4cm}|p{1.1cm}|p{0.7cm}|p{0.8cm}|p{0.6cm}|p{0.8cm}|p{0.6cm}|p{1.1cm}|p{1.5cm}|}
-            \hline
-            \multirow{2}{*}{\vspace{-2cm}\textbf{Approach}} & \multicolumn{2}{|c|}{\textbf{Data Type}} & \multicolumn{4}{|c|}{\vspace{0cm}\textbf{Privacy-Preserving Domain}} & \multicolumn{5}{|c|}{\textbf{Hosting Environment}} & \multicolumn{2}{|c|}{\textbf{Security}} \tabularnewline
-             \cline{2-14}
-             & \vspace{0cm}\textbf{Set-Valued} & \vspace{0cm}\textbf{Other} & \multicolumn{2}{|c|}{\vspace{-.2cm}\textbf{Non-Interactive}} & \multicolumn{2}{|c|}{\vspace{0cm}\textbf{Interactive}} & \vspace{0cm}\textbf{Single} & \multicolumn{2}{|c|}{\vspace{-0.2cm}\textbf{Two}}& \multicolumn{2}{|c|}{\vspace{0cm}\textbf{Multiple}} & \vspace{0cm}\textbf{Threat Model $^\dagger$} & \vspace{0cm}\textbf{Public \newline Verifiability} \tabularnewline
-             \cline{4-7}
-             \cline{9-12}
-             &  &  & \vspace{0cm}\textbf{Differential Privacy} & \vspace{0cm}\textbf{Syntactic Privacy} & \vspace{0cm}\textbf{Differential Privacy} & \vspace{0cm}\textbf{Syntactic Privacy}&  & \vspace{0cm}\textbf{Horiz.} & \vspace{0cm}\textbf{Vert.} & \vspace{0cm}\textbf{Horiz.} & \vspace{0cm}\textbf{Vert.}  &  & \tabularnewline
-            \cline{1-14}
-            \hline\hline
-            Terrovitis \emph{et al.}, He and Naughton  & \centering{$\CIRCLE$} &  &  & \centering{$\CIRCLE$} &  &  & \centering{$\CIRCLE$} &  &  &  &  &  &  \tabularnewline
-            \hline
-            Chen \emph{et al.} &  \centering{$\CIRCLE$} &  &  \centering{$\CIRCLE$} &  &  &  & \centering{$\CIRCLE$} &  &  &  &  &  &  \tabularnewline
-            \hline
-            Jiang and Clifton &  &  \centering{$\CIRCLE$} &  & \centering{$\CIRCLE$} &  &  &  &  & \centering{$\CIRCLE$} &  &  & \centering{$\Circle$} &  \tabularnewline
-            \hline
-            Jurczyk and Xiong &  &  \centering{$\CIRCLE$} &  & \centering{$\CIRCLE$} &  &  &  &  &  & \centering{$\CIRCLE$} &  & \centering{$\Circle$} &  \tabularnewline
-            \hline
-            Alhadidi \emph{et al.} &  &  \centering{$\CIRCLE$} & \centering{$\CIRCLE$} &  &  &  &  & \centering{$\CIRCLE$} &  &  &  & \centering{$\Circle$} &  \tabularnewline
-            \hline
-            Mohammed \emph{et al.} (DistDiffGen) &  & \centering{$\CIRCLE$} & \centering{$\CIRCLE$} &  &  &  &  &  & \centering{$\CIRCLE$} &  &  & \centering{$\Circle$} &  \tabularnewline
-            \hline
-            Mohammed \emph{et al.} (TIPS) &  & \centering{$\CIRCLE$} &  & \centering{$\CIRCLE$} &  &  &  &  & \centering{$\CIRCLE$} &  &  & \centering{$\CIRCLE$} &  \tabularnewline
-            \hline
-            Bhaskar \emph{et al.}, Li \emph{et al.} & \centering{$\CIRCLE$} &  &  &  & \centering{$\CIRCLE$} &  & \centering{$\CIRCLE$} &  &  &  &  &  &  \tabularnewline
-            \hline
-            Wong \emph{et al.}  & \centering{$\CIRCLE$} &  &  &  &  &  & \centering{$\CIRCLE$} &  &  &  &  & \centering{$\Circle$} &  \tabularnewline
-            \hline
-            Giannotti \emph{et al.} & \centering{$\CIRCLE$} &  &  &  &  & \centering{$\CIRCLE$} & \centering{$\CIRCLE$} &  &  &  &  & \centering{$\Circle$} &  \tabularnewline
-            \hline
-            Kantarcioglu and Clifton & \centering{$\CIRCLE$} &  &  &  &  &  &  &  &  & \centering{$\CIRCLE$} &  & \centering{$\Circle$} &  \tabularnewline
-            \hline
-            Zhang \emph{et al.} & \centering{$\CIRCLE$} &  &  &  &  &  &  & \centering{$\CIRCLE$} &  &  &  & \centering{$\Circle$} &  \tabularnewline
-            \hline
-            Wahab \emph{et al.} & \centering{$\CIRCLE$} &  &  &  & \centering{$\CIRCLE$} &  &  & \centering{$\CIRCLE$} &  & \centering{$\CIRCLE$} &  & \centering{$\Circle$} &  \tabularnewline
-            \hline
-            Dwork \emph{et al.} &  & \centering{$\CIRCLE$} &  &  & \centering{$\CIRCLE$} &  &  &  &  & \centering{$\CIRCLE$} &  & \centering{$\CIRCLE$} &  \tabularnewline
-            \hline
-            Narayan and Haeberlen &  & \centering{$\CIRCLE$} &  &  & \centering{$\CIRCLE$} &  &  & \centering{$\CIRCLE$} & & \centering{$\CIRCLE$} &  & \centering{$\Circle$} &  \tabularnewline
-            \hline\hline
-            Our proposed solution &  \centering{$\CIRCLE$} &  &  \centering{$\CIRCLE$} &  &  &  &  & \centering{$\CIRCLE$} & \centering{$\CIRCLE$} & \centering{$\CIRCLE$} & \centering{$\CIRCLE$} & \centering{$\CIRCLE$} & \centering{$\CIRCLE$} \tabularnewline
-            \hline
-        \end{tabular}
-    }
-    \vspace{0.01cm}
-    \newline
-    $\dagger$
-    \fontsize{7pt}{12pt}\selectfont
-    \raggedright In this column, $\Circle$ denotes semi-honest threat model whereas $\CIRCLE$ denotes malicious threat model.
-\end{table*}
-
-
-
-\end{document}
-
-
+\begin{center}
+ \scalebox{.85}{
+ \begin{tabular}{||c || c c c c c c||}
+ \hline
+ Amino & & & Codons & & &\\ [0.5ex]
+ Acids & & & & & &\\ [0.5ex]
+ \hline\hline
+ Ala & GCT & GCC & GCA & GCG & &\\
+ \hline
+ Arg & CGT & CGC & CGA & CGG & AGA & AGG \\
+ \hline
+ Asn & AAT & AAC & & & &\\
+ \hline
+ Asp & GAT & GAC & & & &\\
+ \hline
+ Cys & TGT & TGC & & & &\\
+ \hline
+ Gln & CAA & CAG & & & &\\
+ \hline
+ Glu & GAA & GAG & & & &\\
+ \hline
+ Gly & GGT & GGC & GGA & GGG & &\\
+ \hline
+ His & CAT & CAC & & & &\\
+ \hline
+ Ile & ATT & ATC & ATA & & &\\
+ \hline
+ Leu & TTA & TTG & CTT & CTC & CTA & CTG \\
+ \hline
+ Lys & AAA & AAG & & & &\\
+ \hline
+ Met & ATG & & & & &\\
+ \hline
+ Phe & TTT & TTC & & & &\\
+ \hline
+ Pro & CCT & CCC & CCA & CCG & &\\
+ \hline
+ Ser & TCT & TCC & TCA & TCG & AGT & AGC \\
+ \hline
+ Thr & ACT & ACC & ACA & ACG & &\\
+ \hline
+ Trp & TGG & & & & &\\
+ \hline
+ Tyr & TAT & TAC & & & &\\
+ \hline
+ Val & GTT & GTC & GTA & GTG & &\\
+ \hline
+ START & ATG & & & & &\\
+ \hline
+ STOP & TAA & TGA & TAG & & &\\[1ex]
+ \hline
+\end{tabular}}
+\end{center}
 
 \end{document}

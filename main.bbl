@@ -1,0 +1,215 @@
+\begin{thebibliography}{}
+
+\bibitem[Ailenberg and Rotstein(2009)Ailenberg and Rotstein]{AR2009BT}
+Ailenberg, M. and Rotstein, O. (2009).
+\newblock An improved huffman coding method for archiving text, images, and
+  music characters in dna.
+\newblock {\em BioTechniques\/}, {\bf 47}, 747--754.
+
+\bibitem[Arita and Yoshiaki(2004)Arita and Yoshiaki]{AY2004BP}
+Arita, M. and Yoshiaki, O. (2004).
+\newblock Secret signatures inside genomic dna.
+\newblock {\em Biotechnology Progress\/}, {\bf 20}, 1605--1607.
+
+\bibitem[Artz(2001)Artz]{A2001IEEEIC}
+Artz, D. (2001).
+\newblock Digital steganography: hiding data within data.
+\newblock {\em IEEE Internet Computing\/}, {\bf 5(3)}, 75--80.
+
+\bibitem[Blattner(1997)Blattner]{B1997S}
+Blattner, F. e.~a. (1997).
+\newblock The complete genome sequence of escherichia coli k-12.
+\newblock {\em Science\/}, {\bf 277:5331}, 1453--1462.
+
+\bibitem[Blawat {\em et~al.}(2016)Blawat, Gaedke, Huetter, Chen, Turczyk,
+  Inverso, Pruitt, and Church]{BLAWAT2016}
+Blawat, M., Gaedke, K., Huetter, I., Chen, X.-M., Turczyk, B., Inverso, S.,
+  Pruitt, B., and Church, G. (2016).
+\newblock Forward error correction for dna data storage.
+\newblock {\em Procedia Computer Science\/}, {\bf 80}, 1011--1022.
+
+\bibitem[Bornholt {\em et~al.}(2016)Bornholt, Lopez, Carmean, Ceze, Seelig, and
+  Strauss]{BORNHOLT2016}
+Bornholt, J., Lopez, R., Carmean, D.~M., Ceze, L., Seelig, G., and Strauss, K.
+  (2016).
+\newblock A dna-based archival storage system.
+\newblock In {\em Proceedings of the Twenty-First International Conference on
+  Architectural Support for Programming Languages and Operating Systems\/},
+  pages 637--649. ACM.
+
+\bibitem[Brenner(2000)Brenner]{BVSPNAS2000}
+Brenner, S., W. S. R.-V. E. H. S. e.~a. (2000).
+\newblock In vitro cloning of complex mixtures of dna on microbeads: physical
+  separation of differentially expressed cdnas.
+\newblock {\em Proceedings of the National Academy of Sciences\/}, {\bf 97(4)},
+  1665--1670.
+
+\bibitem[Brunet(2016)Brunet]{B2016JOB}
+Brunet, T. (2016).
+\newblock Aims and methods of biosteganography.
+\newblock {\em Journal of Biotechnology\/}, {\bf 226}, 56--64.
+
+\bibitem[Chun {\em et~al.}(2013)Chun, Lee, and Yoon]{CLY2015SAPW}
+Chun, J., Lee, H., and Yoon, J. (2013).
+\newblock Passing go with {DNA} sequencing: Delivering messages in a covert
+  transgenic channel.
+\newblock {\em IEEE CS Security and Privacy Workshop\/}, {\bf 14:121}.
+
+\bibitem[Church {\em et~al.}(2012)Church, Gao, and Kosuri]{CHURCH2012}
+Church, G.~M., Gao, Y., and Kosuri, S. (2012).
+\newblock Next-generation digital information storage in dna.
+\newblock {\em Science\/}, {\bf 337}(6102), 1628--1628.
+
+\bibitem[Clelland {\em et~al.}(1999)Clelland, Risca, and Bancroft]{CRB1999N}
+Clelland, C., Risca, V., and Bancroft, C. (1999).
+\newblock Hiding messages in {DNA} microdots.
+\newblock {\em Nature\/}, {\bf 399}, 533--534.
+
+\bibitem[Consortium {\em et~al.}(2012)Consortium {\em et~al.}]{EPC2012N}
+Consortium, E.~P. {\em et~al.} (2012).
+\newblock An integrated encyclopedia of dna elements in the human genome.
+\newblock {\em Nature\/}, {\bf 489(7414)}, 57--74.
+
+\bibitem[Garesse and Vallejo(2001)Garesse and Vallejo]{GV2001G}
+Garesse, R. and Vallejo, C. (2001).
+\newblock Animal mitochondrial biogenesis and function: a regulatory cross-talk
+  between two genomes.
+\newblock {\em Gene\/}, {\bf 263}, 1--16.
+
+\bibitem[Goldman {\em et~al.}(2013)Goldman, Bertone, Chen, Dessimoz, LeProust,
+  Sipos, and Birney]{GOLDMAN2013}
+Goldman, N., Bertone, P., Chen, S., Dessimoz, C., LeProust, E.~M., Sipos, B.,
+  and Birney, E. (2013).
+\newblock Towards practical, high-capacity, low-maintenance information storage
+  in synthesized dna.
+\newblock {\em Nature\/}, {\bf 494}(7435), 77--80.
+
+\bibitem[Grass {\em et~al.}(2015)Grass, Heckel, Puddu, Paunescu, and
+  Stark]{GRASS2015}
+Grass, R.~N., Heckel, R., Puddu, M., Paunescu, D., and Stark, W.~J. (2015).
+\newblock Robust chemical preservation of digital information on dna in silica
+  with error-correcting codes.
+\newblock {\em Angewandte Chemie International Edition\/}, {\bf 54}(8),
+  2552--2555.
+
+\bibitem[Haughton and Balado(2011)Haughton and Balado]{HB2011IEEEICOBAB}
+Haughton, D. and Balado, F. (2011).
+\newblock Repetition coding as an effective error correction code for
+  information encoded in dna.
+\newblock {\em Internation Conference on Bioinformatics and Bioengineering\/}.
+
+\bibitem[Haughton and Balado(2013)Haughton and Balado]{HBBMC2013}
+Haughton, D. and Balado, F. (2013).
+\newblock Biocode: Two biologically compatible algorithms for embedding data in
+  non-coding and coding regions of dna.
+\newblock {\em BMC bioinformatics\/}, {\bf 14(1)}, 1.
+
+\bibitem[Heider and Barnekow(2007)Heider and Barnekow]{HBBMC2007}
+Heider, D. and Barnekow, A. (2007).
+\newblock Dna-based watermarks using the dna-crypt algorithm.
+\newblock {\em BMC bioinformatics\/}, {\bf 8(1)}.
+
+\bibitem[Heider {\em et~al.}(2008)Heider, Kessler, and Barnekow]{HKB2008B}
+Heider, D., Kessler, D., and Barnekow, A. (2008).
+\newblock Watermarking sexually reproducing diploid organisms.
+\newblock {\em Bioinformatics\/}, {\bf 24:17}, 1961--1962.
+
+\bibitem[Heider {\em et~al.}(2009)Heider, Pyka, and Barnekow]{HPB2009BMCRN}
+Heider, D., Pyka, M., and Barnekow, A. (2009).
+\newblock Dna watermarks in non-coding regulatory sequences.
+\newblock {\em BMC Research Notes\/}, {\bf 2:123}.
+
+\bibitem[Huffman(1952)Huffman]{H1952POTIRE}
+Huffman, D. (1952).
+\newblock A method for the construction of minimum-redundancy codes.
+\newblock {\em Proceedings of the IRE\/}, {\bf 40(9)}, 1098--1101.
+
+\bibitem[Kracht and Schober(2015)Kracht and Schober]{KS2015BMCB}
+Kracht, D. and Schober, S. (2015).
+\newblock Insertion and deletion correcting dna barcodes based watermarks.
+\newblock {\em BMC Bioinformatics\/}, {\bf 16:50}.
+
+\bibitem[Lee(2014)Lee]{L2014IS}
+Lee, S. (2014).
+\newblock Dwt based coding dna watermarking for dna copyright protection.
+\newblock {\em Information Sciences\/}, {\bf 273}, 263--286.
+
+\bibitem[Liss {\em et~al.}(2012)Liss, Daubert, Kliche, Hammes, Leiherer, and
+  Wagner]{LDBKHLW2012PO}
+Liss, M., Daubert, D., Kliche, K., Hammes, U., Leiherer, A., and Wagner, R.
+  (2012).
+\newblock Embedding permanent watermarks in synthetic genes.
+\newblock {\em PLOS One\/}, {\bf 7:8}.
+
+\bibitem[Mousa(2011)Mousa]{MMAIAJI2011}
+Mousa, H., M. K. A.-W. W. . H. M.~M. (2011).
+\newblock Data hiding based on contrast mapping using dna medium.
+\newblock {\em International Arab Journal of Information Technolology\/}, {\bf
+  8(2)}, 147--154.
+
+\bibitem[Palkopoulou {\em et~al.}(2015)Palkopoulou, Mallick, Skoglund, Enk,
+  Rohland, Li, Omrak, Vartanyan, Poinar, G{\"o}therstr{\"o}m, {\em
+  et~al.}]{PALKOPOULOU2015}
+Palkopoulou, E., Mallick, S., Skoglund, P., Enk, J., Rohland, N., Li, H.,
+  Omrak, A., Vartanyan, S., Poinar, H., G{\"o}therstr{\"o}m, A., {\em et~al.}
+  (2015).
+\newblock Complete genomes reveal signatures of demographic and genetic
+  declines in the woolly mammoth.
+\newblock {\em Current Biology\/}, {\bf 25}(10), 1395--1400.
+
+\bibitem[Reed and Solomon(1960)Reed and Solomon]{REED1960}
+Reed, I.~S. and Solomon, G. (1960).
+\newblock Polynomial codes over certain finite fields.
+\newblock {\em Journal of the society for industrial and applied
+  mathematics\/}, {\bf 8}(2), 300--304.
+
+\bibitem[Smith {\em et~al.}(????)Smith, Fiddles, Hawkins, and Cox]{SFHC2003BL}
+Smith, G., Fiddles, C., Hawkins, J., and Cox, J. (????).
+\newblock Some possible codes for encrypting data in {DNA}, volume = {25},
+  pages = {1125-1130}, year = {2003}.
+\newblock {\em Biotechnology Letters\/}.
+
+\bibitem[Tanaka(2008)Tanaka]{T2008TOIAS}
+Tanaka, H. (2008).
+\newblock Evaluation of information leakage via electromagnetic emanation and
+  effectiveness of tempest.
+\newblock {\em IEICE Transactions on Information and Systems\/}, {\bf 91(5)},
+  1439--1446.
+
+\bibitem[Viguera {\em et~al.}(2001)Viguera, Conceill, and Ehrlich]{VCE2001TEJ}
+Viguera, E., Conceill, D., and Ehrlich, S. (2001).
+\newblock Replication slippage involves dna polymerase pausing and
+  dissociation.
+\newblock {\em The Embo Journal\/}, {\bf 20(10)}, 2587--2595.
+
+\bibitem[Watson and Crick(1953)Watson and Crick]{WC1953N}
+Watson, J. and Crick, F. (1953).
+\newblock Molecular structure of nucleic acids: a structure for deoxyribose
+  nucleic acid.
+\newblock {\em Nature\/}, {\bf 171 (4356)}, 737--738.
+
+\bibitem[Watson {\em et~al.}(2008)Watson, Baker, Bell, Gann, Levine, and
+  Losich]{WBBGLL2008}
+Watson, J., Baker, T., Bell, S., Gann, A., Levine, M., and Losich, R. (2008).
+\newblock {\em Molecular Biology of the Gene, 6th Edition\/}.
+\newblock Pearson.
+
+\bibitem[Wong {\em et~al.}(2003)Wong, Wong, and Foote]{WWF2003COTACM}
+Wong, P., Wong, K., and Foote, H. (2003).
+\newblock Organic data memory using the dna approach.
+\newblock {\em Communications of the ACM\/}, {\bf 46:1}, 95--98.
+
+\bibitem[Yachie {\em et~al.}(2007)Yachie, Sekiyama, Sugahard, Ohashi, and
+  Tomita]{YSSOT2007BP}
+Yachie, N., Sekiyama, K., Sugahard, J., Ohashi, Y., and Tomita, M. (2007).
+\newblock Alignment-based approach for durable data storage into living
+  organisms.
+\newblock {\em Biotechnology Progress\/}, {\bf 23}, 501--505.
+
+\bibitem[Yazdi {\em et~al.}(2015)Yazdi, Yuan, Ma, Zhao, and
+  Milenkovic]{YAZDI2015}
+Yazdi, S. H.~T., Yuan, Y., Ma, J., Zhao, H., and Milenkovic, O. (2015).
+\newblock A rewritable, random-access dna-based storage system.
+\newblock {\em Scientific reports\/}, {\bf 5}.
+
+\end{thebibliography}
