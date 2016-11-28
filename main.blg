@@ -1,32 +1,32 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: main.aux
 The style file: natbib.bst
-Illegal, another \bibstyle command---line 63 of file main.aux
+Illegal, another \bibstyle command---line 70 of file main.aux
  : \bibstyle
  :          {achemnat}
 I'm skipping whatever remains of this command
-Illegal, another \bibstyle command---line 64 of file main.aux
+Illegal, another \bibstyle command---line 71 of file main.aux
  : \bibstyle
  :          {plainnat}
 I'm skipping whatever remains of this command
-Illegal, another \bibstyle command---line 65 of file main.aux
+Illegal, another \bibstyle command---line 72 of file main.aux
  : \bibstyle
  :          {abbrv}
 I'm skipping whatever remains of this command
-Illegal, another \bibstyle command---line 66 of file main.aux
+Illegal, another \bibstyle command---line 73 of file main.aux
  : \bibstyle
  :          {bioinformatics}
 I'm skipping whatever remains of this command
-Illegal, another \bibstyle command---line 67 of file main.aux
+Illegal, another \bibstyle command---line 74 of file main.aux
  : \bibstyle
  :          {plain}
 I'm skipping whatever remains of this command
-Database file #1: Document.bib
-I was expecting a `,' or a `}'---line 29 of file Document.bib
+Database file #1: document.bib
+I was expecting a `,' or a `}'---line 29 of file document.bib
  : 
  : @article{WC1953N,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Repeated entry---line 193 of file Document.bib
+Repeated entry---line 202 of file document.bib
  : @inproceedings{CLY2015SAPW
  :                           ,
 I'm skipping whatever remains of this entry
