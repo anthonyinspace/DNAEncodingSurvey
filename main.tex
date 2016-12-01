@@ -117,6 +117,16 @@ There are only 20 amino acids, despite the fact that $4^3$ = 64 possible codon v
 \end{tabular}}
 \end{table}
 
+\section{Compression and Error Correction}
+
+Smith et al.~\cite{SFHC2003BL} were the first to suggest a data compression technique in DNA encoding, specifically the Huffman Code. The Huffman Code is a form of lossless data compression that forms a symbol table using fewer bits to encode more common characters~\cite{H1952POTIRE}. Smith et al created a Huffman Code table mapping letters of the alphabet to nucleotide strings, where the most common English letter 'e' was mapped to the nucleotide string "T", and the least common english letter 'z' was mapped to a longer nucleotide string "CCCTG". This achieved an average encoding length of 2.2 bases per letter. The mapping is unambiguous, making only one possible interpretation of each message.
+
+Comma encoding~\cite{BVSPNAS2000} specifies that encoded words be separated by a single nucleotide (i.e., G). The remaining four (or five in Smith et al.), are composed of the other three nucleotides. Additional constraints are that only three A-T pairs are allowed, and two G-C always on the top strand, so that the DNA molecules will have isothermal melting temperatures. This technique provides particularly good detection of insertions and deletions, unfortunately it is also space inefficient.
+
+The alternating code, also from Smith et al.~\cite{SFHC2003BL} consists of 64, 6 base pair codons, with nucleotides alternating between an A or G (purines) at odd positions, and C or T (pyrimidines) at evens (e.g., RYRYRY…, YRYRYR). Like the comma encoding, the alternating code results in isothermically stable molecules with a 1:1 ratio of A-T to G-C pairs. While more space efficient, this technique is not as proficient at error detection, as only 67\% of codons result in nonsense codons after mutation, compared to 83\% for the comma code.
+
+Contrast mapping is an encoding scheme developed by Mousa et al.~\cite{MMAIAJI2011}. The binary message is divided into 6-bit groups, each converted to decimal (base 10). Pairs of consecutive values ($x, y$) are converted into ($x', y'$) with the the following linear transformations: $x' = 2x - y$,  $y' = 2y - x$. Values are limited to the subdomain:  0 $\leq$ 2$x - y$ $\leq$ $L$, 0 $\leq$ 2$y$ - $x$ $\leq$ $L$. Values are decoded with the following equations: $x = [3x' + 3y'], y = [3 x' + 3y']$. This technique is sufficiently flexible to be applied to DNA or image steganography.
+
 \subsection{Artificial Encoding}
 
 Artificial DNA encoding, or DNA data storage, is the process of storing digital information such as text, audio, or images within \textit{in vitro} DNA base pair sequences. DNA is an appealing storage medium due to its high density. For example, the human genome contains 3.3e9 base pairs, or about 725 MB of binary data, with a mass of 3.59e-12 grams. DNA is also incredibly resilient, as the sequencing of 45,000 year old woolly mammoth genomes indicate~\cite{PALKOPOULOU2015}. As with any memory device, the critical operations are read and write. Continued advances in DNA sequencing (reading) and oligonucleotide synthesis (writing) increase the viability of nucleic acid for long term archival storage.
@@ -129,11 +139,11 @@ Goldman et al.~\cite{GOLDMAN2013} were able to encode 739 KB of text, images, an
 
 Grass et al.~\cite{GRASS2015} developed error correction codes for DNA stored in silica gel and exposed to high temperature ($70^o$ C). Every two bytes of input data are mapped to three values from the Galois Field of size 47 (GF(47)). The mappings are arranged in blocks of 594\texttt{x}30. Each block also has 594\texttt{x}3 bits of index data. In the second step, Reed-Solomon (RS) codes~\cite{REED1960} are applied to add 119 bits of redundancy A. In another round of RS, a redundancy B of 6 bits in length. This results in a final block size of 713\texttt{x}39. Each column is mapped to an oligonucleotide by mapping each value from GF(47) to a DNA codon (triplet).
 
-Yazdi et al.~\cite{YAZDI2015} also developed some sort of DNA error correction code, but I have not yet read trough the paper.
+Yazdi et al.~\cite{YAZDI2015} also developed a random access and rewritable DNA storage system, achieved with an addressing scheme. A 1000 bp sequence represents a 960 bp block of data flanked on either side by address regions of 20 bps. The data regions are divided into 12 blocks of 80 bps each, or 6 words of input text per block. Primer sequences correspond to the address sequences, allowing for selective PCR amplification of a desired block. The binary sequences are converted into nucleotides via DNA prefix-synchronized codes. The error correction code is based on binary running digital sums (BRDS). The encoding scheme satisfies four constraints, 1) GC content of approximately 50\%, 2) large Hamming distance between any two strings of equal length, 3) uncorrelated addresses to prevent primer binding to the wrong address, and 4) absence of secondary folding structures.
 
-Blawat et al.~\cite{BLAWAT2016} improved upon this work by developing forward error correction codes.
+Blawat et al.~\cite{BLAWAT2016} improved upon the encoding scheme of ~\cite{CHURCH2012} by developing forward error correction codes. The homopolymer restriction is relaxed somewhat by requiring that the first three nucleotides must differ, as must the last two. A block of data is contained within an oligo sequence of up to 250 bp. An error detection code (EDC) is added to each. Addresses are protected with a BCH code ~\cite{BOSE1960} and a minimum Hamming distance of 9. Consecutive oligo sequences are protected with RS code~\cite{REED1960} over GF($2^8$) with block size of 223. The EDC parity bits employe a CCITT 16 bit cyclic redundancy check (CRC) ~\cite{LIN2004}.
 
-Bornholt et al.~\cite{BORNHOLT2016} have developed a DNA-based archival storage system.
+Bornholt et al.~\cite{BORNHOLT2016} have developed a DNA-based archival storage system that also allows for random access reading. They adopt the binary to ternary Huffman encoding technique of ~\cite{GOLDMAN2013} for storing data. Similarly to ~\cite{YAZDI2015}, each sequence has a primer target sequence on either end of the oligonucleotide. Data are stored in the payload, which is followed by the address. Following the first primer sequence and before the last is an orientation nucleotide to determine if the oligo is being read in the 5' to 3' or 3' to 5' direction. Also like ~\cite{YAZDI2015}, random access is provided by selective PCR amplification via specific primers. The overall system acts as a key-value store with primers acting as keys. Error correction is provided via redundancy, that is more important regions are sequenced in greater quantities. As in ~\cite{GOLDMAN2013}, simple error correction is achieved by performing an XOR on strands of equal length to ensure proper alignment.
 
 \subsection{Cellular Encoding Restrictions}
 
@@ -147,7 +157,6 @@ The protein coding region of DNA contains the codons that are translated to amin
 
 \textit{Codon Bias Preservation} Individual cells have specific ratios of cytoplasmic tRNA associated with their genomic codons, which can be disrupted if the codon balance is changed, and have a negative effect on the cell. Therefore, it is important that codon bias is preserved.
 
-
 \subsubsection{ncDNA Constraints}
 
 The noncoding region of DNA is often called "junk DNA" for its apparent lack of use in the cell. Because they appear to be non-functional, data can be embedded into these regions if the following constraints are met.
@@ -157,16 +166,6 @@ The noncoding region of DNA is often called "junk DNA" for its apparent lack of 
 \textit{No start codons.} When a cell's genetic machinery locates a start codon, it can begin the transcription process. To prevent unwanted transcription from happening in ncDNA with embedded data, it is important to make sure the encoded nucleotides to not create a start codon. When a DNA string is being transcribed, three-nucleotide codons can be read in six different reading frames. Therefore, there should not be a start codon in any of the six frames. The most common start codon is AUG, though some alternative start codons can also exist, particularly in bacteria~\cite{B1997S}. If a cell contains alternative start codons, the encoding scheme should avoid all of them.
 
 \textit{No homopolymers.} A DNA homopolymer is a region where the same nucleotide is repeated multiple times. Too many repeats can cause errors during DNA replication through polymerase slippage~\cite{VCE2001TEJ}. These replication errors could quickly distort the inserted message and possibly damage the cell after a few generations. For this reason any ncDNA encoding scheme should not include homopolymers greater than length 3.
-
-\section{Compression and Error Correction}
-
-Smith et al.~\cite{SFHC2003BL} were the first to suggest a data compression technique in DNA encoding, specifically the Huffman Code. The Huffman Code is a form of lossless data compression that forms a symbol table using fewer bits to encode more common characters~\cite{H1952POTIRE}. Smith et al created a Huffman Code table mapping letters of the alphabet to nucleotide strings, where the most common English letter 'e' was mapped to the nucleotide string "T", and the least common english letter 'z' was mapped to a longer nucleotide string "CCCTG". This achieved an average encoding length of 2.2 bases per letter. The mapping is unambiguous, making only one possible interpretation of each message.
-
-Comma encoding~\cite{BVSPNAS2000} specifies that encoded words be separated by a single nucleotide (i.e., G). The remaining four (or five in Smith et al.), are composed of the other three nucleotides. Additional constraints are that only three A-T pairs are allowed, and two G-C always on the top strand, so that the DNA molecules will have isothermal melting temperatures. This technique provides particularly good detection of insertions and deletions, unfortunately it is also space inefficient.
-
-The alternating code, also from Smith et al.~\cite{SFHC2003BL} consists of 64, 6 base pair codons, with nucleotides alternating between an A or G (purines) at odd positions, and C or T (pyrimidines) at evens (e.g., RYRYRY…, YRYRYR). Like the comma encoding, the alternating code results in isothermically stable molecules with a 1:1 ratio of A-T to G-C pairs. While more space efficient, this technique is not as proficient at error detection, as only 67\% of codons result in nonsense codons after mutation, compared to 83\% for the comma code.
-
-Contrast mapping is an encoding scheme developed by Mousa et al.~\cite{MMAIAJI2011}. The binary message is divided into 6-bit groups, each converted to decimal (base 10). Pairs of consecutive values ($x, y$) are converted into ($x', y'$) with the the following linear transformations: $x' = 2x - y$,  $y' = 2y - x$. Values are limited to the subdomain:  0 $\leq$ 2$x - y$ $\leq$ $L$, 0 $\leq$ 2$y$ - $x$ $\leq$ $L$. Values are decoded with the following equations: $x = [3x' + 3y'], y = [3 x' + 3y']$. This technique is sufficiently flexible to be applied to DNA or image steganography.
 
 \section{Encoding Schemes}
 

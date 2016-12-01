@@ -1,22 +1,24 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: main.aux
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: main.aux
 The style file: natbib.bst
-Illegal, another \bibstyle command---line 70 of file main.aux
+Illegal, another \bibstyle command---line 74 of file main.aux
  : \bibstyle
  :          {achemnat}
 I'm skipping whatever remains of this command
-Illegal, another \bibstyle command---line 71 of file main.aux
+Illegal, another \bibstyle command---line 75 of file main.aux
  : \bibstyle
  :          {plainnat}
 I'm skipping whatever remains of this command
-Illegal, another \bibstyle command---line 72 of file main.aux
+Illegal, another \bibstyle command---line 76 of file main.aux
  : \bibstyle
  :          {abbrv}
 I'm skipping whatever remains of this command
-Illegal, another \bibstyle command---line 73 of file main.aux
+Illegal, another \bibstyle command---line 77 of file main.aux
  : \bibstyle
  :          {bioinformatics}
 I'm skipping whatever remains of this command
-Illegal, another \bibstyle command---line 74 of file main.aux
+Illegal, another \bibstyle command---line 78 of file main.aux
  : \bibstyle
  :          {plain}
 I'm skipping whatever remains of this command
@@ -135,4 +137,45 @@ while executing---line 1279 of file natbib.bst
 Too many commas in name 1 of "Mousa, H., Moustafa, K., Abdel-Wahed, W., & Hadhoud, M. M." for entry MMAIAJI2011
 while executing---line 1279 of file natbib.bst
 Warning--empty year in SFHC2003BL; set to ????
+You've used 38 entries,
+            2378 wiz_defined-function locations,
+            795 strings with 10501 characters,
+and the built_in function-call counts, 18429 in all, are:
+= -- 1765
+> -- 1048
+< -- 21
++ -- 317
+- -- 305
+* -- 1688
+:= -- 3228
+add.period$ -- 176
+call.type$ -- 38
+change.case$ -- 236
+chr.to.int$ -- 38
+cite$ -- 39
+duplicate$ -- 732
+empty$ -- 1173
+format.name$ -- 364
+if$ -- 3642
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 40
+newline$ -- 193
+num.names$ -- 152
+pop$ -- 222
+preamble$ -- 1
+purify$ -- 237
+quote$ -- 0
+skip$ -- 492
+stack$ -- 0
+substring$ -- 1158
+swap$ -- 141
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 336
+warning$ -- 1
+while$ -- 151
+width$ -- 0
+write$ -- 493
 (There were 59 error messages)

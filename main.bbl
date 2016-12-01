@@ -134,6 +134,11 @@ Lee, S. (2014).
 \newblock Dwt based coding dna watermarking for dna copyright protection.
 \newblock {\em Information Sciences\/}, {\bf 273}, 263--286.
 
+\bibitem[Lin and Costello(2004)Lin and Costello]{LIN2004}
+Lin, S. and Costello, D.~J. (2004).
+\newblock {\em Error control coding\/}.
+\newblock Pearson Education India.
+
 \bibitem[Liss {\em et~al.}(2012)Liss, Daubert, Kliche, Hammes, Leiherer, and
   Wagner]{LDBKHLW2012PO}
 Liss, M., Daubert, D., Kliche, K., Hammes, U., Leiherer, A., and Wagner, R.
@@ -161,6 +166,11 @@ Palkopoulou, E., Mallick, S., Skoglund, P., Enk, J., Rohland, N., Li, H.,
 Ratel, D., Ravanat, J., Berger, F., and Wion, D. (2006).
 \newblock N6-methyladenine: the other methylated base of dna.
 \newblock {\em Bioessays\/}, {\bf 28(3)}, 309--315.
+
+\bibitem[R.C.~Bose(1960)R.C.~Bose]{BOSE1960}
+R.C.~Bose, D. R.-C. (1960).
+\newblock On a class of error correcting binary group codes.
+\newblock {\em Information and Control\/}, {\bf 3}(1), 68--79.
 
 \bibitem[Reed and Solomon(1960)Reed and Solomon]{REED1960}
 Reed, I.~S. and Solomon, G. (1960).
