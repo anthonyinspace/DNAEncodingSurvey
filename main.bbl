@@ -70,6 +70,11 @@ Consortium, E.~P. {\em et~al.} (2012).
 \newblock An integrated encyclopedia of dna elements in the human genome.
 \newblock {\em Nature\/}, {\bf 489(7414)}, 57--74.
 
+\bibitem[DeSilva and Ganegoda(2016)DeSilva and Ganegoda]{SG2016BRI}
+DeSilva, P. and Ganegoda, G. (2016).
+\newblock New trends of digital data storage in dna.
+\newblock {\em Biomed Research International\/}.
+
 \bibitem[Garesse and Vallejo(2001)Garesse and Vallejo]{GV2001G}
 Garesse, R. and Vallejo, C. (2001).
 \newblock Animal mitochondrial biogenesis and function: a regulatory cross-talk
@@ -123,6 +128,12 @@ Heider, D., Pyka, M., and Barnekow, A. (2009).
 Huffman, D. (1952).
 \newblock A method for the construction of minimum-redundancy codes.
 \newblock {\em Proceedings of the IRE\/}, {\bf 40(9)}, 1098--1101.
+
+\bibitem[Khalifa and Hamad(2015)Khalifa and Hamad]{KH2015BJOMACS}
+Khalifa, A. and Hamad, S. (2015).
+\newblock Hiding secret information in dna sequences using silent mutations.
+\newblock {\em British Journal of Mathematics and Computer Science\/}, {\bf
+  11(5)}, 1--11.
 
 \bibitem[Kracht and Schober(2015)Kracht and Schober]{KS2015BMCB}
 Kracht, D. and Schober, S. (2015).

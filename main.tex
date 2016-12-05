@@ -190,12 +190,13 @@ The following encoding schemes use some or all of these elements in their design
 	\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}\hline \hline
 		& Method  &\multicolumn{4}{|c|}{\textbf{Bio-Restrictions Satisfied}}  &\multicolumn{5}{|c|}{\textbf{Scheme Components}}\\ \hline
 		  & &No Homopolymers  &No Start Codons  &Preserves Codon Bias  &Balances C-G  &Error Detection  &Error Correction  &Compression  &Encryption  &Blind Decoding\\ \hline
-	\multirow{1}{*}{\vspace{0cm}\textbf{pcDNA}} & Secret Signature~\cite{AY2004BP}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &  &  &\centering{$\CIRCLE$}  &  &  &  &\\ \hline
+	\multirow{6}{*}{pcDNA} & Secret Signature~\cite{AY2004BP}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &  &  &\centering{$\CIRCLE$}  &  &  &  &\\ \hline
 		&DNA-Crypt~\cite{HBBMC2007}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$} &  &  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &  &\centering{$\CIRCLE$}  &\\ \hline
         &Codon Usage Table~\cite{LDBKHLW2012PO}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$} &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &  &  &  &  &$\CIRCLE$\\ \hline
 		&BioCode~\cite{HBBMC2013}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$} &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &  &  &\\ \hline
 		&DWT Based~\cite{L2014IS}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &  &  &\\ \hline
-        \multirow{1}{*}{\vspace{0cm}\textbf{ncDNA and Plasmids}} &Organic Memory~\cite{WWF2003COTACM}  &  &  &\centering{$\CIRCLE$}  &  &  &  &  &  &$\CIRCLE$\\ \hline
+        &LSBase~\cite{KH2015BJOMACS}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$} &  &  &  &  &  &  &$\CIRCLE$\\ \hline
+        \multirow{7}{*}{ncDNA and Plasmids} &Organic Memory~\cite{WWF2003COTACM}  &  &  &\centering{$\CIRCLE$}  &  &  &  &  &  &$\CIRCLE$\\ \hline
 		&Alignment-Based~\cite{YSSOT2007BP}  &  &  &\centering{$\CIRCLE$}  &  &\centering{$\Circle$}  &\centering{$\Circle$}  &  &  &$\CIRCLE$\\ \hline
 		&Improved Huffman~\cite{AR2009BT}  &  &  &\centering{$\CIRCLE$}  &\centering{$\Circle$}  &  &  &\centering{$\CIRCLE$}  &  &$\CIRCLE$\\ \hline
 		&RAlign~\cite{HB2011IEEEICOBAB}  &  &  &\centering{$\CIRCLE$}  &  &\centering{$\Circle$}  &\centering{$\Circle$}  &  &  &$\CIRCLE$\\ \hline
@@ -214,6 +215,8 @@ Shimanovsky et al~\cite{SFHC2003BL} were the first to propose using codon degene
 Heider et al. developed the DNA-Crypt~\cite{HBBMC2007} algorithm for creating DNA watermarks for marking genetically modified organisms. It is similar to the work of Arita et al. in that the encoding targets the wobble base pair in the genetic code. An encryption function $E$ maps the plaintext (binary data) $X$ to the ciphertext (genetic data) $Y$, such that $X \in  \{$0, 1$\}$ and $Y \in \{$A, C, G, T$\}$. Two bits are encoded per base, or one byte for four bases. Error correction is achieved with a fuzzy controller that selects one of two algorithms, either the 8/4 Hamming code for mutations that differ in only bit (e.g., 00 to 01) or the WDH-code for those that differ by multiple bits. This encoding scheme allowed implementations of several cryptographic algorithms, including One-Time Pad, AES, Blowfish, and RSA. The accuracy was tested using the GTPase encoding Ypt gene in $S. cerevisiae$.
 
 Liss et al. were the first to design a pcDNA encoding scheme that allowed for blind decoding~\cite{LDBKHLW2012PO}. First a codon usage table was created, which ranked synonymous codons according to their natural occurrence. An odd-ranked codon (1st, 3rd, or 5th) represented binary 1, while an even-ranked codon (2nd, 4th, or 6th) represented binary 0. Encoding in this way also allowed for codon bias preservation through gene optimization. The receiver who obtains the DNA would only need to know which gene had the encoded message, and the codon usage table, which itself could be encoded into the same genome. Since the receiver does not need to know the wildtype sequence of the genome to decode, this type of scheme can be blindly decoded.
+
+Another blind technique for pcDNA, LSBase, was developed by Khalifa and Hamad ~\cite{KH2015BJOMACS}. Their scheme used a very simple mapping table that allowed for easy encoding and blind decoding. For every wobble codon in the encoding region, the use of a U or an A in the least significant base represented bit 0 while a C or a G represented bit 1. The researchers were able to test their scheme in silico, and found a high bits per nucleotide capacity (0.333) compared to other schemes. However, no effort was made to account for codon bias preservation.
 
 Haughton and Balado proposed BioCode~\cite{HBBMC2013}, a pair of encoding algorithms, one for ncDNA, and one for pcDNA. The ncDNA algorithm expands upon DNA-Crypt by observing the no start codons in restriction. This is accomplished by defining a set of dinucleotides $D$ = $\{$ AT, CT, TT, CA $\}$ that covers the possible eukaryotic start codons on either DNA strand. The trailing dinucleotide $d$ is continually checked for membership in $D$. If found, $d$ is replaced with a lookup table formed from a graduated mapping of the message space $M_d$ to set $S_d$. The pcDNA encoding technique is similar, but enforces the additional constraint of Binary Codon Equivalency (BCE). This requires that the cardinality of the codon set (|$S_d$|) be varied during the embedding process to allow the usage of a static lookup table.
 
@@ -235,9 +238,49 @@ Wanting to improve on the very low bits per base density of previous schemes, Ai
 
 ~\cite{CLY2015SAPW} were the first to design a cyber attack model they named "DNA courier attack" using encoded DNA. To ensure secrecy, the message was first encrypted into ciphertext using the encryption algorithm AES-128 with a secret key. Then a probability distribution of the DNA fragments in the non-coding regions was created. The mapping table was formed by sorting the codons and 5-bit sequences by frequency and matching the two directly. After insertion of the message, fake data was then embedded to rebalance the original codon distribution and further hide the message data. The encoded sequence is then inserted into an isolated plasmid, which is injected into a bacterial cell that can multiply and be hidden so the sender can carry it through a tight security checkpoint if necessary.
 
+%\begin{table*}[t]
+%	\caption{Details of Encoding Schemes}
+%	\label{fig:table2}
+%	\centering
+%	\scalebox{0.9}{
+%	\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}\hline \hline
+%		 &Scheme &Organism &Storage Site &Method &Data  &Density $^\dagger$ &Error Detection/Correction \\ \hline
+%	\multirow{1}{*}{\vspace{0cm}\textbf{pcDNA}} & Secret Signature  &Bacillus subtilis  &ftsZ gene &Mutan-Super Express &"KEIO"  &0.05 cpn &Parity bit \\ \hline
+%		&DNA-Crypt &S. cerevisiae  &Ypt7 gene &In silico  &"this is a test"  &variable &Hamming or WDH\\ \hline
+%        &Codon Usage Table  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$} &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &  &  &  &  &$\CIRCLE$\\ \hline
+%		&BioCode  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$} &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &  &  &\\ \hline
+%		&DWT Based  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &  &  &\\ \hline
+%        \multirow{1}{*}{\vspace{0cm}\textbf{ncDNA and Plasmids}} &Organic Memory  &  &  &\centering{$\CIRCLE$}  &  &  &  &  &  &$\CIRCLE$\\ \hline
+%		&Alignment-Based &  &  &\centering{$\CIRCLE$}  &  &\centering{$\Circle$}  &\centering{$\Circle$}  &  &  &$\CIRCLE$\\ \hline
+%		&Improved Huffman  &  &  &\centering{$\CIRCLE$}  &\centering{$\Circle$}  &  &  &\centering{$\CIRCLE$}  &  &$\CIRCLE$\\ \hline
+%		&RAlign  &  &  &\centering{$\CIRCLE$}  &  &\centering{$\Circle$}  &\centering{$\Circle$}  &  &  &$\CIRCLE$\\ \hline
+%		&HTAlign  &  &  &\centering{$\CIRCLE$}  &  &\centering{$\Circle$}  &\centering{$\Circle$}  &  &  &$\CIRCLE$\\ \hline
+%		&DNA Barcodes  &\centering{$\CIRCLE$}  &  &\centering{$\CIRCLE$}  &  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &  &  &$\CIRCLE$\\ \hline
+%		&DNA-Courier Attack  &  &  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &  &  &  &\centering{$\CIRCLE$}  &$\CIRCLE$\\ \hline
+%	\end{tabular}}
+%    \vspace{0.01cm}
+%    \newline
+%    $\dagger$
+%    \fontsize{7pt}{12pt}\selectfont
+%    \raggedright In this column, cpn denotes "characters per nucleotide" and bpn denotes "bits per nucleotide", representing the two kinds of mapping tables used.
+%\end{table*}
+
 \section{Gaps and Future Directions}
 
-There are several other regions of DNA that have seen little research in biosteganography, but have substantial potential for message encoding and watermarking.
+There are several other aspects of DNA that have seen little research for biosteganography, but have substantial importance for message encoding and watermarking. We illuminate how these areas deserve further research in this section.
+
+\subsection{Addressing}
+
+Artificial DNA researchers have already taken advantage of data addressing to effectively access random data sections in encoded synthetic DNA and also update those sections with new data~\cite{SG2016BRI}. This useful technique has yet to be implemented in cellular DNA, and should be a primary direction of future research. With addressing, a lengthy message could be split up and inserted into multiple parts of a genome, taking advantage of pcDNA, ncDNA, and plasmids simultaneously.
+
+\subsection{Memory Limits}
+
+Currently, the largest amount of data inserted in to cellular DNA has been 844 base pairs~\cite{AR2009BT}. Most organisms have genomes numbering in the billions of base pairs, which begs the question of how much encoded data can cells safely maintain? And how would those maximum lengths differ between organisms?
+
+The DNA substitutions in pcDNA schemes could hypothetically be done in every pcDNA region, but insertions into ncDNA have a limit. If a DNA strand is expanded too far beyond it's normal length, cellular disruption could occur. But so far that limit has not been tested in any genome.
+
+The problem of single lengthy insertions could be avoided by using addressing techniques mentioned previously. If the data of a long insertion were dispersed to multiple parts of the genome and accessed via addressing, much more data could be inserted into the genome. So the question of memory limits is twofold: 1.) How much can be inserted into single regions? and 2.) How much data can be safely inserted into a genome as a whole? Knowing the limitations for different organisms would be invaluable knowledge as the technology for cellular DNA modification continues to develop.
+
 
 \subsection{Compression}
 
@@ -255,7 +298,7 @@ Since the development of $Project Mito$, little research has been done on Mitoch
 
 \subsection{Methylation Encoding}
 
-Methylation is the process by which cells repress the expression of their own genes by attaching methyl groups to specific adenine and cytosine nucleotides~\cite{RRBW2006B}. Methylation is maintained after cell division by a family of enzymes known as DNA methyltransferase. Because the cell can preserve these methyl groups even after replicating, the authors of this survey would like to propose encoding via methylation as a completely new form of DNA encoding.
+Methylation is the process by which cells repress the expression of their own genes by attaching methyl groups to specific adenine and cytosine nucleotides of those genes~\cite{RRBW2006B}. Methylation is maintained after cell division by a family of enzymes known as DNA methyltransferase. Because the cell can preserve these methyl groups even after replicating, the authors of this survey would like to propose encoding via methylation as a completely new form of DNA encoding.
 
 If the sender and receiver can agree on a specific start location in junk DNA for the message, the data can be encoded in binary via methylation. For every cytosine (and adenine for bacteria and plants) found after the start location, the presence of a methyl group represents bit 1 while the absence of a methyl group indicates bit 0. If the receiver of the message had an easy way to read the methyl groups ahead of the site, it would be trivial for them to decode the embedded data.
 
