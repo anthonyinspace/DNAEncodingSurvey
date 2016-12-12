@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.10.27)  5 DEC 2016 14:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.10.27)  12 DEC 2016 14:53
 entering extended mode
 **"C:/Users/antho/Desktop/DNA Encoding/DNAEncodingSurvey/main.tex"
 ("C:/Users/antho/Desktop/DNA Encoding/DNAEncodingSurvey/main.tex"
@@ -418,48 +418,41 @@ Overfull \hbox (1.12001pt too wide) has occurred while \output is active
 
 
  <./OUP_First_SBk_Bot_8401-eps-converted-to.pdf>]
-LaTeX Font Info:    Try loading font information for LY1+phb on input line 65.
-LaTeX Font Info:    No file LY1phb.fd. on input line 65.
+LaTeX Font Info:    Try loading font information for LY1+pcr on input line 73.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ly1\ly1pcr.fd"
+File: ly1pcr.fd 2001/02/01 font definitions for LY1/pcr using Berry names.
+)
+LaTeX Font Info:    Try loading font information for LY1+phb on input line 76.
+LaTeX Font Info:    No file LY1phb.fd. on input line 76.
 
 
 LaTeX Font Warning: Font shape `LY1/phb/m/n' undefined
-(Font)              using `LY1/ptm/m/n' instead on input line 65.
+(Font)              using `LY1/ptm/m/n' instead on input line 76.
 
 
 LaTeX Font Warning: Font shape `LY1/phb/bx/n' undefined
-(Font)              using `LY1/phb/m/n' instead on input line 65.
+(Font)              using `LY1/phb/m/n' instead on input line 76.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 LaTeX Font Info:    Font shape `LY1/phv/m/it' in size <8> not available
-(Font)              Font shape `LY1/phv/m/sl' tried instead on input line 136.
+(Font)              Font shape `LY1/phv/m/sl' tried instead on input line 135.
 
 Overfull \hbox (252.0pt too wide) has occurred while \output is active
 [][] 
  []
 
 [2]
-LaTeX Font Info:    Try loading font information for LY1+pcr on input line 140.
-
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ly1\ly1pcr.fd"
-File: ly1pcr.fd 2001/02/01 font definitions for LY1/pcr using Berry names.
-)
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
 LaTeX Font Info:    Font shape `LY1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `LY1/ptm/b/n' tried instead on input line 152.
+(Font)              Font shape `LY1/ptm/b/n' tried instead on input line 167.
 
 Overfull \hbox (252.0pt too wide) has occurred while \output is active
 [][] 
  []
 
 [3]
-Overfull \hbox (51.5162pt too wide) in paragraph at lines 206--209
-[][] 
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -468,37 +461,83 @@ Overfull \hbox (252.0pt too wide) has occurred while \output is active
  []
 
 [4]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 Overfull \hbox (252.0pt too wide) has occurred while \output is active
 [][] 
  []
 
 [5] (main.bbl
-LaTeX Font Info:    Font shape `LY1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `LY1/ptm/b/n' tried instead on input line 7.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
 Overfull \hbox (252.0pt too wide) has occurred while \output is active
 [][] 
  []
 
-[6])
-Overfull \vbox (3.74051pt too high) has occurred while \output is active []
+[6]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Extra height:0.0pt when 15.25949pt
+)
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Overfull \vbox (3.74051pt too high) has occurred while \output is active []
 
-(2)Left:15.25949pt Right:10.0pt Output:15.25949pt
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Extra height:20.519pt when 484.019pt
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Extra height:20.519pt when 485.019pt
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Extra height:20.519pt when 486.019pt
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Extra height:20.519pt when 487.019pt
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Extra height:20.519pt when 488.019pt
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Extra height:20.519pt when 489.019pt
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Extra height:0.0pt when 490.019pt
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+(2)Left:490.019pt Right:491.038pt Output:490.019pt
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+(2)Left:491.038pt Right:491.038pt Output:491.038pt
 - LAST -
 Extra skip:0.0pt
-Left:15.25949pt
-Right:10.0pt
-Output:15.25949pt
-
-Overfull \vbox (3.74051pt too high) has occurred while \output is active []
-
+Left:491.038pt
+Right:491.038pt
+Output:491.038pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -507,9 +546,7 @@ Overfull \hbox (252.0pt too wide) has occurred while \output is active
 [][] 
  []
 
-[7
-
-] (main.aux)
+[7] (main.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.75pt have occurred.
@@ -522,13 +559,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3928 strings out of 493334
- 48568 string characters out of 3136671
- 130794 words of memory out of 3000000
- 7343 multiletter control sequences out of 15000+200000
- 56154 words of font info for 102 fonts, out of 3000000 for 9000
+ 3940 strings out of 493334
+ 48705 string characters out of 3136671
+ 148252 words of memory out of 3000000
+ 7355 multiletter control sequences out of 15000+200000
+ 55023 words of font info for 101 fonts, out of 3000000 for 9000
  1145 hyphenation exceptions out of 8191
- 40i,11n,28p,1075b,357s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 40i,11n,28p,1113b,303s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/texnansi.enc}<C:/
 Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmbsy9.pfb><
 C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/
@@ -548,7 +585,7 @@ C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program
 Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb><C:/Program Files (x86
 )/MiKTeX 2.9/fonts/type1/public/wasy/wasy7.pfb><C:/Program Files (x86)/MiKTeX 2
 .9/fonts/type1/public/wasy/wasy8.pfb>
-Output written on main.pdf (7 pages, 222928 bytes).
+Output written on main.pdf (7 pages, 230304 bytes).
 PDF statistics:
  108 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

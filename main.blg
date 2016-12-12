@@ -1,22 +1,6 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: main.aux
-The style file: natbib.bst
-Illegal, another \bibstyle command---line 86 of file main.aux
- : \bibstyle
- :          {achemnat}
-I'm skipping whatever remains of this command
-Illegal, another \bibstyle command---line 87 of file main.aux
- : \bibstyle
- :          {plainnat}
-I'm skipping whatever remains of this command
-Illegal, another \bibstyle command---line 88 of file main.aux
- : \bibstyle
- :          {abbrv}
-I'm skipping whatever remains of this command
-Illegal, another \bibstyle command---line 89 of file main.aux
- : \bibstyle
- :          {bioinformatics}
-I'm skipping whatever remains of this command
-Illegal, another \bibstyle command---line 90 of file main.aux
+The style file: abbrv.bst
+Illegal, another \bibstyle command---line 102 of file main.aux
  : \bibstyle
  :          {plain}
 I'm skipping whatever remains of this command
@@ -31,108 +15,56 @@ Repeated entry---line 218 of file document.bib
  :                           ,
 I'm skipping whatever remains of this entry
 Too many commas in name 1 of "Brenner, S., Williams, S. R., Vermaas, E. H., Storck, et al." for entry BVSPNAS2000
-while executing---line 1207 of file natbib.bst
+while executing---line 1049 of file abbrv.bst
 Too many commas in name 1 of "Brenner, S., Williams, S. R., Vermaas, E. H., Storck, et al." for entry BVSPNAS2000
-while executing---line 1207 of file natbib.bst
+while executing---line 1049 of file abbrv.bst
 Too many commas in name 1 of "Brenner, S., Williams, S. R., Vermaas, E. H., Storck, et al." for entry BVSPNAS2000
-while executing---line 1207 of file natbib.bst
+while executing---line 1049 of file abbrv.bst
 Too many commas in name 1 of "Brenner, S., Williams, S. R., Vermaas, E. H., Storck, et al." for entry BVSPNAS2000
-while executing---line 1207 of file natbib.bst
+while executing---line 1049 of file abbrv.bst
 Too many commas in name 1 of "Brenner, S., Williams, S. R., Vermaas, E. H., Storck, et al." for entry BVSPNAS2000
-while executing---line 1207 of file natbib.bst
-Too many commas in name 1 of "Brenner, S., Williams, S. R., Vermaas, E. H., Storck, et al." for entry BVSPNAS2000
-while executing---line 1207 of file natbib.bst
-Too many commas in name 1 of "Brenner, S., Williams, S. R., Vermaas, E. H., Storck, et al." for entry BVSPNAS2000
-while executing---line 1207 of file natbib.bst
-Too many commas in name 1 of "Brenner, S., Williams, S. R., Vermaas, E. H., Storck, et al." for entry BVSPNAS2000
-while executing---line 1207 of file natbib.bst
-Too many commas in name 1 of "Brenner, S., Williams, S. R., Vermaas, E. H., Storck, et al." for entry BVSPNAS2000
-while executing---line 1207 of file natbib.bst
-Too many commas in name 1 of "Brenner, S., Williams, S. R., Vermaas, E. H., Storck, et al." for entry BVSPNAS2000
-while executing---line 1207 of file natbib.bst
+while executing---line 1049 of file abbrv.bst
 Too many commas in name 1 of "Mousa, H., Moustafa, K., Abdel-Wahed, W., & Hadhoud, M. M." for entry MMAIAJI2011
-while executing---line 1207 of file natbib.bst
+while executing---line 1049 of file abbrv.bst
 Too many commas in name 1 of "Mousa, H., Moustafa, K., Abdel-Wahed, W., & Hadhoud, M. M." for entry MMAIAJI2011
-while executing---line 1207 of file natbib.bst
+while executing---line 1049 of file abbrv.bst
 Too many commas in name 1 of "Mousa, H., Moustafa, K., Abdel-Wahed, W., & Hadhoud, M. M." for entry MMAIAJI2011
-while executing---line 1207 of file natbib.bst
+while executing---line 1049 of file abbrv.bst
 Too many commas in name 1 of "Mousa, H., Moustafa, K., Abdel-Wahed, W., & Hadhoud, M. M." for entry MMAIAJI2011
-while executing---line 1207 of file natbib.bst
+while executing---line 1049 of file abbrv.bst
 Too many commas in name 1 of "Mousa, H., Moustafa, K., Abdel-Wahed, W., & Hadhoud, M. M." for entry MMAIAJI2011
-while executing---line 1207 of file natbib.bst
-Too many commas in name 1 of "Mousa, H., Moustafa, K., Abdel-Wahed, W., & Hadhoud, M. M." for entry MMAIAJI2011
-while executing---line 1207 of file natbib.bst
-Too many commas in name 1 of "Mousa, H., Moustafa, K., Abdel-Wahed, W., & Hadhoud, M. M." for entry MMAIAJI2011
-while executing---line 1207 of file natbib.bst
-Too many commas in name 1 of "Mousa, H., Moustafa, K., Abdel-Wahed, W., & Hadhoud, M. M." for entry MMAIAJI2011
-while executing---line 1207 of file natbib.bst
-Too many commas in name 1 of "Mousa, H., Moustafa, K., Abdel-Wahed, W., & Hadhoud, M. M." for entry MMAIAJI2011
-while executing---line 1207 of file natbib.bst
-Too many commas in name 1 of "Mousa, H., Moustafa, K., Abdel-Wahed, W., & Hadhoud, M. M." for entry MMAIAJI2011
-while executing---line 1207 of file natbib.bst
+while executing---line 1049 of file abbrv.bst
 Name 1 in "Heider, Dominik, and Barnekow, Angelika" has a comma at the end for entry HBBMC2007
-while executing---line 1207 of file natbib.bst
+while executing---line 1049 of file abbrv.bst
+Name 1 in "Haughton, David, and Félix Balado" has a comma at the end for entry HBBMC2013
+while executing---line 1049 of file abbrv.bst
+Name 1 in "Heider, Dominik, and Pyka, Martin and Barnekow, Angelika" has a comma at the end for entry HPB2009BMCRN
+while executing---line 1049 of file abbrv.bst
+Too many commas in name 1 of "Brenner, S., Williams, S. R., Vermaas, E. H., Storck, et al." for entry BVSPNAS2000
+while executing---line 1090 of file abbrv.bst
+Too many commas in name 1 of "Brenner, S., Williams, S. R., Vermaas, E. H., Storck, et al." for entry BVSPNAS2000
+while executing---line 1090 of file abbrv.bst
+Too many commas in name 1 of "Brenner, S., Williams, S. R., Vermaas, E. H., Storck, et al." for entry BVSPNAS2000
+while executing---line 1090 of file abbrv.bst
+Too many commas in name 1 of "Brenner, S., Williams, S. R., Vermaas, E. H., Storck, et al." for entry BVSPNAS2000
+while executing---line 1090 of file abbrv.bst
+Too many commas in name 1 of "Brenner, S., Williams, S. R., Vermaas, E. H., Storck, et al." for entry BVSPNAS2000
+while executing---line 1090 of file abbrv.bst
+Name 1 in "Haughton, David, and Félix Balado" has a comma at the end for entry HBBMC2013
+while executing---line 1090 of file abbrv.bst
 Name 1 in "Heider, Dominik, and Barnekow, Angelika" has a comma at the end for entry HBBMC2007
-while executing---line 1207 of file natbib.bst
-Name 1 in "Haughton, David, and Félix Balado" has a comma at the end for entry HBBMC2013
-while executing---line 1207 of file natbib.bst
-Name 1 in "Haughton, David, and Félix Balado" has a comma at the end for entry HBBMC2013
-while executing---line 1207 of file natbib.bst
+while executing---line 1090 of file abbrv.bst
 Name 1 in "Heider, Dominik, and Pyka, Martin and Barnekow, Angelika" has a comma at the end for entry HPB2009BMCRN
-while executing---line 1207 of file natbib.bst
-Name 1 in "Heider, Dominik, and Pyka, Martin and Barnekow, Angelika" has a comma at the end for entry HPB2009BMCRN
-while executing---line 1207 of file natbib.bst
-Too many commas in name 1 of "Brenner, S., Williams, S. R., Vermaas, E. H., Storck, et al." for entry BVSPNAS2000
-while executing---line 1279 of file natbib.bst
-Too many commas in name 1 of "Brenner, S., Williams, S. R., Vermaas, E. H., Storck, et al." for entry BVSPNAS2000
-while executing---line 1279 of file natbib.bst
-Too many commas in name 1 of "Brenner, S., Williams, S. R., Vermaas, E. H., Storck, et al." for entry BVSPNAS2000
-while executing---line 1279 of file natbib.bst
-Too many commas in name 1 of "Brenner, S., Williams, S. R., Vermaas, E. H., Storck, et al." for entry BVSPNAS2000
-while executing---line 1279 of file natbib.bst
-Too many commas in name 1 of "Brenner, S., Williams, S. R., Vermaas, E. H., Storck, et al." for entry BVSPNAS2000
-while executing---line 1279 of file natbib.bst
-Too many commas in name 1 of "Brenner, S., Williams, S. R., Vermaas, E. H., Storck, et al." for entry BVSPNAS2000
-while executing---line 1279 of file natbib.bst
-Too many commas in name 1 of "Brenner, S., Williams, S. R., Vermaas, E. H., Storck, et al." for entry BVSPNAS2000
-while executing---line 1279 of file natbib.bst
-Too many commas in name 1 of "Brenner, S., Williams, S. R., Vermaas, E. H., Storck, et al." for entry BVSPNAS2000
-while executing---line 1279 of file natbib.bst
-Too many commas in name 1 of "Brenner, S., Williams, S. R., Vermaas, E. H., Storck, et al." for entry BVSPNAS2000
-while executing---line 1279 of file natbib.bst
-Too many commas in name 1 of "Brenner, S., Williams, S. R., Vermaas, E. H., Storck, et al." for entry BVSPNAS2000
-while executing---line 1279 of file natbib.bst
-Name 1 in "Haughton, David, and Félix Balado" has a comma at the end for entry HBBMC2013
-while executing---line 1279 of file natbib.bst
-Name 1 in "Haughton, David, and Félix Balado" has a comma at the end for entry HBBMC2013
-while executing---line 1279 of file natbib.bst
-Name 1 in "Heider, Dominik, and Barnekow, Angelika" has a comma at the end for entry HBBMC2007
-while executing---line 1279 of file natbib.bst
-Name 1 in "Heider, Dominik, and Barnekow, Angelika" has a comma at the end for entry HBBMC2007
-while executing---line 1279 of file natbib.bst
-Name 1 in "Heider, Dominik, and Pyka, Martin and Barnekow, Angelika" has a comma at the end for entry HPB2009BMCRN
-while executing---line 1279 of file natbib.bst
-Name 1 in "Heider, Dominik, and Pyka, Martin and Barnekow, Angelika" has a comma at the end for entry HPB2009BMCRN
-while executing---line 1279 of file natbib.bst
+while executing---line 1090 of file abbrv.bst
 Too many commas in name 1 of "Mousa, H., Moustafa, K., Abdel-Wahed, W., & Hadhoud, M. M." for entry MMAIAJI2011
-while executing---line 1279 of file natbib.bst
+while executing---line 1090 of file abbrv.bst
 Too many commas in name 1 of "Mousa, H., Moustafa, K., Abdel-Wahed, W., & Hadhoud, M. M." for entry MMAIAJI2011
-while executing---line 1279 of file natbib.bst
+while executing---line 1090 of file abbrv.bst
 Too many commas in name 1 of "Mousa, H., Moustafa, K., Abdel-Wahed, W., & Hadhoud, M. M." for entry MMAIAJI2011
-while executing---line 1279 of file natbib.bst
+while executing---line 1090 of file abbrv.bst
 Too many commas in name 1 of "Mousa, H., Moustafa, K., Abdel-Wahed, W., & Hadhoud, M. M." for entry MMAIAJI2011
-while executing---line 1279 of file natbib.bst
+while executing---line 1090 of file abbrv.bst
 Too many commas in name 1 of "Mousa, H., Moustafa, K., Abdel-Wahed, W., & Hadhoud, M. M." for entry MMAIAJI2011
-while executing---line 1279 of file natbib.bst
-Too many commas in name 1 of "Mousa, H., Moustafa, K., Abdel-Wahed, W., & Hadhoud, M. M." for entry MMAIAJI2011
-while executing---line 1279 of file natbib.bst
-Too many commas in name 1 of "Mousa, H., Moustafa, K., Abdel-Wahed, W., & Hadhoud, M. M." for entry MMAIAJI2011
-while executing---line 1279 of file natbib.bst
-Too many commas in name 1 of "Mousa, H., Moustafa, K., Abdel-Wahed, W., & Hadhoud, M. M." for entry MMAIAJI2011
-while executing---line 1279 of file natbib.bst
-Too many commas in name 1 of "Mousa, H., Moustafa, K., Abdel-Wahed, W., & Hadhoud, M. M." for entry MMAIAJI2011
-while executing---line 1279 of file natbib.bst
-Too many commas in name 1 of "Mousa, H., Moustafa, K., Abdel-Wahed, W., & Hadhoud, M. M." for entry MMAIAJI2011
-while executing---line 1279 of file natbib.bst
-Warning--empty year in SFHC2003BL; set to ????
-(There were 59 error messages)
+while executing---line 1090 of file abbrv.bst
+Warning--empty year in SFHC2003BL
+(There were 29 error messages)
