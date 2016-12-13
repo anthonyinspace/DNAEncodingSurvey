@@ -324,4 +324,311 @@ S.~H.~T. Yazdi, Y.~Yuan, J.~Ma, H.~Zhao, and O.~Milenkovic.
 \newblock A rewritable, random-access dna-based storage system.
 \newblock {\em Scientific reports}, 5, 2015.
 
+@article{EPWISG2012PO,
+title={Embedding permanent watermarks in synthetic genes},
+author={Liss, M and Daubert, D and Brunner, K and Kliche, K and Hammes, U and Leiherer, A and Wagner, R},
+journal={Plos one},
+volume={7:8},
+year={2012}
+}
+
+@article{REED1960,
+title={Polynomial codes over certain finite fields},
+author={Reed, Irving S and Solomon, Gustave},
+journal={Journal of the society for industrial and applied mathematics},
+volume={8},
+number={2},
+pages={300--304},
+year={1960},
+publisher={SIAM}
+}
+
+@inproceedings{BORNHOLT2016,
+title={A DNA-based archival storage system},
+author={Bornholt, James and Lopez, Randolph and Carmean, Douglas M and Ceze, Luis and Seelig, Georg and Strauss, Karin},
+booktitle={Proceedings of the Twenty-First International Conference on Architectural Support for Programming Languages and Operating Systems},
+pages={637--649},
+year={2016},
+organization={ACM}
+}
+
+@article{BOSE1960,
+title={On a class of error correcting binary group codes},
+author={R.C. Bose, D.K. Ray-Chaudhuri},
+journal={Information and Control},
+volume={3},
+number={1},
+pages={68--79},
+year={1960},
+publisher={Elsevier}
+}
+
+@book{LIN2004,
+title={Error control coding},
+author={Lin, Shu and Costello, Daniel J},
+year={2004},
+publisher={Pearson Education India}
+}
+
+@inproceedings{POTDAR2005,
+title={Fingerprinted secret sharing steganography for robustness against image cropping attacks},
+author={Potdar, Vidyasagar M and Han, Song and Chang, Elizabeth},
+booktitle={INDIN'05. 2005 3rd IEEE International Conference on Industrial Informatics, 2005.},
+pages={717--724},
+year={2005},
+organization={IEEE}
+}
+
+@article{JUNG2009,
+title={Data hiding method using image interpolation},
+author={Jung, Ki-Hyun and Yoo, Kee-Young},
+journal={Computer Standards \& Interfaces},
+volume={31},
+number={2},
+pages={465--470},
+year={2009},
+publisher={Elsevier}
+}
+
+@inproceedings{LI2009,
+title={Lossless data hiding scheme based on adjacent pixel difference},
+author={Li, Zhuo and Chen, Xiaoping and Pan, Xuezeng and Zeng, Xianting},
+booktitle={Computer Engineering and Technology, 2009. ICCET'09. International Conference on},
+volume={1},
+pages={588--592},
+year={2009},
+organization={IEEE}
+}
+
+@inproceedings{FARD2006,
+title={A new genetic algorithm approach for secure JPEG steganography},
+author={Fard, Amin Milani and Akbarzadeh-T, M-R and Varasteh-A, Farshad and Varasteh-A, F},
+booktitle={2006 IEEE International Conference on Engineering of Intelligent Systems},
+pages={1--6},
+year={2006},
+organization={IEEE}
+}
+
+@inproceedings{MCKEON2007,
+title={Strange Fourier steganography in movies},
+author={McKeon, Robert T},
+booktitle={2007 IEEE International Conference on Electro/Information Technology},
+pages={178--182},
+year={2007},
+organization={IEEE}
+}
+
+@inproceedings{MANIKOPOLOUS2002,
+title={Detection of block DCT-based steganography in gray-scale images},
+author={Manikopoulos, Constantine and Shi, Yun-Qing and Song, Sui and Zhang, Zheng and Ni, Zhicheng and Zou, Dekun},
+booktitle={Multimedia Signal Processing, 2002 IEEE Workshop on},
+pages={355--358},
+year={2002},
+organization={IEEE}
+}
+
+@article{CHEN2007,
+title={Color image steganography scheme using set partitioning in hierarchical trees coding, digital Fourier transform and adaptive phase modulation},
+author={Chen, Wen-Yuan},
+journal={Applied Mathematics and Computation},
+volume={185},
+number={1},
+pages={432--448},
+year={2007},
+publisher={Elsevier}
+}
+
+@inproceedings{POTDAR2005S,
+title={A survey of digital image watermarking techniques},
+author={Potdar, Vidyasagar M and Han, Song and Chang, Elizabeth},
+booktitle={INDIN'05. 2005 3rd IEEE International Conference on Industrial Informatics, 2005.},
+pages={709--716},
+year={2005},
+organization={IEEE}
+}
+
+@inproceedings{VERMA2005,
+title={Watermarking image databases: a review},
+author={Verma, Bhupendra and Jain, Sanjeev and Agarwal, DP},
+booktitle={Proceedings of the International Conference on Cognition and Recognition, Mandya, Karnataka, India},
+pages={171--179},
+year={2005}
+}
+
+@inproceedings{ABDULAZIZ2000,
+title={Robust data hiding for images},
+author={Abdulaziz, NK and Pang, KK},
+booktitle={Communication Technology Proceedings, 2000. WCC-ICCT 2000. International Conference on},
+volume={1},
+pages={380--383},
+year={2000},
+organization={IEEE}
+}
+
+@misc{PAULSON2006,
+title={New system fights steganography},
+author={Dailey Paulson, Linda},
+year={2006},
+publisher={IEEE COMPUTER SOC 10662 LOS VAQUEROS CIRCLE, PO BOX 3014, LOS ALAMITOS, CA 90720-1314 USA}
+}
+
+@inproceedings{ABDELWAHAB2008,
+title={A discrete wavelet transform based technique for image data hiding},
+author={Abdelwahab, Ahmed A and Hassaan, Lobna A},
+booktitle={Radio Science Conference, 2008. NRSC 2008. National},
+pages={1--9},
+year={2008},
+organization={IEEE}
+}
+
+@inproceedings{SALLEE2003,
+title={Model-based steganography},
+author={Sallee, Phil},
+booktitle={International workshop on digital watermarking},
+pages={154--167},
+year={2003},
+organization={Springer}
+}
+
+@inproceedings{CHANG2004,
+title={An adaptive steganography for index-based images using codeword grouping},
+author={Chang, Chin-Chen and Tsai, Piyu and Lin, Min-Hui},
+booktitle={Pacific-Rim Conference on Multimedia},
+pages={731--738},
+year={2004},
+organization={Springer}
+}
+
+@inproceedings{HIROHISA2002,
+title={A data embedding method using BPCS principle with new complexity measures},
+author={Hirohisa, Hioki},
+booktitle={Proc. of Pacific Rim Workshop on Digital Steganography},
+pages={30--47},
+year={2002}
+}
+
+@article{WU2006GEN,
+title={Genetic algorithm based methodology for breaking the steganalytic systems},
+author={Wu, Yi-Ta and Shih, Frank Y},
+journal={IEEE Transactions on Systems, Man, and Cybernetics, Part B (Cybernetics)},
+volume={36},
+number={1},
+pages={24--31},
+year={2006},
+publisher={IEEE}
+}
+
+@article{ADLEMAN1994,
+  title={Molecular computation of solutions to combinatorial problems},
+  author={Adleman, Leonard M},
+  journal={Nature},
+  volume={369},
+  pages={40},
+  year={1994}
+}
+
+@article{BONEH1996,
+  title={On the computational power of DNA},
+  author={Boneh, Dan and Dunworth, Christopher and Lipton, Richard J and Sgall, Jiri},
+  journal={Discrete Applied Mathematics},
+  volume={71},
+  number={1},
+  pages={79--94},
+  year={1996},
+  publisher={Elsevier}
+}
+
+@article{KARI2000,
+  title={Using DNA to solve the bounded post correspondence problem},
+  author={Kari, Lila and Gloor, Greg and Yu, Sheng},
+  journal={Theoretical Computer Science},
+  volume={231},
+  number={2},
+  pages={193--203},
+  year={2000},
+  publisher={Elsevier}
+}
+
+@inproceedings{OGIHARA1999,
+  title={Executing parallel logical operations with DNA},
+  author={Ogihara, Mitsunori and Ray, Animesh},
+  booktitle={Evolutionary Computation, 1999. CEC 99. Proceedings of the 1999 Congress on},
+  volume={2},
+  year={1999},
+  organization={IEEE}
+}
+
+@article{BENENSON2004,
+  title={An autonomous molecular computer for logical control of gene expression},
+  author={Benenson, Yaakov and Gil, Binyamin and Ben-Dor, Uri and Adar, Rivka and Shapiro, Ehud},
+  journal={Nature},
+  volume={429},
+  number={6990},
+  pages={423--429},
+  year={2004},
+  publisher={Nature Publishing Group}
+}
+
+@article{NAYEBI2009,
+  title={Fast matrix multiplication techniques based on the Adleman-Lipton model},
+  author={Nayebi, Aran},
+  journal={arXiv preprint arXiv:0912.0750},
+  year={2009}
+}
+
+@article{STOJANOVIC2003,
+  title={A deoxyribozyme-based molecular automaton},
+  author={Stojanovic, Milan N and Stefanovic, Darko},
+  journal={Nature biotechnology},
+  volume={21},
+  number={9},
+  pages={1069--1074},
+  year={2003},
+  publisher={Nature Publishing Group}
+}
+
+@article{MACDONALD2006,
+  title={Medium scale integration of molecular logic gates in an automaton},
+  author={Macdonald, Joanne and Li, Yang and Sutovic, Marko and Lederman, Harvey and Pendri, Kiran and Lu, Wanhong and Andrews, Benjamin L and Stefanovic, Darko and Stojanovic, Milan N},
+  journal={Nano letters},
+  volume={6},
+  number={11},
+  pages={2598--2603},
+  year={2006},
+  publisher={ACS Publications}
+}
+
+@article{BONNET2013,
+  title={Amplifying genetic logic gates},
+  author={Bonnet, Jerome and Yin, Peter and Ortiz, Monica E and Subsoontorn, Pakpoom and Endy, Drew},
+  journal={Science},
+  volume={340},
+  number={6132},
+  pages={599--603},
+  year={2013},
+  publisher={American Association for the Advancement of Science}
+}
+
+@article{BROPHY2014,
+  title={Principles of genetic circuit design},
+  author={Brophy, Jennifer AN and Voigt, Christopher A},
+  journal={Nature methods},
+  volume={11},
+  number={5},
+  pages={508--520},
+  year={2014},
+  publisher={Nature Publishing Group}
+}
+
+@article{NIELSEN2016,
+  title={Genetic circuit design automation},
+  author={Nielsen, Alec AK and Der, Bryan S and Shin, Jonghyeon and Vaidyanathan, Prashant and Paralanov, Vanya and Strychalski, Elizabeth A and Ross, David and Densmore, Douglas and Voigt, Christopher A},
+  journal={Science},
+  volume={352},
+  number={6281},
+  pages={aac7341},
+  year={2016},
+  publisher={American Association for the Advancement of Science}
+}
+
 \end{thebibliography}
