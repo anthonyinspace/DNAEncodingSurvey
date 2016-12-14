@@ -14,18 +14,18 @@
 
 \subtitle{Sequence Analysis}
 
-\title{Hiding Data in Cellular DNA: Contextualizing Diverse Encoding Schemes}
-\author[Sample \textit{et~al}.]{Anthony P. Machado\,$^{\text{\sfb 1,}*}$, Gaby G. Dagher\,$^{\text{\sfb 2}}$ and Eddie C. Davis\,$^{\text{\sfb 2,}*}$}
-\address{$^{\text{\sf 1}}$Computer Science Department, Boise State University, Boise, 83725, USA}
+\title{Data Storage in Cellular DNA: Contextualizing Diverse Encoding Schemes}
+\author[Sample \textit{et~al}.]{Anthony P. Machado\,$^{\text{}}$, Gaby G. Dagher\,$^{\text{}}$, and Eddie C. Davis\,$^{\text{}}$}
+\address{$^{\text{}}$Computer Science Department, Boise State University, Boise, 83725, USA}
 
-\corresp{$^\ast$To whom correspondence should be addressed.}
+\corresp{}
 
 \history{Received on XXXXX; revised on XXXXX; accepted on XXXXX}
 
 \editor{Associate Editor: XXXXXXX}
 
 \abstract{\textbf{Motivation:} DNA, the macromolecule used by organisms to store and transmit genomic data, has attracted the attention of privacy researchers as a channel for secure data transfer. DNA's small size and abundance in nature makes it an ideal steganographic medium for hiding messages. Already, artificially synthesized DNA has been used to store text, audio, and images. Encoded cellular DNA is not far behind, with much research being done on ways to safely embed data without harming the cell.\\
-\textbf{Results:} In this survey we provide the first systematic comparison of cellular encoding schemes proposed in the literature. Different DNA regions in the cell have their own unique bio-restrictions that must be satisfied for DNA storage. Drawing from a wide array of schemes, we compare the novel techniques used to meet these bio-restrictions. This contextualization of the research creates a bigger picture that can help guide the design of future schemes. We also survey the compression methods and error detection techniques used by the encoding schemes, and their effect on error rate and bits-per-base density. Finally, we propose future directions for research in untapped cellular regions such as mitochondrial DNA and we offer novel insights into the potential for epigenetic encoding with methylation and histones. \\
+\textbf{Results:} In this survey we provide the first systematic comparison of cellular encoding schemes proposed in the literature. Different DNA regions in the cell have their own unique bio-restrictions that must be satisfied for DNA storage. Drawing from a wide array of schemes, we compare the novel techniques used to meet these bio-restrictions. This contextualization of the research creates a bigger picture that can help guide the design of future schemes. We also survey the compression methods and error detection techniques used by the encoding schemes, and their effect on error rate and density. Finally, we propose future directions for research by examining gaps in the literature and suggesting novel approaches with epigenetics and mitochondrial storage. \\
 \textbf{Contact:} \href{anthonymachado@u.boisestate.edu}{anthonymachado@u.boisestate.edu}\\
 \textbf{Supplementary information:} Supplementary data are available at \textit{Bioinformatics}
 online.}
@@ -34,7 +34,7 @@ online.}
 
 \section{Introduction}
 
-Biosteganography is an emerging field in privacy research that combines techniques from genetic engineering, bioinformatics, cryptography and forensics to secretly transfer data within a living cell's DNA~\cite{B2016JOB}. Data ranging from simple text messages to audio recordings and color images can be inserted into cellular DNA for secure transmission. Because DNA is information dense and occurs abundantly in nature, it makes an ideal medium for sending messages secretly. Basic steganographic principles dictate that if an attacker doesn't know where to find a confidential message in the first place, the message is far more secure~\cite{A2001IEEEIC}. Locating encoded DNA would be harder than finding a needle in a haystack. A needle, at least, can be seen by the human eye.
+Biosteganography is an emerging field in privacy research that combines techniques from genetic engineering, bioinformatics, cryptography and forensics to secretly transfer data within a living cell's DNA~\cite{B2016JOB}. Data ranging from simple text messages to audio recordings and color images can potentially be inserted into cellular DNA for secure transmission. Because DNA is information dense and occurs abundantly in nature, it makes an ideal medium for sending messages secretly. Basic steganographic principles dictate that if an attacker doesn't know where to find a confidential message in the first place, the message is far more secure~\cite{A2001IEEEIC}. Locating encoded DNA would be harder than finding a needle in a haystack. A needle, at least, can be seen by the human eye.
 
 Traditional digital storage systems such as hard drives and SD cards have detectable emanations, which makes them vulnerable to side attacks~\cite{T2008TOIAS}. Modified DNA, however, has no measurable emanations. If an agent needed to carry a confidential message through a tight security checkpoint, any form of electronic storage could be easily detected, while physical recordings like paper or tape could be visibly located by the security guard. A DNA encoded message, however, located in the cells of the agent's thumb, or in bacteria under the agent's nail, could be brought through without detection. The receiver of the message would need to know how to decode the data, and have the lab equipment to amplify and sequence the DNA in order to retrieve the message.
 
@@ -43,11 +43,11 @@ Inserting hidden data into DNA is also crucial for watermarking patented genes. 
 Several encoding schemes have been proposed to accomplish data embedding in cellular DNA. In this survey, we will provide the first systematic analysis of these diverse encoding schemes, in which:
 \begin{itemize}
 \item We define the unique bio-restrictions associated with cellular encoding and compare how the proposed encoding schemes meet these restrictions;
-\item We contrast the error rates and bits-per-nucleotide densities of each of the schemes, highlighting the effects of error correction and compression techniques on both; and
+\item We contrast the error rates and densities of each of the schemes, highlighting the effects of error correction and compression techniques on both; and
 \item We propose new directions for research incorporating novel epigenetic techniques.
 \end{itemize}
 
-The rest of the survey is organized as follows. In Section 2 we provide a background on genetics, explain techniques in artificial DNA encoding, and clarify the biological restrictions involved in cellular encoding. A systematic comparison of the encoding schemes for coding and non-coding regions is presented in Section 3, in which we look at how each encoding scheme meets cellular restrictions and the error rate and bits-per-nucleotide density it offers. Finally, in Section 4 we propose new directions for future encoding schemes that use epigenetics and alternative genetic regions.
+The rest of the survey is organized as follows. In Section 2 we provide a background on genetics and explain the biological constraints of encoding with cellular DNA. Section 3  illustrates related work done in artificial encoding. A systematic comparison of cellular encoding schemes is presented in Section 4. Next, Section 5 proposes new directions for future encoding schemes that use epigenetics and alternative genetic regions. Finally, we conclude in Section 6.
 
 %\enlargethispage{12pt}
 
@@ -57,20 +57,20 @@ The rest of the survey is organized as follows. In Section 2 we provide a backgr
 
 Every living cell contains DNA molecules encoded with instructions for making the proteins necessary for the cell to function. DNA takes the form of a double helix made of two antiparallel strands. Each strand is composed of a sequence of 4 nucleotides: adenine (A), guanine (G), cytosine (C), and thymine (T). The purines adenine and guanine, and the pyrimidines cytosine and thymine, form hydrogen bonds with each other across the double helix. Adenine binds to thymine with two hydrogen bonds, and guanine binds to cytosine with three. Every three nucleotides forms a codon that the cell reads and processes to create an amino acid, the building block of a protein~\cite{WC1953N}. Proteins can be encoded on either strand.
 
-There are only 20 amino acids, despite the fact that $4^3$ = 64 possible codon variations exist. This is because many amino acids are correlated with up to five redundant codons. Also, three codons are used specifically as stop signals to indicate the end of a protein chain. The redundancy in codon to amino acid mapping is called codon degeneracy~\cite{WBBGLL2008}.
+There are only 20 amino acids, despite the fact that $4^3$ = 64 possible codon variations exist. This is because many amino acids are correlated with up to five redundant codons. Also, three codons are used specifically as stop signals to indicate the end of a protein chain. The redundancy in codon to amino acid mapping is called codon degeneracy~\cite{WBBGLL2008}. Table 1 illustrates codon to amino acid mapping.
 
 
-\subsection{Artificial Encoding}
+\subsection{Cellular Encoding Restrictions}
 
-Artificial DNA encoding, or DNA data storage, is the process of storing digital information such as text, audio, or images within \textit{in vitro} DNA base pair sequences. DNA is an appealing storage medium due to its high density. For example, the human genome contains 3.3e9 base pairs, or about 725 MB of binary data, with a mass of 3.59e-12 grams. DNA is also incredibly resilient, as the sequencing of 45,000 year old woolly mammoth genomes indicate~\cite{PALKOPOULOU2015}. As with any memory device, the critical operations are read and write. Continued advances in DNA sequencing (reading) and oligonucleotide synthesis (writing) increase the viability of nucleic acid for long term archival storage.
+Cellular DNA encoding must not harm the carrier organism, either by removing cellular functionality or adding mutative behavior. To avoid this, encoding schemes must ensure that modified DNA strands remain biologically equivalent to their wild-type form. This section defines the bio-restrictions that exist for two distinct areas of cellular DNA, protein coding DNA (pcDNA) and noncoding DNA (ncDNA). As our knowledge of genetics continues to expand, more particular restrictions may become known.
 
-DNA was first encoded with a secret message in 1999 by Clelland et al~\cite{CRB1999N}. Inspired by the tiny, concealed microdot messages used in World War II, artificial DNA strands were constructed using a simple substitution cipher, then mixed with human DNA and pipetted onto a printed period on filter paper. The encoded DNA was later recovered from the dot and sequenced to successfully read the secret message: JUNE 6 INVASION: NORMANDY.
+\subsubsection{pcDNA Constraints}
 
-The primary limiting factor has been the length of the oligonucleotides that can be synthesized. Church et al.~\cite{CHURCH2012} developed a technique using high fidelity DNA microchips to encode 5.27 MB of data including a book by the author, 11 JPEG images, and a JavaScript program into 54,898 159 nt sequences. Each 159 nt sequence consisted of a 96 nt data block and 19 nt address. The data were recovered with only 10 bit errors.
+The protein coding region of DNA contains the codons that are eventually translated to amino acids, which are concatenated into proteins. Any data insertions in this area must meet the following constraints.
 
-Goldman et al.~\cite{GOLDMAN2013} were able to encode 739 KB of text, images, and audio with 100\% recovery rate. The technique applied a modified Huffman code~\cite{H1952POTIRE}, converting the binary (base-2) data into ternary (base-3), and mapping each trit to a nucleotide, different from the one preceding it in order to prevent homopolymers. The sequences were capped with reverse complemented index information so that the data could be reassembled by scanning for overlaps.
+\textit{Protein Preservation} The structure of the protein coded by the region must remain unchanged. Nucleotide insertions and modifications must not alter the codons in such a way that would change the original amino acid sequence.
 
-Grass et al.~\cite{GRASS2015} developed error correction codes for DNA stored in silica gel and exposed to high temperature ($70^o$ C). Every two bytes of input data are mapped to three values from the Galois Field of size 47 (GF(47)). The mappings are arranged in blocks of 594\texttt{x}30. Each block also has 594\texttt{x}3 bits of index data. In the second step, Reed-Solomon (RS) codes~\cite{REED1960} are applied to add 119 bits of redundancy A. In another round of RS, a redundancy B of 6 bits in length. This results in a final block size of 713\texttt{x}39. Each column is mapped to an oligonucleotide by mapping each value from GF(47) to a DNA codon (triplet).
+\textit{Codon Bias Preservation} Individual cells have specific ratios of cytoplasmic tRNA associated with their genomic codons, which can be disrupted if the codon balance is changed, and have a negative effect on the cell. Therefore, it is important that codon bias is preserved by maintaining roughly equal numbers of each codon after encoding is complete.
 
 \begin{table}[t]
 	\caption{Codon to Amino Acid Mapping}
@@ -128,6 +128,30 @@ Grass et al.~\cite{GRASS2015} developed error correction codes for DNA stored in
 \end{tabular}}
 \end{table}
 
+\subsubsection{ncDNA Constraints}
+
+The noncoding region of DNA is often called "junk DNA" for its apparent lack of use in the cell. Because they appear to be non-functional, data can be embedded into these regions if the following constraints are met.
+
+\textit{Truly nonfunctional region.} When ncDNA was first discovered it was assumed to have no role in cell functionality, but recent studies have shown that up to 80\% of ncDNA may have biochemical functions in the cell, despite not coding for proteins~\cite{EPC2012N}. Therefore, it is first imperative that the individual who wishes to insert a message into ncDNA verify that they are encoding their message in the 20\% that has no biochemical use.
+
+\textit{No start codons.} When a cell's genetic machinery locates a start codon, it can begin the transcription process. To prevent unwanted transcription from happening in ncDNA with embedded data, it is important to make sure the encoded nucleotides to not create a start codon. When a DNA string is being transcribed, three-nucleotide codons can be read in six different reading frames. Therefore, there should not be a start codon in any of the six frames. The most common start codon is AUG, though some alternative start codons can also exist, particularly in bacteria~\cite{B1997S}. If a cell contains alternative start codons, the encoding scheme should avoid all of them.
+
+\textit{No homopolymers.} A DNA homopolymer is a region where the same nucleotide is repeated multiple times. Too many repeats can cause errors during DNA replication through polymerase slippage~\cite{VCE2001TEJ}. These replication errors could quickly distort the inserted message and possibly damage the cell after a few generations. For this reason any ncDNA encoding scheme should not include homopolymers greater than length 3.
+
+\section{Related Work}
+
+\subsection{Artificial Encoding}
+
+Artificial DNA encoding, or DNA data storage, is the process of storing digital information such as text, audio, or images within \textit{in vitro} DNA base pair sequences. DNA is an appealing storage medium due to its high density. For example, the human genome contains 3.3e9 base pairs, or about 725 MB of binary data, with a mass of 3.59e-12 grams. DNA is also incredibly resilient, as the sequencing of 45,000 year old woolly mammoth genomes indicate~\cite{PALKOPOULOU2015}. As with any memory device, the critical operations are read and write. Continued advances in DNA sequencing (reading) and oligonucleotide synthesis (writing) increase the viability of nucleic acid for long term archival storage.
+
+DNA was first encoded with a secret message in 1999 by Clelland et al~\cite{CRB1999N}. Inspired by the tiny, concealed microdot messages used in World War II, artificial DNA strands were constructed using a simple substitution cipher, then mixed with human DNA and pipetted onto a printed period on filter paper. The encoded DNA was later recovered from the dot and sequenced to successfully read the secret message: JUNE 6 INVASION: NORMANDY.
+
+The primary limiting factor has been the length of the oligonucleotides that can be synthesized. Church et al.~\cite{CHURCH2012} developed a technique using high fidelity DNA microchips to encode 5.27 MB of data including a book by the author, 11 JPEG images, and a JavaScript program into 54,898 159 nt sequences. Each 159 nt sequence consisted of a 96 nt data block and 19 nt address. The data were recovered with only 10 bit errors.
+
+Goldman et al.~\cite{GOLDMAN2013} were able to encode 739 KB of text, images, and audio with 100\% recovery rate. The technique applied a modified Huffman code~\cite{H1952POTIRE}, converting the binary (base-2) data into ternary (base-3), and mapping each trit to a nucleotide, different from the one preceding it in order to prevent homopolymers. The sequences were capped with reverse complemented index information so that the data could be reassembled by scanning for overlaps.
+
+Grass et al.~\cite{GRASS2015} developed error correction codes for DNA stored in silica gel and exposed to high temperature ($70^o$ C). Every two bytes of input data are mapped to three values from the Galois Field of size 47 (GF(47)). The mappings are arranged in blocks of 594\texttt{x}30. Each block also has 594\texttt{x}3 bits of index data. In the second step, Reed-Solomon (RS) codes~\cite{REED1960} are applied to add 119 bits of redundancy A. In another round of RS, a redundancy B of 6 bits in length. This results in a final block size of 713\texttt{x}39. Each column is mapped to an oligonucleotide by mapping each value from GF(47) to a DNA codon (triplet).
+
 Yazdi et al.~\cite{YAZDI2015} also developed a random access and rewritable DNA storage system, achieved with an addressing scheme. A 1000 bp sequence represents a 960 bp block of data flanked on either side by address regions of 20 bps. The data regions are divided into 12 blocks of 80 bps each, or 6 words of input text per block. Primer sequences correspond to the address sequences, allowing for selective PCR amplification of a desired block. The binary sequences are converted into nucleotides via DNA prefix-synchronized codes. The error correction code is based on binary running digital sums (BRDS). The encoding scheme satisfies four constraints, 1) GC content of approximately 50\%, 2) large Hamming distance between any two strings of equal length, 3) uncorrelated addresses to prevent primer binding to the wrong address, and 4) absence of secondary folding structures.
 
 Blawat et al.~\cite{BLAWAT2016} improved upon the encoding scheme of Church et al.~\cite{CHURCH2012} by developing forward error correction codes. The homopolymer restriction is relaxed somewhat by requiring that the first three nucleotides must differ, as must the last two. A block of data is contained within an oligo sequence of up to 250 bp. An error detection code (EDC) is added to each. Addresses are protected with a BCH code ~\cite{BOSE1960} and a minimum Hamming distance of 9. Consecutive oligo sequences are protected with RS code~\cite{REED1960} over GF($2^8$) with block size of 223. The EDC parity bits employe a CCITT 16 bit cyclic redundancy check (CRC) ~\cite{LIN2004}.
@@ -166,27 +190,7 @@ The seminal paper in the field of DNA computing is Adleman's paper ~\cite{ADLEMA
 
 Benenson et al. expanded DNA computing from the \textit{in vitro} realm to \textit{in vivo}, by introducing a scheme for controlling gene expression with a molecular computer~\cite{BENENSON2004}. Nayebi developed a DNA-based implementation of Strassen's fast matrix multiplication algorithm~\cite{NAYEBI2009}. A crucial advance in this field came with the development of the ``transcriptor'' by Bonnet et al.~\cite{BONNET2013}, a three terminal transistor like device implemented with serine integrases from bacteriophages to guide RNA polymerases and control gene expression. Transcriptors allow circuit designers to create AND, NAND, OR, XOR, NOR, and XNOR logic gates. This work has since been expanded to develop entire genetic circuits~\cite{BROPHY2014,NIELSEN2016}.
 
-\subsection{Cellular Encoding Restrictions}
 
-Cellular DNA encoding must not harm the carrier organism, either by removing cellular functionality or adding mutative behavior. To avoid this, encoding schemes must ensure that modified DNA strands remain biologically equivalent to their wild-type form. This section defines the bio-restrictions that exist for two distinct areas of cellular DNA, protein coding DNA (pcDNA) and noncoding DNA (ncDNA). As our knowledge of genetics continues to expand, more particular restrictions may become known.
-
-\subsubsection{pcDNA Constraints}
-
-The protein coding region of DNA contains the codons that are eventually translated to amino acids, which are concatenated into proteins. Any data insertions in this area must meet the following constraints.
-
-\textit{Protein Preservation} The structure of the protein coded by the region must remain unchanged. Nucleotide insertions and modifications must not alter the codons in such a way that would change the original amino acid sequence.
-
-\textit{Codon Bias Preservation} Individual cells have specific ratios of cytoplasmic tRNA associated with their genomic codons, which can be disrupted if the codon balance is changed, and have a negative effect on the cell. Therefore, it is important that codon bias is preserved by maintaining roughly equal numbers of each codon after encoding is complete.
-
-\subsubsection{ncDNA Constraints}
-
-The noncoding region of DNA is often called "junk DNA" for its apparent lack of use in the cell. Because they appear to be non-functional, data can be embedded into these regions if the following constraints are met.
-
-\textit{Truly nonfunctional region.} When ncDNA was first discovered it was assumed to have no role in cell functionality, but recent studies have shown that up to 80\% of ncDNA may have biochemical functions in the cell, despite not coding for proteins~\cite{EPC2012N}. Therefore, it is first imperative that the individual who wishes to insert a message into ncDNA verify that they are encoding their message in the 20\% that has no biochemical use.
-
-\textit{No start codons.} When a cell's genetic machinery locates a start codon, it can begin the transcription process. To prevent unwanted transcription from happening in ncDNA with embedded data, it is important to make sure the encoded nucleotides to not create a start codon. When a DNA string is being transcribed, three-nucleotide codons can be read in six different reading frames. Therefore, there should not be a start codon in any of the six frames. The most common start codon is AUG, though some alternative start codons can also exist, particularly in bacteria~\cite{B1997S}. If a cell contains alternative start codons, the encoding scheme should avoid all of them.
-
-\textit{No homopolymers.} A DNA homopolymer is a region where the same nucleotide is repeated multiple times. Too many repeats can cause errors during DNA replication through polymerase slippage~\cite{VCE2001TEJ}. These replication errors could quickly distort the inserted message and possibly damage the cell after a few generations. For this reason any ncDNA encoding scheme should not include homopolymers greater than length 3.
 
 \section{Encoding Schemes}
 
@@ -199,24 +203,24 @@ Encoding schemes for cellular DNA can involve several components:
 \item Error correction
 \end{itemize}
 
-The following encoding schemes use some or all of these elements in their design.
+The following encoding schemes use some or all of these elements in their design. A comparison of the schemes is shown in Table 2. Table 3 has details of their implementation.
 
 
 \begin{table*}[t]
 	\caption{Comparison of Encoding Schemes}
-	\label{fig:table1}
+	\label{fig:table2}
 	\centering
 	\scalebox{0.7}{
 	\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}\hline \hline
-		& \multirow{2}{*}{Method}  &\multicolumn{4}{|c|}{\textbf{Bio-Restrictions Satisfied}}  &\multicolumn{5}{|c|}{\textbf{Scheme Components}}\\ \cline{3-11}
+		& \multirow{2}{*}{\textbf{Scheme}}  &\multicolumn{4}{|c|}{\textbf{Bio-Restrictions Satisfied}}  &\multicolumn{5}{|c|}{\textbf{Scheme Components}}\\ \cline{3-11}
 		  & &No Homopolymers  &No Start Codons  &Preserves Codon Bias  &Balances C-G  &Error Detection  &Error Correction  &Compression  &Encryption  &Blind Decoding\\ \hline
 	\multirow{6}{*}{pcDNA} & Secret Signature~\cite{AY2004BP}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &  &  &\centering{$\CIRCLE$}  &  &  &  &\\ \cline{2-11}
 		&DNA-Crypt~\cite{HBBMC2007}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$} &  &  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &  &\centering{$\CIRCLE$}  &\\ \cline{2-11}
         &Codon Usage Table~\cite{LDBKHLW2012PO}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$} &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &  &  &  &$\CIRCLE$  &$\CIRCLE$\\ \cline{2-11}
 		&BioCode~\cite{HBBMC2013}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$} &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &  &  &\\ \cline{2-11}
-		&DWT Based~\cite{L2014IS}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &  &  &\\ \cline{2-11}
+		&DWT Based~\cite{L2014IS}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$}  &  &  &  &  &\\ \cline{2-11}
         &LSBase~\cite{KH2015BJOMACS}  &\centering{$\CIRCLE$}  &\centering{$\CIRCLE$} &  &  &  &  &  &  &$\CIRCLE$\\ \hline
-        \multirow{7}{*}{ncDNA and Plasmids} &Organic Memory~\cite{WWF2003COTACM}  &  &  &\centering{$\CIRCLE$}  &  &  &  &  &  &$\CIRCLE$\\ \cline{2-11}
+        \multirow{7}{*}{ncDNA \& Plasmids} &Organic Memory~\cite{WWF2003COTACM}  &  &  &\centering{$\CIRCLE$}  &  &  &  &  &  &$\CIRCLE$\\ \cline{2-11}
 		&Alignment-Based~\cite{YSSOT2007BP}  &  &  &\centering{$\CIRCLE$}  &  &\centering{$\Circle$}  &\centering{$\Circle$}  &  &  &$\CIRCLE$\\ \cline{2-11}
 		&Improved Huffman~\cite{AR2009BT}  &  &  &\centering{$\CIRCLE$}  &\centering{$\Circle$}  &  &  &\centering{$\CIRCLE$}  &  &$\CIRCLE$\\ \cline{2-11}
 		&RAlign~\cite{HB2011IEEEICOBAB}  &  &  &\centering{$\CIRCLE$}  &  &\centering{$\Circle$}  &\centering{$\Circle$}  &  &  &$\CIRCLE$\\ \cline{2-11}
@@ -227,6 +231,35 @@ The following encoding schemes use some or all of these elements in their design
     \fontsize{7pt}{12pt}\selectfont
     \raggedright $\Circle$ denotes partially satisfied whereas $\CIRCLE$ denotes completely satisfied.
 \end{table*}
+
+\begin{table*}[t]
+	\caption{Details of Scheme Implementation}
+	\label{fig:table3}
+	\centering
+	\scalebox{0.9}{
+	\begin{tabular}{|c|c|c|c|c|c|c|}\hline \hline
+		 &\textbf{Scheme} &\textbf{Organism} &\textbf{Method} &\textbf{Data}  &\textbf{Density} $^\dagger$ &\textbf{Error Detection/Correction} \\ \hline
+	\multirow{6}{*}{pcDNA} & Secret Signature  &Bacteria &In vivo &"KEIO"  &0.167 cpc &Parity bit \\ \cline{2-7}
+		&DNA-Crypt &Bacteria &In silico  &"this is a test"  &0.173 bpc &Hamming, WDH\\ \cline{2-7}
+        &Codon Usage Table  &Bacteria, yeast, plant, human &In vivo  &"GENE" &0.143 bpc  &None  \\ \cline{2-7}
+		&BioCode  &Bacteria, yeast &In silico  &"BioCode preserves codon bias"  &0.204 bpc  &Hamming, Repetition  \\ \cline{2-7}
+		&DWT Based  &Bacteria, yeast, human  &In silico  &N/A  &0.180 bpc  &None  \\ \cline{2-7}
+        &LSBase  &Rodent &In silico  &3.7 kb text  &0.333 bpn  &None  \\ \hline
+        \multirow{7}{*}{ncDNA \& Plasmids} &Organic Memory  &Bacteria  &In vivo  &"It's a Small World" lyrics  &0.333 cpn  &None \\ \cline{2-7}
+		&Alignment-Based &Bacteria  &In vivo &"E=mc2"  &0.5 bpn &Repetition  \\ \cline{2-7}
+		&Improved Huffman  &Theoretical &In silico  &Lyrics, music \& image  &0.286 bpn  &None  \\ \cline{2-7}
+		&RAlign  &Virus  &In silico  &1000 bits &0.48 bpn  &Repetition  \\ \cline{2-7}
+		&HTAlign  &Virus  &In silico  &1000 bits  &0.46 bpn &Repetition  \\ \cline{2-7}
+		&DNA Barcodes  &Theoretical  &In silico  &73 code sets &0.2 bpn  &Hamming  \\ \cline{2-7}
+		&DNA-Courier Attack  &Bacteria  &In silico  &"HelloMyNameIsLHL"  &0.97 bpn  &None  \\ \hline
+	\end{tabular}}
+    \vspace{0.01cm}
+    \newline
+    $\dagger$
+    \fontsize{7pt}{12pt}\selectfont
+    \raggedright In this column, cpc denotes "characters per nucleotide", bpc denotes "bits per codon", and bpn denotes "bits per nucleotide". In the case of multiple storage sites, the average density is taken.
+\end{table*}
+
 
 \subsection{pcDNA Encoding}
 
@@ -258,37 +291,10 @@ Heider et al.~\cite{HPB2009BMCRN} were interested in the possibility of encoding
 
 Chun et al.~\cite{CLY2015SAPW} were the first to design a cyber attack model they named "DNA courier attack" using encoded DNA. To ensure secrecy, the message was first encrypted into ciphertext using the encryption algorithm AES-128 with a secret key. Then a probability distribution of the DNA fragments in the non-coding regions was created. The mapping table was formed by sorting the codons and 5-bit sequences by frequency and matching the two directly. After insertion of the message, fake data was then embedded to rebalance the original codon distribution and further hide the message data. The encoded sequence was then inserted into an isolated plasmid, which was injected into a bacterial cell that can multiply and be hidden so the sender can carry it through a tight security checkpoint if necessary.
 
-%\begin{table*}[t]
-%	\caption{Details of Encoding Schemes}
-%	\label{fig:table2}
-%	\centering
-%	\scalebox{0.9}{
-%	\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}\hline \hline
-%		 &\textbf{Scheme} &\textbf{Organism} &\textbf{Storage Site} &\textbf{Method} &\textbf{Data}  &\textbf{Density} $^\dagger$ &\textbf{Error Detection/Correction} \\ \hline
-%	\multirow{1}{*}{\vspace{0cm}\textbf{pcDNA}} & Secret Signature  &\textit{Bacillus subtilis}  &ftsZ gene &Mutan-Super Express &"KEIO"  &0.167 cpc &Parity bit \\ \hline
-%		&DNA-Crypt &\textit{S. cerevisiae}  &Ypt7 gene &In silico  &"this is a test"  &0.173 bpc &Hamming, WDH\\ \hline
- %       &Codon Usage Table  &multiple  &multiple &multiple  &multiple &0.143 bpc  &None  &  &  &\\ \hline
-%		&BioCode  &multiple  &multiple &In silico  &multiple  &0.204 bpc  &Hamming, Repetition  &  &  &\\ \hline
-%		&DWT Based  &multiple  &multiple  &In silico  &N/A  &0.180 bpc  &None  &  &  &\\ \hline
- %        &LSBase  &multiple  &multiple &In silico  &  &0.333 bpn  &  &  &  &\\ \hline
-  %      \multirow{1}{*}{\vspace{0cm}\textbf{ncDNA and Plasmids}} &Organic Memory  &  &  &  &  &  &  &  &  &\\ \hline
-	%	&Alignment-Based &  &  &  &  & &  &  &  &\\ \hline
-%		&Improved Huffman  &  &  &  &  &0.286 bpn  &  &  &  &\\ \hline
-%		&RAlign  &  &  &  &  &  &  &  &  &\\ \hline
-%		&HTAlign  &  &  &  &  & &  &  &  &\\ \hline
-%		&DNA Barcodes  &  &  &  &  &  &  &  &  &\\ \hline
-%		&DNA-Courier Attack  &  &  &  &  &  &  &  &  &\\ \hline
-%	\end{tabular}}
- %   \vspace{0.01cm}
-  %  \newline
-%    $\dagger$
- %   \fontsize{7pt}{12pt}\selectfont
-  %  \raggedright In this column, cpc denotes "characters per nucleotide", bpc denotes "bits per codon", and bpn denotes "bits per nucleotide".
-%\end{table*}
 
 \section{Gaps and Future Directions}
 
-There are several other aspects of DNA that have seen little research for biosteganography, but have substantial importance for message encoding and watermarking. We illuminate how these areas deserve further research in this section, along with pointing out gaps in the current research.
+There are several aspects of cellular DNA storage that have seen little research, despite their importance for message encoding. In this section, we illuminate why these areas deserve further study, and we suggest novel approaches for future schemes.
 
 \subsection{Addressing}
 
@@ -305,7 +311,7 @@ The problem of single lengthy insertions could be avoided by using addressing te
 
 \subsection{Compression}
 
-Advances in cellular DNA encoding have so far been made using short messages. Therefore, the need for compression techniques has been minimal. Compression also creates additional difficulties because it allows mutative errors to disrupt more of the data. But we believe that if cellular DNA is to become a more viable method of secure data encoding, more research must be done into methods that compress data while at the same time reducing damage from errors.
+Advances in cellular DNA encoding have so far been made using short messages. Therefore, the need for compression techniques has been minimal. Compression also creates additional difficulties because it allows mutative errors to disrupt more of the data. But if cellular DNA is to become a more viable method of secure data encoding, more research must be done into methods that compress data while at the same time reducing damage from errors.
 
 The clearest way to accomplish this is with compression matched with error correction. The DNA-Crypt algorithm implements a fuzzy controller that determines what type of error correction is best for optimal performance given mutation rate, sequence length, and stability~\cite{HBBMC2007}. We believe a similar sort of fuzzy controller could be used to determine ideal error correction methods by adding an additional parameter for compression density.
 
@@ -325,13 +331,13 @@ If the sender and receiver can agree on a specific start location in junk DNA fo
 
 This technique of methylation encoding would be restricted only by the insertion location. If the embedding site is in truly non-functional ncDNA, the encoder does not need to be concerned about the other bio-restrictions associated with ncDNA. This would allow for raw binary encoding without the need for complex algorithms and schemes to get around the common bio-restrictions.
 
-While the technology for site-specific methylation is still in its infancy, we can expect that soon the ability to encode and read methyl groups in DNA will be more available and economical. When this happens, we believe methylation encoding could become one of the most efficient and useful forms of cellular DNA encoding.
+While the technology for site-specific methylation is still in its infancy, we can expect that soon the ability to encode and read methyl groups in DNA will be more available and economical. When this happens, we believe methylation encoding could become an efficient and useful form of cellular DNA encoding.
 
 \section{Conclusion}
 
-Digital data has been encoded into DNA. Great strides have been made in both synthetic and cellular DNA encoding, with a focus on long term data storage for synthetic DNA, and steganography and watermarking for cellular DNA. In the near future, computer data centers may partially replace their large storage spaces with smaller shelves of synthetic DNA containing the same amount of information. In a few years, government agents or private individuals wishing to transmit secret messages might do so by encoding them in bacterial DNA and hiding the bacteria on their very bodies. Corporations who have created patented genes are already looking at ways to encode secret watermarks inside the genomes of their novel organisms.
+Great strides have been made in both synthetic and cellular DNA encoding, with a focus on long term data storage for synthetic DNA, and steganography and watermarking for cellular DNA. In the near future, computer data centers may partially replace their large storage spaces with smaller shelves of synthetic DNA containing the same amount of information. In a few years, government agents or private individuals wishing to transmit secret messages might do so by encoding the messages in bacterial DNA and hiding the bacteria on their bodies. Corporations that have created patented genes are already looking at ways to encode secret watermarks inside the genomes of their novel organisms.
 
-The potential for cellular DNA encoding continues to grow. Data has been inserted into pcDNA and ncDNA, bypassing the biological restrictions associated with those areas by using precise encoding schemes. Encryption, error correction, and data compression have also been implemented in a variety of ways by these schemes to make them more useful. Future research into cellular DNA encoding has many possible avenues which could provide novel benefits over existing schemes. Nature has been using DNA to store biological data for millions of years, and finally humans are learning to use the same medium for our own data. 
+The potential for cellular DNA encoding continues to grow. Data has been inserted into pcDNA and ncDNA, bypassing the biological restrictions associated with those areas through encoding schemes. Encryption, error correction, and data compression have also been implemented in a variety of ways by these schemes to make them more useful. Future research into cellular DNA encoding has many possible avenues which could provide important benefits over existing schemes. Nature has been using DNA to store biological data for millions of years, and finally humans are learning to use the same medium for our own data.
 
 %\bibliographystyle{natbib}
 %\bibliographystyle{achemnat}
